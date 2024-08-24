@@ -1,22 +1,22 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Městská bytová správa, spol. s.r.o. Hodonín
+  site: 'https://bytovka.cz'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: 
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Městská bytová správa, spol. s.r.o. Hodonín
+    template: '%s — Městská bytová správa, spol. s.r.o. Hodonín'
+  description: "Městská bytová správa Hodonín nabízí správu a údržbu nemovitostí, dodávky tepla, plynu a vody, technické prohlídky a služby pro společenství vlastníků."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Městská bytová správa, spol. s.r.o. Hodonín
     images:
       - url: '~/assets/images/default.png'
         width: 1200

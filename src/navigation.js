@@ -3,87 +3,78 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'SVJ',
       links: [
         {
-          text: 'SaaS',
+          text: 'O nás',
           href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Startup',
+          text: 'Služby',
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Mobile App',
+          text: 'Rozdělení SVJ',
           href: getPermalink('/homes/mobile-app'),
         },
         {
-          text: 'Personal',
+          text: 'Otázky a odpovědi',
+          href: getPermalink('/homes/personal'),
+        },
+        {
+          text: 'Dokumenty ke stažení',
+          href: getPermalink('/homes/personal'),
+        },
+        {
+          text: 'Náš tým',
+          href: getPermalink('/homes/personal'),
+        },
+        {
+          text: 'Napište nám',
+          href: getPermalink('/homes/personal'),
+        },
+        {
+          text: 'Ceník',
           href: getPermalink('/homes/personal'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Údržba',
+      href: '#',
+    },
+    {
+      text: 'Družstva',
       links: [
         {
-          text: 'Features (Anchor Link)',
+          text: 'Kaštany',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
+          text: 'Lípa',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: 'Pastelky',
           href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
+      text: 'Teplo',
+      href: '#',
+    },
+    {
+      text: 'Služby',
+      href: '#',
+    },
+    {
+      text: 'Pro zaměstnance',
+      href: '#',
+    },
+    {
+      text: 'Kontakt',
+      href: '#',
     },
     {
       text: 'Blog',
@@ -110,12 +101,8 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Kontakt', href: '#' }],
 };
 
 export const footerData = {
@@ -166,8 +153,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Zpracování osobních údajů', href: getPermalink('/privacy') },
+    { text: 'Mapa stránek', href: getPermalink('/terms') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
@@ -177,7 +164,8 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
-  `,
+    Je to složité, ale někdo to udělat musel – <a class="text-blue-600 dark:text-muted" href="https://petrv.eu"> </a>
+    <a href="https://petrv.eu" target="_blanck">
+        <img class="w-5 h-4 md:w-10 md:h-4 md:ml-2 md:mt-1 float-right rtl:float-right rounded-sm" src="../src/assets/favicons/logo_petrv_RGB.png" alt="PetrV_logo">
+    </a>  `,
 };

@@ -8,7 +8,6 @@ const { items = [], columns, defaultIcon = '', classes = {} } = Astro.props;
 
 const {
   container: containerClass = '',
-  // container: containerClass = "sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
   panel: panelClass = '',
   title: titleClass = '',
   description: descriptionClass = '',
@@ -32,7 +31,7 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
+      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {}, contacts = [] }) => (
         <div class={twMerge('relative flex flex-col', panelClass, itemClasses?.panel)}>
           {(icon || defaultIcon) && (
             <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
@@ -41,6 +40,20 @@ const {
           {description && (
             <p class={twMerge('text-muted mt-2', descriptionClass, itemClasses?.description)} set:html={description} />
           )}
+          
+          <!-- Vykreslení kontaktních informací -->
+          {contacts.length > 0 && (
+            <div class="mt-4">
+              {contacts.map(({ type, value }) => (
+                <p class="flex items-center mb-2">
+                  {type === 'phone' && <Icon name="tabler:phone" class="w-5 h-5 mr-2 text-primary" />}
+                  {type === 'email' && <Icon name="tabler:mail" class="w-5 h-5 mr-2 text-primary" />}
+                  {value}
+                </p>
+              ))}
+            </div>
+          )}
+          
           {callToAction && (
             <div class="mt-2">
               <Button {...callToAction} />

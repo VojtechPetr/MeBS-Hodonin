@@ -132,6 +132,11 @@ export interface Stat {
   icon?: string;
 }
 
+export interface Contact {
+  type: 'phone' | 'email'; 
+  value: string; 
+}
+
 export interface Item {
   title?: string;
   description?: string;
@@ -139,6 +144,7 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
+  contacts?: Contact[]; 
 }
 
 export interface Price {

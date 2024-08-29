@@ -2,8 +2,10 @@
 import { SITE } from 'astrowind:config';
 ---
 
-<span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
->
-  🚀 {SITE?.name}
+
+<span class="flex items-center ml-2 rtl:ml-0 rtl:mr-2">
+  <img src="../../src/assets/favicons/logo_petrv_RGB.png" alt="Site Logo" class="h-8 w-auto mr-2" />
+  <span class="text-2xl md:text-xl font-bold text-gray-900 dark:text-white max-w-60 break-words">
+    {SITE?.name}
+  </span>
 </span>

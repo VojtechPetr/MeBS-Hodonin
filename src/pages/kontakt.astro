@@ -1,0 +1,72 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Kontakt',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Kontakt" title="Pojďme se spojit" />
+
+  <div class="">
+    <!-- Přidáno ml-auto pro zajištění zarovnání textu doprava -->
+    <div class="">
+      <p>
+        <!-- Použití font-bold pro tučný text "Městská bytová správa" -->
+        <span class="font-bold">Městská bytová správa, spol. s r.o.</span> je od 21. prosince 1995 zapsána v obchodním rejstříku vedeném Krajským soudem v Brně v oddílu C, vložka 21697. Zakladatelem a jediným společníkem je Město Hodonín.
+        <br><br>
+        Sídlo: Hodonín, Rodinova 691/4, PSČ 695 01, IČ: 634 89 953, DIČ: CZ699001303<br>
+        Statutární orgán: Ing. Jana Bimková, jednatelka společnosti<br>
+        ID datové schránky: 4mimcfg
+        <br><br>
+        <!-- Použití font-bold pro tučný text "Pokladna" -->
+        <span class="font-bold">Pokladna</span><br>
+        Pondělí, středa 7.30 – 17.00, II. patro, dveře č. 16<br>
+        Rodinova 691/4, Hodonín
+      </p>
+    </div>
+    <!-- QR kód stále zarovnán uprostřed na pravé straně -->
+    <div class="md:w-1/2 flex justify-center">
+      <img src="../../src/assets/images/bytovka_kontakt_QR.png" alt="QR Code" class="w-48 h-48" />
+    </div>
+  </div>
+
+  <Features2
+    items={[
+      {
+        title: 'Oddělení zákaznické podpory',
+        description: 'Jana Nováková',
+        icon: 'tabler:user',
+        contacts: [
+          {
+            type: 'phone',
+            value: '+420 123 456 789',
+          },
+          {
+            type: 'email',
+            value: 'jana.novakova@bytovka.cz',
+          },
+        ],
+      },
+      {
+        title: 'Technické oddělení',
+        description: 'Petr Svoboda',
+        icon: 'tabler:user',
+        contacts: [
+          {
+            type: 'phone',
+            value: '+420 987 654 321',
+          },
+          {
+            type: 'email',
+            value: 'petr.svoboda@bytovka.cz',
+          },
+        ],
+      },
+      // Přidejte další oddělení dle potřeby
+    ]}
+  />
+</Layout>

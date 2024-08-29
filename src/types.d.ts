@@ -132,9 +132,21 @@ export interface Stat {
   icon?: string;
 }
 
-export interface Contact {
-  type: 'phone' | 'email'; 
-  value: string; 
+export interface ContactInfo {
+  type: 'phone' | 'email';
+  value: string;
+}
+
+export interface ContactDetail {
+  title: string;
+  name: string;
+  icon: string;
+  contactInfo: ContactInfo[];
+}
+
+export interface Department {
+  department: string;
+  contacts: ContactDetail[];
 }
 
 export interface Item {
@@ -144,8 +156,8 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
-  contacts?: Contact[]; 
-}
+  contacts?: ContactInfo[]; 
+  }
 
 export interface Price {
   title?: string;
@@ -196,7 +208,7 @@ export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
 }
 
 export interface ItemGrid {
-  items?: Array<Item>;
+  items: Item[];
   columns?: number;
   defaultIcon?: string;
   classes?: Record<string, string>;
@@ -250,7 +262,6 @@ export interface Brands extends Omit<Headline, 'classes'>, Widget {
 export interface Features extends Omit<Headline, 'classes'>, Widget {
   image?: string | unknown;
   video?: Video;
-  items?: Array<Item>;
   columns?: number;
   defaultIcon?: string;
   callToAction1?: CallToAction;
@@ -258,6 +269,7 @@ export interface Features extends Omit<Headline, 'classes'>, Widget {
   isReversed?: boolean;
   isBeforeContent?: boolean;
   isAfterContent?: boolean;
+  items: Department[];
 }
 
 export interface Faqs extends Omit<Headline, 'classes'>, Widget {
@@ -288,5 +300,3 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
   isAfterContent?: boolean;
   callToAction?: CallToAction;
 }
-
-export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}

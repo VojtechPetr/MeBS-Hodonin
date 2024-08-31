@@ -139,7 +139,7 @@ export interface ContactInfo {
 
 export interface ContactDetail {
   title: string;
-  name: string;
+  name?: string;
   icon: string;
   contactInfo: ContactInfo[];
 }
@@ -259,7 +259,7 @@ export interface Brands extends Omit<Headline, 'classes'>, Widget {
   images?: Array<Image>;
 }
 
-export interface Features extends Omit<Headline, 'classes'>, Widget {
+export interface Features21 extends Omit<Headline, 'classes'>, Widget {
   image?: string | unknown;
   video?: Video;
   columns?: number;
@@ -271,6 +271,20 @@ export interface Features extends Omit<Headline, 'classes'>, Widget {
   isAfterContent?: boolean;
   items: Department[];
 }
+
+export interface Features extends Omit<Headline, 'classes'>, Widget {
+  image?: string | unknown;
+  video?: Video;
+  columns?: number;
+  defaultIcon?: string;
+  callToAction1?: CallToAction;
+  callToAction2?: CallToAction;
+  isReversed?: boolean;
+  isBeforeContent?: boolean;
+  isAfterContent?: boolean;
+  items: Item[];
+}
+
 
 export interface Faqs extends Omit<Headline, 'classes'>, Widget {
   iconUp?: string;

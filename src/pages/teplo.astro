@@ -1,0 +1,100 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Note from '~/components/widgets/Note.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+---
+
+<Layout metadata={{ title: 'Tepelné hospodářství' }}>
+  <HeroText tagline="Tepelné hospodářství" title="Informace o teple" />
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="col-span-2">
+        <h2 class="text-2xl font-semibold mb-4">Aktuálně</h2>
+        <p class="text-gray-700 mb-4">
+          Vážení odběratelé, jako každý rok se v přechodném období projevují rozdíly v tepelně-izolačních vlastnostech jednotlivých domů a tím i náročnost na vytápění.
+        </p>
+
+        <h3 class="text-xl font-semibold mb-2">Pravidla pro vytápění předepisuje vyhláška 194/2007: § 2</h3>
+        <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+          <li>Otopné období začíná 1. září a končí 31. května následujícího roku.</li>
+          <li>Dodávka tepelné energie se zahájí v otopném období, když průměrná denní teplota venkovního vzduchu v příslušném místě nebo lokalitě poklesne pod +13 °C ve 2 dnech po sobě následujících a podle vývoje počasí nelze očekávat zvýšení této teploty nad +13 °C pro následující den.</li>
+          <li>Průměrnou denní teplotou venkovního vzduchu je čtvrtina součtu venkovních teplot měřených ve stínu s vyloučením vlivu sálání okolních ploch v 7.00, 14.00 a ve 21.00 hod., přičemž teplota měřená ve 21.00 hod. se počítá dvakrát.</li>
+          <li>Vytápění bytů a nebytových prostor v bytových a nebytových budovách se omezí nebo přeruší v otopném období tehdy, jestliže průměrná denní teplota venkovního vzduchu v příslušném místě nebo lokalitě vystoupí nad +13 °C ve 2 dnech po sobě následujících a podle vývoje počasí nelze očekávat pokles této teploty pro následující den. Omezení vytápění se provádí tak, aby byly dodrženy požadavky jejich teplotního útlumu zajišťujícího tepelnou stabilitu místnosti. Při následném poklesu průměrné denní teploty venkovního vzduchu pod +13 °C se vytápění obnoví.</li>
+        </ol>
+        <p class="text-gray-700 mb-4 font-bold">
+            Pokud bude v přechodném období požadavek ze strany odběratelů na zahájení vytápění, může být akceptovaný pouze na základě písemné žádosti předsedy SVJ např. mailem.
+        </p>
+
+        <Note 
+          boldText="" 
+          normalText="Vytápění bylo ukončeno v pátek 10.5.2024" 
+        />
+        <div class="border-b border-gray-300 my-10 "></div>
+        <p class="my-4">
+          První pololetí roku 2023 bylo proti r. 2022 chladnější, zejména měsíc květen. Vytápění bylo ukončeno 22.5.2023.
+        </p>
+        <p class="mb-4">
+          Na rok 2023 předpokládáme růst nákladů za dodávku tepla asi o 20 %
+        </p>
+        <p class="mb-4">
+          Na rok 2024 předpokládáme růst nákladů za dodávku tepla asi o 9 %
+        </p>
+        <p class="mb-4">
+          Upozorňujeme odběratele, a to zejména ty, kteří měli již v minulosti nedoplatek za dodávku tepla, že jim budou zvýšeny zálohy a to od března 2023.
+        </p>
+        <div class="border-b border-gray-300 my-10 "></div>
+        <p class="mb-4">
+          V přechodném období, kdy venkovní teplota kolísá kolem rozhodné teploty průměrných 13°C, je problematické rozhodnout, zda objekty vytápět nebo ne. Záleží to samozřejmě také na stavu domu, zejména na jeho tepelně-izolačních vlastnostech. U objektů s instalovanou domovní předávací stanicí lze na žádost zástupce vlastníků /předseda, místopředseda společenství vlastníků/ vytápění objektu zapnout nebo vypnout dle okamžitého stavu počasí.
+        </p>
+        <p class="mb-4">
+          U objektů napojených na předávací stanice Horní Valy, Lesní /Lesanka/, Bažantnice a Národní 61 bude v tomto období vytápění vždy zapnuto /s vyjímkou havarijních stavů nebo rekonstrukcí /. Tyto objekty jsou technologicky tak propojeny, že je nelze regulovat samostatně. Ročně dodáme odběratelům asi 150 tis. GJ tepla, v závislosti na počasí. Teplo dodávané do objektů je měřeno na patách domů měřidly tepla Clorius a LandisGyr. Postupně probíhá jejich výměna za ultrazvuková měřidla s vysokou přesností.
+        </p>
+      </div>
+
+      <div class="ml-20">
+        <h3 class="text-xl font-semibold mb-4">Ceny</h3>
+        <p class="mb-4 text-sm">
+            Měřidla jsou cejchovaná, přecejchování se provádí zpravidla <strong>po 4 letech.</strong> Dle údajů na měřidlech - množství spotřebovaného tepla - se účtuje celková částka za teplo. 
+            Do nákladů na cenu tepla se zahrnují (dle Energetického regulačního úřadu) všechny oprávněné náklady včetně přiměřeného zisku. Tato cena je regulovaná ERU.</p>
+        <p class="mb-4 text-sm">
+            <strong>V praxi tedy cena tepla roste pouze s růstem cen nakupovaných energií.</strong> 
+            Cena tepla je vypočtena jako podíl skutečných nákladů a vyrobených GJ za topnou sezónu - kalendářní rok - a rozpočítávání na jednotlivé odběratele je prováděno počítačovým programem HEAT.</p>
+        <h3 class="text-xl font-semibold mb-4">Cesta tepla</h3>
+        <p class="mb-4 text-sm">
+            Teplo je vyráběno v blokových nebo malých domovních kotelnách. Větší část tepla je nakupována z <strong>Elektrárny Hodonín</strong> ve formě páry nebo horké vody. 
+            V systému centrálního zásobování je teplo rozváděno do objektů venkovním potrubím dvoutrubkovými nebo čtyřtrubkovými rozvody.</p>
+        <p class="mb-4 text-sm">
+            Tam, kde je teplo vedeno dvoutrubkovým rozvodem, jsou v objektech spotřeby instalovány domovní směšovací stanice, kde se podle potřeby odběratele rozdělí teplo do ÚT či do TUV. 
+            Při čtyřtrubkovém rozvodu je v centrálním zdroji tepla přeměněno teplo v páře nebo horké vodě na teplo do ÚT a teplo na ohřev TUV, a každé médium je zvlášť vedeno do objektu spotřeby.</p>
+        <div class="border-b border-gray-300 my-10 "></div>
+        <h3 class="text-xl font-semibold mb-4">Dokumenty ke stažení</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li><a href="/assets/files/tepelne-hospodarstvi/Oznámení o odstávce tepelné energie.pdf" class="text-blue-600 underline" download>Oznámení o odstávce tepelné energie</a></li>
+          <li><a href="/assets/files/tepelne-hospodarstvi/Předpokládané ceny tepla na rok 2024.pdf" class="text-blue-600 underline" download>Předpokládané ceny tepla rok 2024</a></li>
+          <li><a href="/assets/files/tepelne-hospodarstvi/Předpokládané ceny tepla 2023.pdf" class="text-blue-600 underline" download>Předpokládané ceny tepla 2023</a></li>
+          <li><a href="/assets/files/tepelne-hospodarstvi/Denostupně 2022.xls" class="text-blue-600 underline" download>Denostupně 2022</a></li>
+          <li><a href="/assets/files/tepelne-hospodarstvi/Předpokládané ceny tepla 2022.pdf" class="text-blue-600 underline" download>Předpokládané ceny tepla 2022</a></li>
+          <li><a href="/assets/files/tepelne-hospodarstvi/Pravidla pro vytápění.doc" class="text-blue-600 underline" download>Pravidla pro vytápění</a></li>
+          <li><a href="/assets/files/tepelne-hospodarstvi/Předávací stanice - napojené domy.doc" class="text-blue-600 underline" download>Předávací stanice - napojené domy</a></li>
+          <li><a href="/ke-stazeni/tepelne-hospodarstvi" class="text-blue-600 underline"> více &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-b border-gray-300 mt-10 "></div>
+
+    <Stats
+    title="Provozovaná zařízení"
+    stats={[
+      { title: 'parních předavacích stanic', amount: '14' },
+      { title: 'horkovodní předávací stanice', amount: '2' },
+      { title: 'směšovacích stanic', amount: '121' },
+      { title: 'plynových kotelen', amount: '6' },
+      { title: 'plynových kotelen v režimu maloodběr', amount: '13' },
+      { title: 'kotelna na propan-butan', amount: '1' },
+    ]}
+  />
+  </section>
+</Layout>

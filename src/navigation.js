@@ -26,14 +26,6 @@ export const headerData = {
           href: getPermalink('/homes/personal'),
         },
         {
-          text: 'Náš tým',
-          href: getPermalink('/homes/personal'),
-        },
-        {
-          text: 'Napište nám',
-          href: getPermalink('/homes/personal'),
-        },
-        {
           text: 'Ceník',
           href: getPermalink('/homes/personal'),
         },
@@ -62,19 +54,15 @@ export const headerData = {
     },
     {
       text: 'Teplo',
-      href: '#',
+      href: '/teplo',
     },
     {
       text: 'Služby',
-      href: '#',
+      href: '/sluzby',
     },
     {
       text: 'Pro zaměstnance',
-      href: '#',
-    },
-    {
-      text: 'Kontakt',
-      href: getPermalink('/kontakt'),
+      href: '/ke-stazeni/pro-zamestnance',
     },
     {
       text: 'Blog',
@@ -102,7 +90,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Kontakt', href: '#' }],
+  actions: [{ text: 'Kontakt', href: '/kontakt' }],
 };
 
 export const footerData = {

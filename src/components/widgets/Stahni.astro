@@ -1,0 +1,19 @@
+---
+const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/pro-zamestnance' }];
+---
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <ul class="space-y-4 bg-blue-300 rounded-lg">
+      {
+        downloadPages.map((page) => (
+          <li class="p-4 border rounded-lg shadow-sm flex justify-between items-center">
+            <div>
+              <h3 class="text-lg font-semibold">{page.title}</h3>
+            </div>
+            <a href={page.url} class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+              Zobrazit
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>

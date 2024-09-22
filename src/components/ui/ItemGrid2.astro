@@ -31,7 +31,7 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, image, callToAction, link = '', target = '_self', classes: itemClasses = {} }) => (
+      {items.map(({ title, description, icon, image, callToAction, link = '/', target = '_self', classes: itemClasses = {} }) => (
         <a
           href={link}
           target={target}

@@ -1,0 +1,76 @@
+---
+
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import List from '~/components/widgets/List.astro';
+
+const metadata = {
+  title: 'O nás',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="O nás"
+    image={{ 
+      src: '../assets/images/o-nas.jpg',
+      alt: 'Caos Image',
+      class: "-mb-10",
+    }}
+  >
+    <Fragment slot="title">
+      Komplexní správa nemovitostí <br />
+      <span class="text-accent dark:text-white highlight"> Pro Váš klid a pohodlí</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Naše oddělení je část provozně technického útvaru Městské bytové správy spol. s r.o. Hodonín. Naší pracovní náplní
+      je zabezpečovat správu prodaných bytů v jednotlivých společenstvích vlastníků na základě mandátních smluv.
+    </Fragment>
+  </Hero>
+
+  <List
+    title="Soupis činností prováděných na základě uzavřené mandátní smlouvy mezi správcem a SVJ:"
+    items={[
+      'Vyhotovování předpisu fondu oprav, odměny za správu a jednotlivých služeb v domě vedených',
+      'Vedení otápěné plochy bytu pro rozúčtování tepla',
+      'Vedení měřičů ÚT + TUV + vody (pokud jsou v bytě)',
+      'Vedení přehledu osob nahlášených k bydlení v bytové jednotce z důvodu rozúčtování některých služeb na osoby',
+      'Při vlastníkem nahlášené změně počtu osob v domácnosti, přepočet záloh na služby s ohledem na nově uvedený počet osob',
+      'Při změně vlastníka – přepis bytové jednotky na nového vlastníka – přepis placení na poště (poskytnutí informací, kde si má nový vlastník co přihlásit, např. vyřízení SIPO čísla, plynu, elektřiny, rozhlasu, televize, odpadků apod.)',
+      'Rozúčtování jednotlivých služeb za kalendářní rok dle platných vyhlášek s ohledem na změnu vlastníků bytové jednotky (pokud je jich více, je vyúčtování zasláno každému z nich na nově uvedenou adresu)',
+      'Hromadná úprava záloh na služby po rozúčtování s ohledem na náklady v rozúčtování a změny cenových předpisů (zdražení vodného-stočného apod.)',
+      'Vedení skutečně zaplacených měsíčních plateb (komunikace s poštou pomocí SIPA)',
+      'Pořizování plateb uhrazených jiným způsobem než prostřednictvím inkasní složenky, tj. na pokladně, na složenku nebo bankovním převodem',
+      'S tříměsíčním zpožděním po obdržení neuhrazených měsíčních plateb od České pošty, jejich zaúčtování do dluhu, následné upomenutí (FO se nepenalizuje)',
+      'Na žádost výboru společenství provádění přípravy a vyhotovování podkladů pro podání žalob na dluhy ve fondu oprav jednotlivých vlastníků bytových či nebytových jednotek',
+      'Vedení dlužníků bytových jednotek v uvedeném domě',
+      'Sjednávání smluv dodávek médií: a) Smlouvy o dodávce elektřiny dodávané ze sítě nízkého napětí pro společné prostory domu. b) Smlouva o dodávce vody z veřejného vodovodu a odvádění odpadních vod veřejnou kanalizací',
+      'Zajištění smluvního pojištění domu, komunikace při řešení pojistných událostí',
+      'Zajišťování dodávky tepla',
+      'Údržba tepelného zdroje, pravidelné prohlídky a kontroly',
+      'Objednávání pravidelných čištění komínových těles dle platné vyhlášky',
+      'Zajišťování pravidelné revizní prohlídky: elektroinstalace, plynoinstalace, požární a hasící techniky a hromosvodů ve společných prostorech',
+      'Zajišťování odstranění porevizních závad vyplývajících z revizí',
+      'Zajišťování projektové dokumentace na investice a opravy většího rozsahu',
+      'Zajišťování cenových návrhů dodavatelů oprav a investic',
+      'Zajišťování výběrových řízení na dodavatelské opravy a investice',
+      'Vyřizování všech náležitostí k zahájení stavebních prací, jednání se stavebním úřadem, zajištění vyjádření od správců sítí a dotčených orgánů státní správy',
+      'Zajišťování nutných technických a ekonomických podkladů pro zpracování podkladů pro vstup do programu Panel, vždy pro firmu, která pro společenství zajišťuje dotace z programu Panel',
+      'Konzultování smluv uzavíraných společenstvím, upozornění výboru společenství na možná úskalí smluv',
+      'Na žádost výboru společenství informování o legislativních změnách týkajících se společenství vlastníků a náležitostmi s tím spojenými',
+      'Zajištění požární prevence, zpracování směrnic PO, zajištění revizí hydrantů, kontrola a doplňování hasící techniky',
+      'Rozúčtovávání jednotlivých faktur za opravy na jednotlivé vlastníky dle spoluvlastnických podílů, dle písemné dohody členů společenství nebo dle výborem předloženého zápisu ze shromáždění společenství',
+      'Na základě žádostí svolávání shromáždění vlastníků včetně přichystání podkladů pro snadný průběh schůze (pozvánky, prezenční listina, hlasovací tabulka)',
+      'Provádění oprav, které jsou členy výboru nahlášeny na údržbě MěBS',
+      'Rozúčtovávání oprav z údržby MěBS',
+      'Archivace dokladů',
+      'Vedení účtu fondu oprav zvlášť pro každou bytovou i nebytovou jednotku v domě',
+      'Vyúčtování fondu oprav jednou ročně',
+      'Na základě žádostí vlastníků předkládání aktuálních zůstatků záloh na fondu oprav v průběhu roku',
+      'Při ročním vyúčtování fondu oprav provádění kompenzace dluhů měs. plateb ze zůstatků f.o.(pokud je jeho výše dostatečná)',
+      'Technická evidence domu, vedení a doplňování archívu technické dokumentace',
+      'Zajišťování 24hodinové havarijní služby pro případ havárie rozvodů vody, dodávek tepla, poruchy výtahu při níž došlo k uvíznutí osob a okamžité odstraňování těchto havarijních stavů',
+    ]}
+  />
+</Layout>

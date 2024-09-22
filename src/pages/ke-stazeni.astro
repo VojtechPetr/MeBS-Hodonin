@@ -1,0 +1,44 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+// Seznam stránek ke stažení
+const downloadPages = [
+  { title: 'BD Kaštany', url: '/ke-stazeni/bd-kastany' },
+  { title: 'BD Lípa', url: '/ke-stazeni/bd-lipa' },
+  { title: 'BD Pastelky', url: '/ke-stazeni/bd-pastelky' },
+  { title: 'Bytová Údržba', url: '/ke-stazeni/bytova-udrzba' },
+  { title: 'Družstva', url: '/ke-stazeni/druzstva' },
+  { title: 'Městské Byty', url: '/ke-stazeni/mestske-byty' },
+  { title: 'Obecné Dokumenty', url: '/ke-stazeni/obecne-doku' },
+  { title: 'Pro Zaměstnance', url: '/ke-stazeni/pro-zamestnance' },
+  { title: 'Správa Prodanych Bytu', url: '/ke-stazeni/sprava-prodanych-bytu' },
+  { title: 'Tepelné Hospodářství', url: '/ke-stazeni/tepelne-hospodarstvi' }
+];
+
+const metadata = {
+  title: 'Ke stažení',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Ke stažení" title="Seznam oddělení" />
+
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <ul class="space-y-4">
+      {downloadPages.map((page) => (
+        <li class="p-4 border rounded-lg shadow-sm flex justify-between items-center">
+          <div>
+            <h3 class="text-lg font-semibold">{page.title}</h3>
+          </div>
+          <a
+            href={page.url}
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          >
+            Zobrazit
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>

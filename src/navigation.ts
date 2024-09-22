@@ -1,92 +1,64 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'SVJ',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'O nás',
+          href: getPermalink('/svj/o-nas'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Rozdělení SVJ',
+          href: getPermalink('/svj/rozdeleni-svj'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'Profi předseda',
+          href: getPermalink('/svj/profi-predseda'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Ceník',
+          href: getPermalink('/svj/cenik'),
         },
+        {
+          text: 'Otázky a odpovědi',
+          href: getPermalink('/svj/faq'),
+        },
+        {
+          text: 'BD Kaštany',
+          href: getPermalink('/svj/bd-kastany'),
+        },
+        {
+          text: 'BD Lípa',
+          href: getPermalink('/svj/bd-lipa'),
+        },
+        {
+          text: 'BD Pastelky',
+          href: getPermalink('/svj/bd-pastelky'),
+        },
+
+
       ],
     },
     {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
+      text: 'Údržba',
+      href: '/udrzba',
     },
     {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
+      text: 'Teplo',
+      href: '/teplo',
     },
     {
-      text: 'Blog',
+      text: 'Ke stažení',
+      href: '/ke-stazeni',
+    },
+    {
+      text: 'Kariéra',
+      href: '/kariera',
+    },
+    {
+      text: 'Aktuality',
       links: [
         {
           text: 'Blog List',
@@ -110,74 +82,23 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Kontakt', href: '/kontakt' }],
 };
 
 export const footerData = {
-  links: [
-    {
-      title: 'Product',
-      links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
-      ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
-  ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Zpracování osobních údajů', href: getPermalink('/privacy') },
+    { text: 'Mapa stránek', href: getPermalink('/terms') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/m%C4%9Bstsk%C3%A1-bytov%C3%A1-spr%C3%A1va-spol-s-r-o-hodon%C3%ADn/'},
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
-  `,
+    Je to složité, ale někdo to udělat musel – <a class="text-blue-600 dark:text-muted" href="https://petrv.eu"> </a>
+    <a href="https://petrv.eu" target="_blank">
+        <img class="w-5 h-4 md:w-10 md:h-4 md:ml-2 md:mt-1 float-right rtl:float-right rounded-sm" src="../src/assets/favicons/logo_petrv_RGB.png" alt="PetrV_logo">
+    </a>  `,
 };

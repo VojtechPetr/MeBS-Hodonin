@@ -17,6 +17,7 @@ const {
   image = await Astro.slots.render('image'),
   isReversed = false,
   isAfterContent = false,
+  isSingle = false,
 
   id,
   isDark = false,
@@ -43,7 +44,7 @@ const {
   />
   <div class="mx-auto max-w-7xl p-4 md:px-8">
     <div class={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
-      <div class="md:basis-1/2 self-center">
+      <div class={`${isSingle ? '' : 'md:basis-1/2'} self-start`}>
         {content && <div class="mb-12 text-lg dark:text-slate-400" set:html={content} />}
 
         {
@@ -68,7 +69,7 @@ const {
           }}
         />
       </div>
-      <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
+      <div aria-hidden="true" class=`${isSingle ? '' : 'md:basis-1/2'} mt-10 md:mt-0`>
         {
           image && (
             <div class="relative m-auto max-w-4xl">

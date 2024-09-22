@@ -1,0 +1,30 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import DocumentList from '~/components/widgets/DownloadFile.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import fs from 'fs';
+import path from 'path';
+
+const metadata = {
+  title: 'Bytové družstvo Pastelky',
+};
+
+const directoryPath = path.resolve('./public/assets/files/bd-pastelky');
+
+const documents = fs.readdirSync(directoryPath).map((fileName) => {
+  const filePath = path.join(directoryPath, fileName);
+  const stats = fs.statSync(filePath);
+
+  return {
+    title: fileName, 
+    url: `/assets/files/bd-pastelky/${fileName}`, 
+    date: stats.mtime, 
+    size: (stats.size / 1024).toFixed(2) 
+  };
+});
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Bytové družstvo Pastelky" title="Soubory ke stažení" />
+  <DocumentList documents={documents} />
+</Layout>

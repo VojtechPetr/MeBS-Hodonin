@@ -1,0 +1,164 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Note from '~/components/widgets/Note.astro';
+import List from '~/components/widgets/List.astro';
+
+const metadata = {
+  title: 'Tepelné hospodářství',
+};
+---
+
+<Layout metadata={metadata}>
+  <Note boldText="Kontakt pro hlášení poruch:" normalText="  518 343 349 / 602 793 211" />
+
+  <Hero
+    tagline="Tepelné hospodářství"
+    title="Tepelné hospodářství  je výrobcem a distributorem tepla v celé lokalitě města Hodonína"
+    subtitle=`Teplo je vyráběno v blokových nebo malých domovních kotelnách. Větší část tepla je nakupována z <strong>Elektrárny Hodonín</strong> ve formě páry nebo horké vody. V systému centrálního zásobování je teplo rozváděno do objektů venkovním potrubím dvoutrubkovými nebo čtyřtrubkovými rozvody.</br></br>
+
+Tam, kde je teplo vedeno dvoutrubkovým rozvodem, jsou v objektech spotřeby instalovány domovní směšovací stanice, kde se podle potřeby odběratele rozdělí teplo do ÚT či do TUV. Při čtyřtrubkovém rozvodu je v centrálním zdroji tepla přeměněno teplo v páře nebo horké vodě na teplo do ÚT a teplo na ohřev TUV, a každé médium je zvlášť vedeno do objektu spotřeby. </br></br>
+
+Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zařízení, zejména výměny teplovodů.
+`
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
+  />
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Plánované opravy"
+    subtitle="v roce 2024"
+    columns={2}
+    items={[
+      {
+        title: 'Výměna teplovodu Lesní /Sigma/',
+        icon: 'tabler:switch-3',
+      },
+      {
+        title: 'Výměna teplovodu Lesní /Lesanka/',
+        icon: 'tabler:switch-3',
+      },
+      {
+        title: 'Výměna teplovodu Radniční',
+        icon: 'tabler:switch-3',
+      },
+      {
+        title: 'Výměna systému měření a regulace PS Nám. Osvobození',
+        icon: 'tabler:switch-3',
+      },
+    ]}
+  />
+
+  <List
+    title="Pravidla pro vytápění "
+    subtitle="Pravidla pro vytápění předepisuje vyhláška 194/2007 § 2:"
+    items={[
+      'Otopné období začíná 1. září a končí 31. května následujícího roku.',
+      'Dodávka tepelné energie se zahájí v otopném období, když průměrná denní teplota venkovního vzduchu v příslušném místě nebo lokalitě poklesne pod +13 °C ve 2 dnech po sobě následujících a podle vývoje počasí nelze očekávat zvýšení této teploty nad +13 °C pro následující den.',
+      'Průměrnou denní teplotou venkovního vzduchu je čtvrtina součtu venkovních teplot měřených ve stínu s vyloučením vlivu sálání okolních ploch v 7.00, 14.00 a ve 21.00 hod., přičemž teplota měřená ve 21.00 hod. se počítá dvakrát.',
+      'Vytápění bytů a nebytových prostor v bytových a nebytových budovách se omezí nebo přeruší v otopném období tehdy, jestliže průměrná denní teplota venkovního vzduchu v příslušném místě nebo lokalitě vystoupí nad +13 °C ve 2 dnech po sobě následujících a podle vývoje počasí nelze očekávat pokles této teploty pro následující den. Omezení vytápění se provádí tak, aby byly dodrženy požadavky jejich teplotního útlumu zajišťujícího tepelnou stabilitu místnosti. Při následném poklesu průměrné denní teploty venkovního vzduchu pod +13 °C se vytápění obnoví.',
+    ]}
+  />
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="font-bold">
+      Pokud bude v přechodném období požadavek ze strany odběratelů na zahájení vytápění, může být akceptovaný pouze na
+      základě písemné žádosti předsedy SVJ např. mailem
+    </p>
+  </div>
+
+  <Content
+    isReversed
+    items={[
+      {
+        description:
+          'Průběh a ukončení topné sezóny v 1. pololetí 2024 byl bez výpadků v dodávce tepla. Teplotně bylo 1.pololetí výrazně teplejší  proti roku 2023, v denostupních o 18,4%. Vytápění bylo ukončeno 10.května.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description:
+          'Celkem bylo dodáno za první pololetí roku 2024 68,5 tis. GJ tepla, což je o 9 tis. GJ méně než v předchozím roce z důvodů mírnější zimy a úsporných opatření odběratelů.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description:
+          'Viz <a href="/ke-stazeni/tepelne-hospodarstvi" target="_blank" class="text-blue-500 underline">tabulka denostupňů</a>',
+        icon: 'tabler:download',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Průběh topné sezóny</h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'V praxi tedy cena tepla roste pouze s růstem cen nakupovaných energií.',
+        description: 'Cena tepla je vypočtena jako podíl skutečných nákladů a vyrobených/dodaných GJ za topnou sezónu - kalendářní rok. Rozúčtování na jednotlivé odběratele je prováděno počítačovým programem HEAT. Regulace cen tepelné energie probíhá formou věcného usměrňování cen.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description: 'Rozúčtování v systému CZT je prováděno na základě pravidelných odečtů měřidel tepla. Měřidla jsou cejchovaná, ověření se provádí zpravidla <strong>po 4 letech</strong>. Dle údajů na měřidlech - množství spotřebovaného tepla - se účtuje celková částka za teplo. Do nákladů na cenu tepla se zahrnují (dle Energetického regulačního úřadu) všechny oprávněné náklady včetně přiměřeného zisku.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description: 'Na rok 2024 předpokládáme růst nákladů za dodávku tepla asi o 9 %',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description: 'Předpoklad výstupních cen: viz  <a href="/ke-stazeni" target="_blank" class="text-blue-500 underline">ke stažení</a>',
+        icon: 'tabler:download',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tvorba cen tepla</h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    isSingle={true}
+    columns={1}
+    items={[
+      {
+        description: 'Vážení odběratelé, jako každý rok se v přechodném období projevují rozdíly v tepelně-izolačních vlastnostech jednotlivých domů a tím i náročnost na vytápění. V přechodném období, kdy venkovní teplota kolísá kolem rozhodné teploty průměrných 13°C, je problematické rozhodnout, zda objekty vytápět nebo ne. Záleží to samozřejmě také na stavu domu, zejména na jeho tepelně-izolačních vlastnostech.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description: 'U objektů s instalovanou domovní předávací stanicí lze na žádost zástupce vlastníků /předseda, místopředseda společenství vlastníků/ vytápění objektu zapnout nebo vypnout dle okamžitého stavu počasí.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description: 'U objektů napojených na předávací stanice Horní Valy, Bažantnice a Národní 61 bude v tomto období vytápění vždy zapnuto /s vyjímkou havarijních stavů nebo rekonstrukcí /. Vytápěné objekty jsou technologicky tak propojeny, že je nelze regulovat samostatně.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        description: 'Seznam zásobovaných objektů: viz  <a href="/ke-stazeni" target="_blank" class="text-blue-500 underline">ke stažení</a>',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Aktuálně</h3>
+    </Fragment>
+  </Content>
+
+
+</Layout>

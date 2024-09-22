@@ -1,0 +1,130 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Bytové družstvo Lípa',
+};
+
+const downloadPages = [{ title: 'Dokumenty ke stažení', url: '/ke-stazeni/bd-lipa' }];
+---
+
+<Layout metadata={metadata}>
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Lípa"
+    tagline="Bytové družstvo"
+    columns={1}
+    items={[
+      {
+        title: 'Výpis z obchodního rejstříku',
+        description: `
+        LÍPA, bytové družstvo, Dr 3829 vedená u Krajského soudu v Brně oddíl Dr, vložka 3829 <br/>
+        Datum zápisu: 9. července 2003 <br/>
+        Spisová značka: Dr 3829 vedená u Krajského soudu v Brně <br/>
+        Obchodní firma: LÍPA, bytové družstvo <br/>
+        Sídlo: Hodonín, Rodinova 691/4, PSČ 695 01 <br/>
+        Identifikační číslo: 26900262 <br/>
+        Právní forma: Družstvo <br/>
+        Předmět podnikání: Správa a údržba nemovitostí
+
+      `,
+        icon: 'tabler:align-justified',
+      },
+    ]}
+  />
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Statutární orgán"
+    columns={2}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'předsedkyně představenstva:',
+        description: `
+          PhDr. JANA TRNEČKOVÁ <br/>
+          U Cihelny 4086/5, 695 01 Hodonín <br/>
+          Den vzniku funkce: 31. května 2023 <br/>
+          Den vzniku členství: 31. května 2023 <br/>
+          `,
+        icon: 'tabler:user',
+      },
+      {
+        title: 'místopředseda představenstva:',
+        description: `
+          Ing. MARIÁN MAŇÁK <br/>
+          Vrchlického 1136, 696 03 Dubňany <br/>
+          Den vzniku funkce: 31. května 2023 <br/>
+          Den vzniku členství: 31. května 2023 <br/>
+          `,
+        icon: 'tabler:user',
+      },
+      {
+        title: 'členka představenstva:',
+        description: `
+          IVA HARAŠTOVÁ <br/>
+          Lipová alej 4086/12, 695 01 Hodonín <br/>
+          Den vzniku členství: 31. května 2023 <br/>
+          `,
+        icon: 'tabler:user',
+      },
+      {
+        title: 'členka představenstva:',
+        description: `
+          IVANA JELÍNKOVÁ <br/>
+          Lipová alej 4086/14, 695 01 Hodonín <br/>
+          Den vzniku členství: 31. května 2023 <br/>
+          `,
+        icon: 'tabler:user',
+      },
+      {
+        title: 'členka představenstva:',
+        description: `
+          RNDr. IVETA MACUROVÁ <br/>
+          Lipová alej 4086/14, 695 01 Hodonín <br/>
+          Den vzniku členství: 31. května 2023 <br/>
+          `,
+        icon: 'tabler:user',
+      },
+    ]}
+  />
+  <div class="max-w-5xl mx-auto p-4 md:px-8">
+    <div class="w-full mb-12 -mt-10 text-base dark:text-slate-400">
+      <p>
+        Způsob jednání: Představenstvo má 5 členů. Představenstvo je oprávněno jednat jménem družstva navenek ve všech
+        věcech. Za družstvo jedná navenek předseda, v jeho nepřítomnosti místopředseda. Je-li pro právní úkon, který
+        činí představenstvo předepsána písemná forma, je třeba podpisu předsedy, popřípadě místopředsedy, a jednoho ze
+        členů představenstva. Představenstvo může na základě plné moci pověřit zastupováním družstva i třetí osoby.
+      </p>
+    </div>
+
+    <div class="w-full mb-12 text-base dark:text-slate-400">
+      <p>
+        Základní členský vklad: 10 000 Kč <br />
+        Základní členský vklad fyzické osoby: 25 000 Kč <br />
+        Základní členský vklad právnické osoby, zapisovaný základní kapitál: 50 000 Kč
+      </p>
+    </div>
+  </div>
+
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+    <ul class="space-y-4 bg-blue-300 rounded-lg">
+      {
+        downloadPages.map((page) => (
+          <li class="p-4 shadow-sm flex justify-between items-center">
+            <div>
+              <h3 class="text-lg font-semibold">{page.title}</h3>
+            </div>
+            <a href={page.url} class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+              Zobrazit
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Layout>

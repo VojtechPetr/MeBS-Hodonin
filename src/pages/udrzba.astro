@@ -1,0 +1,557 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Note from '~/components/widgets/Note.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features21 from '~/components/widgets/Features21.astro';
+
+
+const metadata = {
+  title: 'Údržba',
+};
+---
+
+<Layout metadata={metadata}>
+  <Note boldText="Havarijní služby vodo-topo:" normalText="  602 779 936" />
+  <Note boldText="Havarijní služba výtahy, elektro:" normalText="  602 779 935" />
+
+  <Hero
+    tagline="Údržba"
+    title="Profesionální servis a údržba pro vaše nemovitosti"
+    subtitle=`Údržba jako jedno z provozních středisek společnosti provádí <strong>servisní 
+    činnost pro nutný provoz bytových domů a ostatních nebytových prostor. </strong>
+    Tato servisní činnost zahrnuje z hlediska bytových domů především provádění 
+    drobných oprav v bytech, běžnou údržbu bytů, provádění větších oprav a výměn předmětů 
+    vnitřního vybavení v bytech a opravy ve společných prostorech domů. 
+    Z hlediska nebytových prostor údržba bytového fondu zajišťuje běžnou údržbu a 
+    opravy těchto prostor vyplývající z jejich běžného provozu.`
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Personální struktura střediska"
+    columns={3}
+    items={[
+      {
+        title: 'Vedoucí údržby',
+        icon: 'tabler:crown',
+      },
+      {
+        title: 'Provozní ekonom',
+        icon: 'tabler:zoom-money',
+      },
+      {
+        title: 'Vedoucí skladník, rozpočtář',
+        icon: 'tabler:forklift',
+      },
+    ]}
+  />
+
+  <Stats
+    title="Personál"
+    stats={[
+      { title: 'instalatérů', amount: '5' },
+      { title: 'elektrikáři', amount: '2' },
+      { title: 'výtaháři', amount: '2' },
+      { title: 'zedníci', amount: '3' },
+      { title: 'zámečník ', amount: '1' },
+    ]}
+  />
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Výměna rozvodů studené a teplé vody (kov, plast, měď, nerez)',
+        description: '',
+        icon: 'tabler:switch-3',
+      },
+      {
+        title: 'Výměna rozvodů kanalizace (litina, kamenina, HT, KG)',
+        description: '',
+        icon: 'tabler:switch-3',
+      },
+      {
+        title: 'Montáž nových rozvodů studené a teplé vody, kanalizace',
+        description: '',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Návrh a montáž chemické a magnetické úpravy vody',
+        description: '',
+        icon: 'tabler:droplet-check',
+      },
+      {
+        title: 'Čištění kanalizace v objektech, chemické čištění potrubí vody a topení',
+        description: '',
+        icon: 'tabler:reload',
+      },
+      {
+        title: 'Instalace vodovodních baterií, sanitární keramiky, van a sprchových koutů',
+        description: '',
+        icon: 'tabler:bath',
+      },
+      {
+        title: 'Výměna a montáž vodoměrů standardních a s dálkovým odečtem',
+        description: '',
+        icon: 'tabler:gauge',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblasti vodoinstalací</h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Výměna rozvodů domovní plynoinstalace',
+        description: '',
+        icon: 'tabler:switch-3',
+      },
+      {
+        title: 'Montáž nových rozvodů plynoinstalace (kov, měď, nerez)',
+        description: '',
+        icon: 'tabler:tool',
+      },
+      {
+        title:
+          'Dodávka a montáž plynových i kombinovaných sporáků, kotlů, plynových topidel a ohřívačů teplé užitkové vody',
+        description: '',
+        icon: 'tabler:flame',
+      },
+      {
+        title: 'Oprava plynových spotřebičů (ohřívače vody, topidla)',
+        description: '',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Revize plynoinstalace',
+        description: '',
+        icon: 'tabler:checkup-list',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblast plynoinstalací</h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    items={[
+      {
+        title:
+          'Výměna radiátorů dle požadavků zákazníka, návrhy (propočty) radiátorů dle kW, výměny kotlů včetně odkouření',
+        description: '',
+        icon: 'tabler:temperature',
+      },
+      {
+        title: 'Výměna měřičů tepla, přenastavení při změně radiátorů',
+        description: '',
+        icon: 'tabler:gauge',
+      },
+      {
+        title: 'Provádění rekonstrukcí i nových rozvodů ústředního topení (kov, měď)',
+        description: '',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Rekonstrukce kotelen bytových domů',
+        description: '',
+        icon: 'tabler:building-skyscraper',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblasti topenářství</h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Oprava a rekonstrukce rozvodů el. instalace v bytech i ve společných prostorech',
+        description: '',
+        icon: 'tabler:plug',
+      },
+      {
+        title: 'Instalace pohybových čidel ve společných prostorech',
+        description: '',
+        icon: 'tabler:walk',
+      },
+      {
+        title: 'Servis v oblasti domácích telefonů',
+        description: '',
+        icon: 'tabler:phone-call',
+      },
+      {
+        title: 'Odborné prohlídky a servis výtahů, zajištění revize',
+        description: '',
+        icon: 'tabler:elevator',
+      },
+      {
+        title: 'Havarijní služba - vyprošťování osob',
+        description: '',
+        icon: 'tabler:sos',
+      },
+      {
+        title: 'Revize elektroinstalací',
+        description: '',
+        icon: 'tabler:checkup-list',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Práce v oblast elektro a výtahů
+      </h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Skládání, kompletace nového nábytku',
+        description: '',
+        icon: 'tabler:columns-2',
+      },
+      {
+        title: 'Dodavatelsky zajišťujeme výrobu nábytku na zakázku (kuchyňské linky, skříně) u hodonínského výrobce',
+        description: '',
+        icon: 'tabler:packages',
+      },
+      {
+        title: 'Dodávka a pokládka podlahových krytin (PVC, plovoucí podlahy, parkety)',
+        description: '',
+        icon: 'tabler:angle',
+      },
+      {
+        title: 'Opravy podlah - parkety (renovace, broušení, lakování) - dodavatelsky',
+        description: '',
+        icon: 'tabler:hammer',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Práce v oblasti stolařské a podlahářské
+      </h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    isSingle={true}
+    columns={2}
+    items={[
+      {
+        title: 'Výměna bytových zárubní včetně dodávky dveří',
+        description: '',
+        icon: 'tabler:door-enter',
+      },
+      {
+        title: 'Odborné zednické zapravení při výměně oken',
+        description: '',
+        icon: 'tabler:window',
+      },
+      {
+        title: 'Grafické návrhy koupelen a stavebních úprav',
+        description: '',
+        icon: 'tabler:brand-blender',
+      },
+      {
+        title:
+          'Rekonstrukce bytových jader, koupelen - dodávka veškerých řemeslných prací (zednické, obkladačské, elektrikářské, stolařské, malířské)',
+        description: '',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Veškeré klempířské práce - výměna okapů a jejich čištění, výroba odtahů (dodavatelsky zajišťujeme)',
+        description: '',
+        icon: 'tabler:bucket',
+      },
+      {
+        title: 'Vyklízení bytů, domů, stěhování',
+        description: '',
+        icon: 'tabler:truck',
+      },
+      {
+        title: 'Opravy střech rovných i šikmých, izolatérské práce',
+        description: '',
+        icon: 'tabler:home',
+      },
+      {
+        title: 'Poradenská činnost v oblasti vodo-topo-plyn a elektro',
+        description: '',
+        icon: 'tabler:info-circle',
+      },
+      {
+        title: 'Provádění odpočtů bytových měřičů (vodoměry, měřiče tepla)',
+        description: '',
+        icon: 'tabler:gauge',
+      },
+      {
+        title: 'Realizace stavebních úprav v bytech a nebytových prostorách na náklad nájemců',
+        description: '',
+        icon: 'tabler:building-skyscraper',
+      },
+      {
+        title: 'Zajišťování oprav společných televizních antén',
+        description: '',
+        icon: 'tabler:antenna',
+      },
+      {
+        title: 'Zajišťování přípravy a realizace měření tepla v bytech',
+        description: '',
+        icon: 'tabler:gauge',
+      },
+      {
+        title: 'Zajišťování výměny měřidel tepla v bytech při opravách a jejich programování',
+        description: '',
+        icon: 'tabler:switch-3',
+      },
+      {
+        title: 'Evidence a kontrola bytových vodoměrů na teplou a studenou vodu',
+        description: '',
+        icon: 'tabler:clipboard-check',
+      },
+      {
+        title: 'Spolupráce s domovníky v nájemních bytech',
+        description: '',
+        icon: 'tabler:users',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Další práce a činnosti</h3>
+    </Fragment>
+  </Content>
+
+  <Features2
+  title="Služby autodopravy"
+  subtitle=`<strong>Možnost nadstandardního financování, komunikace se zákazníkem o tvorbě ceny akce.</strong>`
+  columns={2}
+  items={[
+    {
+      title: 'CITROËN Jumper',
+      description:
+        'Sklápěčka: sklápěcí korba, nosnost 1t, cena dopravy je kalkulována dle dohody.',
+      icon: 'tabler:truck',
+    },
+    {
+      title: 'CITROËN Jumper',
+      description:
+        'Skříňová dodávka: uzavřený nákladní prostor, vhodná pro přepravu zboží.',
+      icon: 'tabler:truck',
+    },
+  ]}
+/>
+<script>
+  console.log('Columns passed to Features2:', 2);
+</script> 
+
+<Content
+title="Realizované akce 2024"
+subtitle=""
+columns={2}
+isReversed
+isSingle={true}
+items={[
+  {
+    title: 'Výměny stoupacího potrubí vody a kanalizace pro SVJ (Pr.Veselého 56,U Červených domků 6 a 30-32,Seifrtova 4, a 14,Hotel Panon, Národní třída 61, Lesní 14):',
+  },
+  {
+    title: 'Výměny páteřního rozvodu teplé a cirkulační vody  ( U Červených domků 6-8)',
+  },
+  {
+    title: 'Výměny světel pro ČSAD Hodonín na autobusovém nádraží všechny nástupiště',
+  },
+  {
+    title: 'Výměny stupaček plynu pro SVJ Nám.Osvobození 3',
+  },
+  {
+    title: 'Rekonstrukce bytových jader (Anenská 4, Pr.Veselého 56, I.Olbrachta 1)',
+  },
+  {
+    title: 'Rekonstrukce prádelen pro SVJ Brandlova 137-139-141',
+  },
+  {
+    title: 'Rekonstrukce učeben v suterénu ZŠ Mírové náměstí',
+  },
+  {
+    title: 'Rekonstrukce ZTI v objektu MŠ Jánošíkova',
+  },
+  {
+    title: 'Rekonstrukce bytů pro Město Hodonín v objektech )Polní 10 - 18, Slavíkova 17-21, Šafaříkova 1-3, Lipová alej 17, Brandlova 78)',
+  },
+]}
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+</Fragment>
+</Content>
+
+<Features21
+title="Důležité kontakty"
+structure={[
+  {
+    department: 'Tísňová volání',
+    contacts: [
+      {
+        name: 'Krizová linka',
+        icon: 'tabler:sos',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '112',
+          },
+        ],
+      },
+      {
+        name: 'Policie',
+        icon: 'tabler:brightness-up',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '158',
+          },
+        ],
+      },
+      {
+        name: 'Městská policie',
+        icon: 'tabler:brightness-up',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '156',
+          },
+        ],
+      },
+      {
+        name: 'Hasiči',
+        icon: 'tabler:fire-extinguisher',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '150',
+          },
+        ],
+      },      {
+        name: 'Rychlá zdravotní pomoc',
+        icon: 'tabler:hospital-circle',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '155',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    department: 'Poruchová volání',
+    contacts: [
+      {
+        name: 'Elektrárna',
+        icon: 'tabler:plug',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '800 225 577',
+          },
+        ],
+      },
+      {
+        name: 'Vodárna',
+        icon: 'tabler:droplet',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '800 800 825',
+          },
+        ],
+      },
+      {
+        name: 'Plynárna',
+        icon: 'tabler:flame',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '1239',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    department: 'Havarijní služba',
+    contacts: [
+      {
+        name: 'Vodo-topo-plyn',
+        icon: 'tabler:home-exclamation',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '602 779 936',
+          },
+        ],
+      },
+      {
+        name: 'Elektroinstalace',
+        icon: 'tabler:plug',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '602 779 935',
+          },
+        ],
+      },
+      {
+        name: 'Výtahy',
+        icon: 'tabler:elevator',
+        contactInfo: [
+          {
+            type: 'phone',
+            value: '602 779 935',
+          },
+        ],
+      },
+    ],
+  },
+
+]}
+/>
+
+</Layout>

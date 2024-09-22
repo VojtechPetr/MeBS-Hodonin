@@ -1,0 +1,502 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features21 from '~/components/widgets/Features21.astro';
+
+const metadata = {
+  title: 'Kontakt',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Kontakt" title="Pojďme se spojit" />
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-start">
+      <div class="flex-1 mt-4">
+        <p>
+          <span class="font-bold">Městská bytová správa, spol. s r.o.</span> je od 21. prosince 1995 zapsána v obchodním
+          rejstříku vedeném Krajským soudem v Brně v oddílu C, vložka 21697. Zakladatelem a jediným společníkem je Město
+          Hodonín.
+          <br /><br />
+          Sídlo: Hodonín, Rodinova 691/4, PSČ 695 01, IČ: 634 89 953, DIČ: CZ699001303<br />
+          Statutární orgán: Ing. Jana Bimková, jednatelka společnosti<br />
+          ID datové schránky: 4mimcfg
+          <br /><br />
+          <span class="font-bold">Pokladna</span><br />
+          Pondělí, středa 7.30 – 17.00, II. patro, dveře č. 16<br />
+          Rodinova 691/4, Hodonín
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="/assets/images/bytovka_kontakt_QR.png" alt="QR Code" class="w-48 h-48" />
+      </div>
+    </div>
+    <div class="border-b border-gray-300 mt-14"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-0">
+    <Features21
+      items={[
+        {
+          department: 'Správa',
+          contacts: [
+            {
+              title: 'jednatelka',
+              name: 'Ing. Jana Bimková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 519',
+                },
+                {
+                  type: 'email',
+                  value: 'bimkova@bytovka.cz',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          department: 'Správní úsek',
+          contacts: [
+            {
+              title: 'sekretariát, fax',
+              name: 'Marcela Ingrová ',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 512',
+                },
+                {
+                  type: 'email',
+                  value: 'ingrova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'správce HW',
+              name: 'Dušan Škopík',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'email',
+                  value: 'skopik@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'vedoucí',
+              name: 'Ing. Milana Vršťalová',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 532, 733 640 454',
+                },
+                {
+                  type: 'email',
+                  value: 'vrstalova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'mzdová účtárna',
+              name: 'Dana Skripalová',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 538',
+                },
+                {
+                  type: 'email',
+                  value: 'skripalova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Iva Bílská',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 533',
+                },
+                {
+                  type: 'email',
+                  value: 'bilska@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Ladislava Suchánková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 536',
+                },
+                {
+                  type: 'email',
+                  value: 'suchankova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'pokladna',
+              name: 'Ladislava Suchánková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 511',
+                },
+                {
+                  type: 'email',
+                  value: 'suchankova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'právník společnosti',
+              name: 'Mgr. Lucie Sitníková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 518, 602 127 717',
+                },
+                {
+                  type: 'email',
+                  value: 'sitnikova@bytovka.cz',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          department: 'Údržba',
+          contacts: [
+            {
+              title: 'vedoucí údržby',
+              name: 'Miloslav Komosný',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 546, 607 829 808',
+                },
+                {
+                  type: 'email',
+                  value: 'komosny@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'technik údržby, vedoucí skladu',
+              name: 'Jakub Nevečeřal',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 545, 607 001 912',
+                },
+                {
+                  type: 'email',
+                  value: 'neveceral@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'provozní ekonomka, fakturace',
+              name: 'Pavla Stanická',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 545, 607 273 900',
+                },
+                {
+                  type: 'email',
+                  value: 'stanicka@bytovka.cz',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          department: 'Tepelné',
+          contacts: [
+            {
+              title: 'vedoucí',
+              name: 'Ing. Petr Pacal',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 524, 602 515 443',
+                },
+                {
+                  type: 'email',
+                  value: 'pacal@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'ekonomka, fakturace',
+              name: 'Jitka Vrábliková ',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 529, 602 734 775',
+                },
+                {
+                  type: 'email',
+                  value: 'vrablikova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'centrální dispečink',
+              icon: 'tabler:headset',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '602 793 211, 602 793 211',
+                },
+                {
+                  type: 'email',
+                  value: 'dispecink@bytovka.cz',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          department: 'Realitní oddělení',
+          contacts: [
+            {
+              title: 'vedoucí',
+              name: 'Pavel Schöndorf',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 528, 723 154 227',
+                },
+                {
+                  type: 'email',
+                  value: 'schondorf@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'technik, projekce',
+              name: 'Zuzana Adamcová',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 513, 736 624 070',
+                },
+                {
+                  type: 'email',
+                  value: 'adamcova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'technik',
+              name: 'Michal Hedrich',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 519, 606 648 953',
+                },
+                {
+                  type: 'email',
+                  value: 'hedrich@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'technik',
+              name: 'Aleš Bábíček',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 526, 606 387 498',
+                },
+                {
+                  type: 'email',
+                  value: 'babicek@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'technik',
+              name: 'Jiří Foltýn',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 540, 724 986 064',
+                },
+                {
+                  type: 'email',
+                  value: 'foltyn@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'vedoucí účetní',
+              name: 'Ing. Dana Jaroňková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 537, 724 358 677',
+                },
+                {
+                  type: 'email',
+                  value: 'jaronkova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Jana Králová',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 531, 724 118 869',
+                },
+                {
+                  type: 'email',
+                  value: 'kralova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Hana Svatošová',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 534, 724 755 322',
+                },
+                {
+                  type: 'email',
+                  value: 'svatosova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Dana Zaorálková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 541, 602 552 758',
+                },
+                {
+                  type: 'email',
+                  value: 'zaoralkova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Iva Kuglíková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 535, 725 796 491',
+                },
+                {
+                  type: 'email',
+                  value: 'kuglikova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Jana Štylárková',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 540, 725 788 731',
+                },
+                {
+                  type: 'email',
+                  value: 'stylarkova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'účetní',
+              name: 'Bc. Lenka Holá, BA',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 517, 607 804 188',
+                },
+                {
+                  type: 'email',
+                  value: 'lenka.hola@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'finanční účtárna - bytová družstva',
+              name: 'Ing. Zdeňka Drutarovská',
+              icon: 'tabler:user',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 535',
+                },
+                {
+                  type: 'email',
+                  value: 'drutarovska@bytovka.cz',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          department: 'Hotel Krystal',
+          contacts: [
+            {
+              title: 'recepce',
+              icon: 'tabler:bed',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 391 311',
+                },
+                {
+                  type: 'email',
+                  value: 'krystal@hotel-krystal.cz',
+                },
+              ],
+            },
+          ],
+        },
+      ]}
+    />
+  </div>
+</Layout>

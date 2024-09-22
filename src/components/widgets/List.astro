@@ -1,0 +1,33 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { ListProps as Props } from '~/types';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`${classes?.container ?? ''}`}
+  bg={bg}
+>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <ul class="mt-24 list-decimal pl-6 text-left w-full space-y-4">
+    {items.map(item => (
+      <li class="w-full">
+        {item}
+      </li>
+    ))}
+  </ul>
+</WidgetWrapper>

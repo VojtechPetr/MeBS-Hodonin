@@ -1,0 +1,44 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'Otázky a odpovědi',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    tagline="Otázky a odpovědi"
+    title="Často kladené dotazy"
+    classes={{ container: 'max-w-6xl' }}
+    columns={1}
+    items={[
+      {
+        title: 'Prodal jsem bytovou jednotku, chtěl bych ji přepsat?',
+        description: `
+        Při prodeji bytové jednotky je nutné u správce přepsat vlastníka. 
+        K tomuto kroku je potřeba vyplnit tento 
+        <a href="/assets/files/sprava-prodanych-bytu/Žádost o změnu vlastníka.xls" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">formulář</a>        
+        a přijít ke správci s těmito dalšími dokumenty: <br/> <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Doklad o nabytí nemovitosti – vyrozumění o provedeném vkladu, LV <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Předávací protokol se zapsanými stavy všech měřidel (voda, poměrové měřiče tepla) <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Nové spojové číslo tzv. SIPO <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Novou adresu prodávajícího pro zaslání vyúčtování služeb`,
+      },
+      {
+        title: 'Změnil jsem si otopné těleso/a v bytě?',
+        description:`Pokud si vlastník vymění topné těleso/a v bytě za nové a v bytě jsou instalovány poměrové měřiče tepla, je nutné vyplnit
+        <a href="/assets/files/sprava-prodanych-bytu/Žádost o přeprogramování měřičů tepla.doc" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">žádost o přeprogramování</a>        
+        a tu doručit správci.`
+        },
+      {
+        title: 'Mám si upravit zálohy na služby?',
+        description:
+          'Při každé změně osob v domácnosti je vlastník povinen tuto změnu hlásit správci, protože některé poskytované služby(např. osvětlení spol. prostor, výtah) se rozúčtovávají dle nahlášených osob v domácnosti. Zálohy na služby si lze dále upravit i po vyúčtování služeb za uplynulý rok. U nedoplatků se zpravidla zálohy upravují automaticky, v případě přeplatků si úpravy záloh musí vlastník provést u správce sám.',
+      },
+    ]}
+  />
+</Layout>

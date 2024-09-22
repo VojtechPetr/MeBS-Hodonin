@@ -16,10 +16,10 @@ const documents = fs.readdirSync(directoryPath).map((fileName) => {
   const stats = fs.statSync(filePath);
 
   return {
-    title: fileName, 
-    url: `/assets/files/tepelne-hospodarstvi/${fileName}`, 
-    date: stats.mtime, 
-    size: (stats.size / 1024).toFixed(2) 
+    title: fileName,
+    url: `/assets/files/tepelne-hospodarstvi/${fileName}`,
+    date: stats.mtime,
+    size: (stats.size / 1024).toFixed(2),
   };
 });
 ---

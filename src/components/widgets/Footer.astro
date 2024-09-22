@@ -47,29 +47,31 @@ const { socialLinks = [], secondaryLinks = [], footNote = '', theme = 'light' } 
           ))
         }
       </div>
-      <div class="text-sm dark:text-muted mx-auto  lg:ml-[350px] 2xl:ml-[400px]">
+      <div class="text-sm dark:text-muted mx-auto lg:ml-[350px] 2xl:ml-[400px]">
         <Fragment set:html={footNote} />
       </div>
-      {socialLinks?.length ? (
-        <ul class="flex gap-4">
-          {socialLinks.map(({ ariaLabel, href, text, icon }) => (
-            <li>
-              <a
-                class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                aria-label={ariaLabel}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {icon && <Icon name={icon} class="w-5 h-5" />}
-                <Fragment set:html={text} />
-              </a>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        ''
-      )}
+      {
+        socialLinks?.length ? (
+          <ul class="flex gap-4">
+            {socialLinks.map(({ ariaLabel, href, text, icon }) => (
+              <li>
+                <a
+                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  aria-label={ariaLabel}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {icon && <Icon name={icon} class="w-5 h-5" />}
+                  <Fragment set:html={text} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          ''
+        )
+      }
     </div>
   </div>
 </footer>

@@ -4,14 +4,14 @@ site:
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: 
+  googleSiteVerificationId:
 
 # Default SEO metadata
 metadata:
   title:
     default: Městská bytová správa, spol. s.r.o. Hodonín
     template: '%s — Městská bytová správa, spol. s.r.o. Hodonín'
-  description: "Městská bytová správa Hodonín nabízí správu a údržbu nemovitostí, dodávky tepla, plynu a vody, technické prohlídky a služby pro společenství vlastníků."
+  description: 'Městská bytová správa Hodonín nabízí správu a údržbu nemovitostí, dodávky tepla, plynu a vody, technické prohlídky a služby pro společenství vlastníků.'
   robots:
     index: true
     follow: true

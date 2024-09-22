@@ -2,8 +2,8 @@
 import { Icon } from 'astro-icon/components';
 
 export interface Props {
-  boldText: string; 
-  normalText: string; 
+  boldText: string;
+  normalText: string;
 }
 
 const { boldText, normalText } = Astro.props;
@@ -13,8 +13,8 @@ const { boldText, normalText } = Astro.props;
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-2 text-md text-center font-medium">
     <span class="font-bold">
       <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom" />
-      {boldText} 
+      {boldText}
     </span>
-    {normalText} 
+    {normalText}
   </div>
 </section>

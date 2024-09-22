@@ -6,7 +6,7 @@ export interface Props {
   height?: string;
 }
 
-const { url, title = "Naše lokace", width, height } = Astro.props;
+const { url, title = 'Naše lokace', width, height } = Astro.props;
 ---
 
 <section class="relative my-8 bg-blue-50 py-20">
@@ -19,7 +19,6 @@ const { url, title = "Naše lokace", width, height } = Astro.props;
       class="rounded-lg"
       style="border:0;"
       allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+      loading="lazy"></iframe>
   </div>
 </section>

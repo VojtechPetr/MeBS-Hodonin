@@ -37,8 +37,6 @@ export const headerData = {
           text: 'BD Pastelky',
           href: getPermalink('/svj/bd-pastelky'),
         },
-
-
       ],
     },
     {
@@ -87,13 +85,15 @@ export const headerData = {
 };
 
 export const footerData = {
-  secondaryLinks: [
-    { text: 'Zpracování osobních údajů', href: getPermalink('/privacy') },
-  ],
+  secondaryLinks: [{ text: 'Zpracování osobních údajů', href: getPermalink('/privacy') }],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '/' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '/' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/m%C4%9Bstsk%C3%A1-bytov%C3%A1-spr%C3%A1va-spol-s-r-o-hodon%C3%ADn/'},
+    {
+      ariaLabel: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
+      href: 'https://www.linkedin.com/company/m%C4%9Bstsk%C3%A1-bytov%C3%A1-spr%C3%A1va-spol-s-r-o-hodon%C3%ADn/',
+    },
   ],
   footNote: `
     Každá stránka má svůj příběh – <a class="text-blue-600 dark:text-muted" href="https://petrv.eu"> </a>

@@ -3,7 +3,6 @@ title: 'Zpracování osobních údajů'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-
 **Zpracování osobních údajů** podle nařízení Evropského parlamentu a Rady (EU) 2016/679 ze dne 27. dubna 2016 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení o ochraně osobních údajů)
 
 ---
@@ -33,6 +32,7 @@ Vaše osobní údaje zpracováváme za účelem:
 - Vedení evidence o našich příjmech a výdajích.
 
 ---
+
 ### III. Právní základ zpracování osobních údajů
 
 Právním základem pro zpracování Vašich osobních údajů je:
@@ -42,16 +42,19 @@ Právním základem pro zpracování Vašich osobních údajů je:
 - Ochrana práv a oprávněných zájmů Městské bytové správy.
 
 ---
+
 ### IV. Příjemci osobních údajů
 
 Příjemci Vašich osobních údajů mohou být orgány veřejné moci v souladu s platnými právními předpisy.
 
 ---
+
 ### V. Doba zpracování osobních údajů
 
 Osobní údaje obsažené v obchodní dokumentaci zpracováváme po dobu stanovenou příslušnými právními předpisy nebo po dobu, po kterou budete naším klientem, a následně po dobu jednoho roku poté.
 
 ---
+
 ### VI. Práva subjektu údajů
 
 Máte následující práva týkající se ochrany osobních údajů:
@@ -64,11 +67,13 @@ Máte následující práva týkající se ochrany osobních údajů:
 - Právo podat stížnost u dozorového úřadu.
 
 ---
+
 ### VII. Povinné zpracování a povinnost poskytnout osobní údaje
 
 Zpracování Vašich osobních údajů je zákonným požadavkem pro poskytování našich služeb.
 
 ---
+
 _V Hodoníně dne 25.5.2018_  
 Ing. Jana Bimková
 jednatelka Městské bytové správy, spol. s r.o.

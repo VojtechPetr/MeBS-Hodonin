@@ -37,8 +37,6 @@ export const headerData = {
           text: 'BD Pastelky',
           href: getPermalink('/svj/bd-pastelky'),
         },
-
-
       ],
     },
     {
@@ -87,18 +85,24 @@ export const headerData = {
 };
 
 export const footerData = {
-  secondaryLinks: [
-    { text: 'Zpracování osobních údajů', href: getPermalink('/privacy') },
-    { text: 'Mapa stránek', href: getPermalink('/terms') },
-  ],
+  secondaryLinks: [{ text: 'Zpracování osobních údajů', href: getPermalink('/privacy') }],
   socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/m%C4%9Bstsk%C3%A1-bytov%C3%A1-spr%C3%A1va-spol-s-r-o-hodon%C3%ADn/'},
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '/' },
+    {
+      ariaLabel: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
+      href: 'https://www.linkedin.com/company/m%C4%9Bstsk%C3%A1-bytov%C3%A1-spr%C3%A1va-spol-s-r-o-hodon%C3%ADn/',
+    },
   ],
   footNote: `
-    Je to složité, ale někdo to udělat musel – <a class="text-blue-600 dark:text-muted" href="https://petrv.eu"> </a>
+    Každá stránka má svůj příběh – <a class="text-blue-600 dark:text-muted" href="https://petrv.eu"> </a>
     <a href="https://petrv.eu" target="_blank">
-        <img class="w-5 h-4 md:w-10 md:h-4 md:ml-2 md:mt-1 float-right rtl:float-right rounded-sm" src="../src/assets/favicons/logo_petrv_RGB.png" alt="PetrV_logo">
-    </a>  `,
+        <img class="w-5 h-4 md:w-10 md:h-4 md:ml-2 md:mt-1 float-right rtl:float-right rounded-sm dark:hidden" 
+             src="../src/assets/favicons/logo_petrv_RGB.png" 
+             alt="PetrV_logo">
+
+        <img class="w-5 h-4 md:w-10 md:h-4 md:ml-2 md:mt-1 float-right rtl:float-right rounded-sm hidden dark:block" 
+             src="../src/assets/favicons/logo_petrv_inverzni_RGB.png" 
+             alt="PetrV_logo_dark">    </a>  `,
 };

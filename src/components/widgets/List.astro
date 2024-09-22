@@ -1,7 +1,6 @@
 ---
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import type { ListProps as Props } from '~/types';
 
 const {
   title = await Astro.slots.render('title'),
@@ -15,19 +14,10 @@ const {
 } = Astro.props;
 ---
 
-<WidgetWrapper
-  id={id}
-  isDark={isDark}
-  containerClass={`${classes?.container ?? ''}`}
-  bg={bg}
->
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
 
   <ul class="mt-24 list-decimal pl-6 text-left w-full space-y-4">
-    {items.map(item => (
-      <li class="w-full">
-        {item}
-      </li>
-    ))}
+    {items.map((item) => <li class="w-full">{item}</li>)}
   </ul>
 </WidgetWrapper>

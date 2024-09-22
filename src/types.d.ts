@@ -132,8 +132,6 @@ export interface Stat {
   icon?: string;
 }
 
-
-
 export interface Price {
   title?: string;
   subtitle?: string;
@@ -248,20 +246,20 @@ export interface Features extends Omit<Headline, 'classes'>, Widget {
 }
 
 export interface ContactInfo {
-  type: 'email' | 'phone'; 
-  value: string; 
+  type: 'email' | 'phone';
+  value: string;
 }
 
 export interface Contact {
-  name: string; 
-  title?: string; 
+  name: string;
+  title?: string;
   icon?: string;
   contactInfo?: Array<ContactInfo>;
 }
 
 export interface Department {
-  department: string; 
-  contacts: Array<Contact>; 
+  department: string;
+  contacts: Array<Contact>;
 }
 
 export interface Features21 extends Omit<Headline, 'classes'>, Widget {
@@ -285,6 +283,8 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
+  link?: string;
+  target?: string;
   contacts?: ContactInfo[];
 }
 

@@ -28,8 +28,7 @@ const metadata = {
 
     <Fragment slot="bg">
       <div
-        class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14"
-        style="background-image: url('/assets/images/zapad-hodonin.webp');"
+    class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
       >
       </div>
     </Fragment>
@@ -37,12 +36,14 @@ const metadata = {
 
   <Features2
     columns={2}
-    items={[
+    classes={{
+      container: 'mt-40' 
+    }}    items={[
       {
-        title: 'Tepelné hospodářství',
-        description: 'Zajišťujeme výrobu a dodávky tepla a TUV',
-        image: { src: '/assets/images/zapad-hodonin.webp', alt: 'Tepelné hospodářství' },
-        link: '/teplo',
+        title: 'Správa prodaných bytů (SVJ) a družstva',
+        description: 'Zajišťujeme správu nemovitostí',
+        image: { src: '/assets/images/zapad-hodonin.webp', alt: 'Správa prodaných bytů (SVJ) a družstva' },
+        link: '/svj/o-nas',
       },
       {
         title: 'Údržba',
@@ -51,10 +52,10 @@ const metadata = {
         link: '/udrzba',
       },
       {
-        title: 'Správa prodaných bytů (SVJ) a družstva',
-        description: 'Zajišťujeme správu nemovitostí',
-        image: { src: '/assets/images/zapad-hodonin.webp', alt: 'Správa prodaných bytů (SVJ) a družstva' },
-        link: '/svj/o-nas',
+        title: 'Tepelné hospodářství',
+        description: 'Zajišťujeme výrobu a dodávky tepla a TUV',
+        image: { src: '/assets/images/zapad-hodonin.webp', alt: 'Tepelné hospodářství' },
+        link: '/teplo',
       },
       {
         title: 'Hotel Krystal',

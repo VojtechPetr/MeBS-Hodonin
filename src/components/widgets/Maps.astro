@@ -6,10 +6,10 @@ export interface Props {
   height?: string;
 }
 
-const { url, title = 'Naše lokace', width, height } = Astro.props;
+const { url, title = 'Kde nás najdete', width, height } = Astro.props;
 ---
 
-<section class="relative my-8 bg-blue-50 py-20">
+<section class="relative my-8 bg-blue-50 dark:bg-gray-800 py-20">
   {title && <h2 class="text-2xl font-bold text-center mb-6">{title}</h2>}
   <div class="relative mx-auto max-w-5xl rounded-lg overflow-hidden shadow-lg">
     <iframe

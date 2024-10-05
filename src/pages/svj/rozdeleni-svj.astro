@@ -8,9 +8,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Hero
-    tagline="Rozdělení SVJ"
-  >
+  <Hero tagline="Rozdělení SVJ">
     <Fragment slot="title">
       Seznam správců a přiřazených nemovitostí <br />
     </Fragment>
@@ -24,11 +22,11 @@ const metadata = {
   <!-- Tabulka rozdělení SVJ -->
   <div class="container mx-auto mb-20 px-4 sm:px-6 lg:px-8">
     <div class="overflow-x-auto">
-      <table class="min-w-full table-auto text-left ">
+      <table class="min-w-full table-auto text-left">
         <!-- Skryj záhlaví na mobilních zařízeních -->
         <thead class="hidden md:table-header-group bg-gray-100 dark:bg-gray-800 border-b-2 rounded-lg">
           <tr>
-            <th scope="col" class="p-4 text-center text-lg font-medium align-top ">
+            <th scope="col" class="p-4 text-center text-lg font-medium align-top">
               <div>Kancelář č. 20</div>
               <div class="bg-pink-300 rounded-lg font-semibold dark:text-black">p. Zaorálková</div>
             </th>
@@ -117,7 +115,9 @@ const metadata = {
             <td class="p-4 sm align-top block md:table-cell">
               <span class="bg-yellow-300 rounded-lg font-bold md:hidden">Kancelář č. 5 (p. Lenka Holá):</span>
               <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">J. Suka 4-6-8</div>
-              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Masarykovo nám, Jánošíkova, Radniční</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">
+                Masarykovo nám, Jánošíkova, Radniční
+              </div>
               <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. Osvobození 7</div>
               <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. Osvobození 8</div>
               <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní tř.34</div>

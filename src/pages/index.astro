@@ -10,7 +10,6 @@ const metadata = {
   ignoreTitleTemplate: true,
 };
 const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/pro-zamestnance' }];
-
 ---
 
 <Layout metadata={metadata}>
@@ -21,7 +20,7 @@ const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/
     </Fragment>
     <Fragment slot="bg">
       <div
-    class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
+        class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
       >
       </div>
     </Fragment>
@@ -30,8 +29,9 @@ const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/
   <Features2
     columns={2}
     classes={{
-      container: 'mt-40' 
-    }}    items={[
+      container: 'mt-40',
+    }}
+    items={[
       {
         title: 'Správa prodaných bytů (SVJ) a družstva',
         description: 'Zajišťujeme správu nemovitostí',

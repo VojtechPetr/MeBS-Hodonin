@@ -50,7 +50,7 @@ export const headerData = {
     {
       text: 'Hotel Krystal',
       href: 'https://www.hotel-krystal.cz/',
-      target: '_blank'
+      target: '_blank',
     },
     {
       text: 'Ke stažení',

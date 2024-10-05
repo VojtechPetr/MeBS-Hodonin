@@ -40,7 +40,10 @@ const {
                   <img src={image.src} alt={image.alt} class="w-full h-full object-cover rounded-md" />
                 </div>
               ) : (
-                <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
+                <Icon
+                  name={icon || defaultIcon}
+                  class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)}
+                />
               )}
               <div class="h-1/2 flex flex-col justify-center mt-4">
                 <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
@@ -86,4 +89,3 @@ const {
     </div>
   )
 }
-

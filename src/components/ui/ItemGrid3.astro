@@ -32,7 +32,13 @@ const {
       )}
     >
       {items.map(({ title, description, icon, callToAction, classes: itemClasses = {}, contacts = [] }) => (
-        <div class={twMerge('relative flex flex-col transition-transform duration-300 ease-in-out transform hover:scale-110', panelClass, itemClasses?.panel)}>
+        <div
+          class={twMerge(
+            'relative flex flex-col transition-transform duration-300 ease-in-out transform hover:scale-110',
+            panelClass,
+            itemClasses?.panel
+          )}
+        >
           {(icon || defaultIcon) && (
             <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
           )}

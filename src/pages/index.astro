@@ -4,28 +4,21 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import List from '~/components/widgets/List.astro';
 import Maps from '~/components/widgets/Maps.astro';
-import Stahni from '~/components/widgets/Stahni.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Městská bytová správa Hodonín – Správa nemovitostí, údržba, tepelné hospodářství a Hotel Krystal',
   ignoreTitleTemplate: true,
 };
+const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/pro-zamestnance' }];
+
 ---
 
 <Layout metadata={metadata}>
   <Hero>
     <Fragment slot="title">
       Městská bytová správa, spol. s.r.o.
-      <span class="text-accent dark:text-white highlight"> Hodonín</span>
+      <span class="text-secondary dark:text-white highlight">Hodonín</span>
     </Fragment>
-
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Zajišťujeme správu nemovitostí, a to privatizovaných bytů a bytů v majetku bytových družstev.
-      </span>
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-    </Fragment>
-
     <Fragment slot="bg">
       <div
     class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
@@ -42,19 +35,19 @@ const metadata = {
       {
         title: 'Správa prodaných bytů (SVJ) a družstva',
         description: 'Zajišťujeme správu nemovitostí',
-        image: { src: '/assets/images/zapad-hodonin.webp', alt: 'Správa prodaných bytů (SVJ) a družstva' },
+        image: { src: '/assets/images/o-nas.webp', alt: 'Správa prodaných bytů (SVJ) a družstva' },
         link: '/svj/o-nas',
       },
       {
         title: 'Údržba',
         description: 'Zajišťujeme opravy a údržbu nemovitostí',
-        image: { src: '/assets/images/zapad-hodonin.webp', alt: 'Údržba' },
+        image: { src: '/assets/images/udrzba-hp.webp', alt: 'Údržba' },
         link: '/udrzba',
       },
       {
         title: 'Tepelné hospodářství',
         description: 'Zajišťujeme výrobu a dodávky tepla a TUV',
-        image: { src: '/assets/images/zapad-hodonin.webp', alt: 'Tepelné hospodářství' },
+        image: { src: '/assets/images/tepelne-hp.webp', alt: 'Tepelné hospodářství' },
         link: '/teplo',
       },
       {
@@ -67,7 +60,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
 
@@ -101,5 +94,20 @@ const metadata = {
     width="100%"
     height="500px"
   />
-  <Stahni />
+  <section class="max-w-5xl mx-auto py-8">
+    <ul class="space-y-4 bg-blue-200 dark:bg-blue-900 rounded-lg">
+      {
+        downloadPages.map((page) => (
+          <li class="p-4 shadow-sm flex justify-between items-center">
+            <div>
+              <h3 class="text-lg font-semibold">{page.title}</h3>
+            </div>
+            <a href={page.url} class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+              Zobrazit
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Layout>

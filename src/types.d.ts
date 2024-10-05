@@ -246,20 +246,20 @@ export interface Features extends Omit<Headline, 'classes'>, Widget {
 }
 
 export interface ContactInfo {
-  type: 'email' | 'phone';
-  value: string;
+  type?: 'email' | 'phone';
+  value?: string;
 }
 
 export interface Contact {
-  name: string;
+  name?: string;
   title?: string;
   icon?: string;
   contactInfo?: Array<ContactInfo>;
 }
 
 export interface Department {
-  department: string;
-  contacts: Array<Contact>;
+  department?: string;
+  contacts?: Array<Contact>;
 }
 
 export interface Features21 extends Omit<Headline, 'classes'>, Widget {
@@ -289,7 +289,7 @@ export interface Item {
 }
 
 export interface ItemGrid3 {
-  items: Array<Item>;
+  items?: Array<Item>;
   columns?: number;
   defaultIcon?: string;
   classes?: Record<string, string>;

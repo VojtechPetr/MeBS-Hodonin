@@ -8,8 +8,6 @@ const downloadPages = [
   { title: 'BD Lípa', url: '/ke-stazeni/bd-lipa' },
   { title: 'BD Pastelky', url: '/ke-stazeni/bd-pastelky' },
   { title: 'Bytová Údržba', url: '/ke-stazeni/bytova-udrzba' },
-  { title: 'Družstva', url: '/ke-stazeni/druzstva' },
-  { title: 'Městské Byty', url: '/ke-stazeni/mestske-byty' },
   { title: 'Obecné Dokumenty', url: '/ke-stazeni/obecne-doku' },
   { title: 'Pro Zaměstnance', url: '/ke-stazeni/pro-zamestnance' },
   { title: 'Správa Prodanych Bytu', url: '/ke-stazeni/sprava-prodanych-bytu' },
@@ -28,7 +26,7 @@ const metadata = {
     <ul class="space-y-4">
       {
         downloadPages.map((page) => (
-          <li class="p-4 border rounded-lg shadow-sm flex justify-between items-center">
+          <li class="p-4 border rounded-lg shadow-sm flex justify-between items-center hover:bg-blue-200 dark:hover:bg-blue-900">
             <div>
               <h3 class="text-lg font-semibold">{page.title}</h3>
             </div>

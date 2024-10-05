@@ -10,10 +10,6 @@ const metadata = {
 <Layout metadata={metadata}>
   <Hero
     tagline="Rozdělení SVJ"
-    image={{
-      src: '../assets/images/o-nas.jpg',
-      alt: 'Caos Image',
-    }}
   >
     <Fragment slot="title">
       Seznam správců a přiřazených nemovitostí <br />
@@ -28,242 +24,242 @@ const metadata = {
   <!-- Tabulka rozdělení SVJ -->
   <div class="container mx-auto mb-20 px-4 sm:px-6 lg:px-8">
     <div class="overflow-x-auto">
-      <table class="min-w-full table-auto text-left">
+      <table class="min-w-full table-auto text-left ">
         <!-- Skryj záhlaví na mobilních zařízeních -->
-        <thead class="hidden md:table-header-group bg-gray-100 border-b-2">
+        <thead class="hidden md:table-header-group bg-gray-100 dark:bg-gray-800 border-b-2 rounded-lg">
           <tr>
-            <th scope="col" class="p-4 text-center text-lg font-medium align-top">
+            <th scope="col" class="p-4 text-center text-lg font-medium align-top ">
               <div>Kancelář č. 20</div>
-              <div class="bg-pink-300 rounded-lg font-semibold">p. Zaorálková</div>
+              <div class="bg-pink-300 rounded-lg font-semibold dark:text-black">p. Zaorálková</div>
             </th>
             <th scope="col" class="p-4 text-center text-lg font-medium align-top">
               <div>Kancelář č. 20</div>
-              <div class="bg-pink-300 rounded-lg font-semibold">p. Svatošová</div>
+              <div class="bg-pink-300 rounded-lg font-semibold dark:text-black">p. Svatošová</div>
             </th>
             <th scope="col" class="p-4 text-center text-lg font-medium align-top">
               <div>Kancelář č. 5</div>
-              <div class="bg-yellow-300 rounded-lg font-semibold">p. Lenka Holá</div>
+              <div class="bg-yellow-300 rounded-lg font-semibold dark:text-black">p. Lenka Holá</div>
             </th>
             <th scope="col" class="p-4 text-center text-lg font-medium align-top">
               <div>Kancelář č. 21</div>
-              <div class="bg-yellow-300 rounded-lg font-semibold">p. Štylárková</div>
+              <div class="bg-yellow-300 rounded-lg font-semibold dark:text-black">p. Štylárková</div>
             </th>
             <th scope="col" class="p-4 text-center text-lg font-medium align-top">
               <div>Kancelář č. 23</div>
-              <div class="bg-green-300 rounded-lg font-semibold">p. Králová</div>
+              <div class="bg-green-300 rounded-lg font-semibold dark:text-black">p. Králová</div>
             </th>
             <th scope="col" class="p-4 text-center text-lg font-medium align-top">
               <div>Kancelář č. 23</div>
-              <div class="bg-green-300 rounded-lg font-semibold">Ing. Jaroňková</div>
+              <div class="bg-green-300 rounded-lg font-semibold dark:text-black">Ing. Jaroňková</div>
             </th>
             <th scope="col" class="p-4 text-center text-lg font-medium align-top">
               <div>Kancelář č. 25</div>
-              <div class="bg-blue-300 rounded-lg font-semibold">p. Kuglíková</div>
+              <div class="bg-blue-300 rounded-lg font-semibold dark:text-black">p. Kuglíková</div>
             </th>
           </tr>
         </thead>
 
         <tbody>
           <!-- Kancelář č. 20 - p. Zaorálková -->
-          <tr class="block md:table-row border-b align-top">
+          <tr class="block md:table-row align-top">
             <td class="p-4 align-top block md:table-cell">
               <span class="bg-pink-300 rounded-lg font-bold md:hidden">Kancelář č. 20 (p. Zaorálková):</span>
-              <div class="hover:bg-gray-300 rounded-lg">Družstevní 12</div>
-              <div class="hover:bg-gray-300 rounded-lg">Erbenova 7-9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">J. Suka 10-12-14</div>
-              <div class="hover:bg-gray-300 rounded-lg">J. Suka 16-18-20</div>
-              <div class="hover:bg-gray-300 rounded-lg">J. Suka 3-5-7</div>
-              <div class="hover:bg-gray-300 rounded-lg">J. Suka 9-11-13</div>
-              <div class="hover:bg-gray-300 rounded-lg">J. Suka 15-17-19</div>
-              <div class="hover:bg-gray-300 rounded-lg">Jungmannova 3-5-7</div>
-              <div class="hover:bg-gray-300 rounded-lg">Luční 7-9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">Luční 13-15</div>
-              <div class="hover:bg-gray-300 rounded-lg">nám. B. Martinů 1-2-3</div>
-              <div class="hover:bg-gray-300 rounded-lg">nám. B. Martinů 7-8-9</div>
-              <div class="hover:bg-gray-300 rounded-lg">nám. B. Martinů 10-11-12</div>
-              <div class="hover:bg-gray-300 rounded-lg">nám. B. Martinů 13-14-15</div>
-              <div class="hover:bg-gray-300 rounded-lg">Partyzánská 26</div>
-              <div class="hover:bg-gray-300 rounded-lg">P. Veselého 54</div>
-              <div class="hover:bg-gray-300 rounded-lg">P. Veselého 56</div>
-              <div class="hover:bg-gray-300 rounded-lg">Sadová 7</div>
-              <div class="hover:bg-gray-300 rounded-lg">Sadová 8</div>
-              <div class="hover:bg-gray-300 rounded-lg">Sadová 11</div>
-              <div class="hover:bg-gray-300 rounded-lg">Slavíkova 2</div>
-              <div class="hover:bg-gray-300 rounded-lg">Slavíkova 4</div>
-              <div class="hover:bg-gray-300 rounded-lg">Slunečná 18-20</div>
-              <div class="hover:bg-gray-300 rounded-lg">Slunečná 22-24</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Cihelny 4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Družstevní 12</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Erbenova 7-9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">J. Suka 10-12-14</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">J. Suka 16-18-20</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">J. Suka 3-5-7</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">J. Suka 9-11-13</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">J. Suka 15-17-19</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Jungmannova 3-5-7</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Luční 7-9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Luční 13-15</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. B. Martinů 1-2-3</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. B. Martinů 7-8-9</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. B. Martinů 10-11-12</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. B. Martinů 13-14-15</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Partyzánská 26</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">P. Veselého 54</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">P. Veselého 56</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Sadová 7</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Sadová 8</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Sadová 11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Slavíkova 2</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Slavíkova 4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Slunečná 18-20</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Slunečná 22-24</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Cihelny 4</div>
             </td>
 
             <!-- Kancelář č. 20 - p. Svatošová -->
             <td class="p-4 sm align-top block md:table-cell">
               <span class="bg-pink-300 rounded-lg font-bold md:hidden">Kancelář č. 20 (p. Svatošová):</span>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 86-88-90</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 101-103-105</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 119-121-123</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 125-127-129</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 131-133-135</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 137-139-141</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 71-73-75-77-79-81</div>
-              <div class="hover:bg-gray-300 rounded-lg">Cihlářská 17-18</div>
-              <div class="hover:bg-gray-300 rounded-lg">Dobrovolského 13</div>
-              <div class="hover:bg-gray-300 rounded-lg">Dobrovolského 13A</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lužní 1-3-5</div>
-              <div class="hover:bg-gray-300 rounded-lg">M. Benky 29A, 29B, 29C</div>
-              <div class="hover:bg-gray-300 rounded-lg">Marxova 21</div>
-              <div class="hover:bg-gray-300 rounded-lg">Třída Bří Čapků 11, 13</div>
-              <div class="hover:bg-gray-300 rounded-lg">Velkomoravská 5</div>
-              <div class="hover:bg-gray-300 rounded-lg">Vřesová 1-3-5</div>
-              <div class="hover:bg-gray-300 rounded-lg">Vřesová 7-9</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 86-88-90</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 101-103-105</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 119-121-123</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 125-127-129</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 131-133-135</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 137-139-141</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 71-73-75-77-79-81</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Cihlářská 17-18</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Dobrovolského 13</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Dobrovolského 13A</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lužní 1-3-5</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">M. Benky 29A, 29B, 29C</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Marxova 21</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Třída Bří Čapků 11, 13</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Velkomoravská 5</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Vřesová 1-3-5</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Vřesová 7-9</div>
             </td>
 
             <!-- Kancelář č. 5 - p. Lenka Holá -->
             <td class="p-4 sm align-top block md:table-cell">
               <span class="bg-yellow-300 rounded-lg font-bold md:hidden">Kancelář č. 5 (p. Lenka Holá):</span>
-              <div class="hover:bg-gray-300 rounded-lg">J. Suka 4-6-8</div>
-              <div class="hover:bg-gray-300 rounded-lg">Masarykovo nám, Jánošíkova, Radniční</div>
-              <div class="hover:bg-gray-300 rounded-lg">nám. Osvobození 7</div>
-              <div class="hover:bg-gray-300 rounded-lg">nám. Osvobození 8</div>
-              <div class="hover:bg-gray-300 rounded-lg">Národní tř.34</div>
-              <div class="hover:bg-gray-300 rounded-lg">Národní tř.40</div>
-              <div class="hover:bg-gray-300 rounded-lg">Národní tř.46</div>
-              <div class="hover:bg-gray-300 rounded-lg">Očovská 22-24</div>
-              <div class="hover:bg-gray-300 rounded-lg">Sv. Čecha 1</div>
-              <div class="hover:bg-gray-300 rounded-lg">Tyršova 6</div>
-              <div class="hover:bg-gray-300 rounded-lg">Vančurova 1-3-5-7-9</div>
-              <div class="hover:bg-gray-300 rounded-lg">V Chalupách Lužice</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lesní 10</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">J. Suka 4-6-8</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Masarykovo nám, Jánošíkova, Radniční</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. Osvobození 7</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. Osvobození 8</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní tř.34</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní tř.40</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní tř.46</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Očovská 22-24</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Sv. Čecha 1</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Tyršova 6</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Vančurova 1-3-5-7-9</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">V Chalupách Lužice</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lesní 10</div>
             </td>
 
             <!-- Kancelář č. 21 - p. Štylárková -->
             <td class="p-4 sm align-top block md:table-cell">
               <span class="bg-yellow-300 rounded-lg font-bold md:hidden">Kancelář č. 21 (p. Štylárková):</span>
-              <div class="hover:bg-gray-300 rounded-lg">Erbenova 1-3-5</div>
-              <div class="hover:bg-gray-300 rounded-lg">Erbenova 18-20-22-24</div>
-              <div class="hover:bg-gray-300 rounded-lg">Erbenova 2-4-6-8</div>
-              <div class="hover:bg-gray-300 rounded-lg">Erbenova 26-28-30</div>
-              <div class="hover:bg-gray-300 rounded-lg">Erbenova 27-29-31</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 12-14-16</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 13-15-17-19</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 1-3-5-7</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 18-20</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 21-23</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 22-24-26</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 2-4-6</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 25-27-29-31</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 8-10</div>
-              <div class="hover:bg-gray-300 rounded-lg">Křičkova 9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">Patočkova 1-3</div>
-              <div class="hover:bg-gray-300 rounded-lg">Patočkova 13-15</div>
-              <div class="hover:bg-gray-300 rounded-lg">Patočkova 17-19</div>
-              <div class="hover:bg-gray-300 rounded-lg">Patočkova 21-23</div>
-              <div class="hover:bg-gray-300 rounded-lg">Patočkova 5-7</div>
-              <div class="hover:bg-gray-300 rounded-lg">Patočkova 8-10</div>
-              <div class="hover:bg-gray-300 rounded-lg">Patočkova 9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">Vřesová 11-13-15</div>
-              <div class="hover:bg-gray-300 rounded-lg">Na Ovčírnách 1274, Mutěnice</div>
-              <div class="hover:bg-gray-300 rounded-lg">tř. Dukelských hrdinů 55</div>
-              <div class="hover:bg-gray-300 rounded-lg">Marxova 11-13-15-17-19</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Erbenova 1-3-5</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Erbenova 18-20-22-24</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Erbenova 2-4-6-8</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Erbenova 26-28-30</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Erbenova 27-29-31</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 12-14-16</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 13-15-17-19</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 1-3-5-7</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 18-20</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 21-23</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 22-24-26</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 2-4-6</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 25-27-29-31</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 8-10</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Křičkova 9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Patočkova 1-3</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Patočkova 13-15</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Patočkova 17-19</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Patočkova 21-23</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Patočkova 5-7</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Patočkova 8-10</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Patočkova 9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Vřesová 11-13-15</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Na Ovčírnách 1274, Mutěnice</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">tř. Dukelských hrdinů 55</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Marxova 11-13-15-17-19</div>
             </td>
 
             <!-- Kancelář č. 23 - p. Králová -->
             <td class="p-4 sm align-top block md:table-cell">
               <span class="bg-green-300 rounded-lg font-bold md:hidden">Kancelář č. 23 (p. Králová):</span>
-              <div class="hover:bg-gray-300 rounded-lg">Bezručova 13-15</div>
-              <div class="hover:bg-gray-300 rounded-lg">Bezručova 35</div>
-              <div class="hover:bg-gray-300 rounded-lg">Blažkova 6</div>
-              <div class="hover:bg-gray-300 rounded-lg">Blažkova 8, Palackého 45</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 74-76</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brněnská 28</div>
-              <div class="hover:bg-gray-300 rounded-lg">G. Preissové 2-4</div>
-              <div class="hover:bg-gray-300 rounded-lg">G. Preissové 6-8</div>
-              <div class="hover:bg-gray-300 rounded-lg">Janáčkova 25</div>
-              <div class="hover:bg-gray-300 rounded-lg">Janáčkova 27</div>
-              <div class="hover:bg-gray-300 rounded-lg">Kolískova 9</div>
-              <div class="hover:bg-gray-300 rounded-lg">Legionářů 2</div>
-              <div class="hover:bg-gray-300 rounded-lg">Legionářů 22</div>
-              <div class="hover:bg-gray-300 rounded-lg">Legionářů 24</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lesní 12</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lesní 14</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lesní 16</div>
-              <div class="hover:bg-gray-300 rounded-lg">Marxova 23-25</div>
-              <div class="hover:bg-gray-300 rounded-lg">Měšťanská 14</div>
-              <div class="hover:bg-gray-300 rounded-lg">Měšťanská 16</div>
-              <div class="hover:bg-gray-300 rounded-lg">Měšťanská 138</div>
-              <div class="hover:bg-gray-300 rounded-lg">Nádražní řádek 10</div>
-              <div class="hover:bg-gray-300 rounded-lg">Nádražní řádek 11</div>
-              <div class="hover:bg-gray-300 rounded-lg">Nádražní řádek 27</div>
-              <div class="hover:bg-gray-300 rounded-lg">Národní tř.61</div>
-              <div class="hover:bg-gray-300 rounded-lg">Národní tř.63-65</div>
-              <div class="hover:bg-gray-300 rounded-lg">Národní tř.92</div>
-              <div class="hover:bg-gray-300 rounded-lg">Národní třída 94</div>
-              <div class="hover:bg-gray-300 rounded-lg">Nesyt 1-3</div>
-              <div class="hover:bg-gray-300 rounded-lg">Pánov 3132-3166</div>
-              <div class="hover:bg-gray-300 rounded-lg">Pánov 3699-3700</div>
-              <div class="hover:bg-gray-300 rounded-lg">Příční 9</div>
-              <div class="hover:bg-gray-300 rounded-lg">P. Jilemnického 11-13</div>
-              <div class="hover:bg-gray-300 rounded-lg">Rohatec, U Školky 47</div>
-              <div class="hover:bg-gray-300 rounded-lg">Seifertova 4-6</div>
-              <div class="hover:bg-gray-300 rounded-lg">Seifertova 12-14</div>
-              <div class="hover:bg-gray-300 rounded-lg">Seifertova 7-9</div>
-              <div class="hover:bg-gray-300 rounded-lg">Úprkova 1</div>
-              <div class="hover:bg-gray-300 rounded-lg">Úprkova 3</div>
-              <div class="hover:bg-gray-300 rounded-lg">Radniční 4</div>
-              <div class="hover:bg-gray-300 rounded-lg">nám. Osvobození 4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Bezručova 13-15</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Bezručova 35</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Blažkova 6</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Blažkova 8, Palackého 45</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 74-76</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brněnská 28</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">G. Preissové 2-4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">G. Preissové 6-8</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Janáčkova 25</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Janáčkova 27</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Kolískova 9</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Legionářů 2</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Legionářů 22</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Legionářů 24</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lesní 12</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lesní 14</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lesní 16</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Marxova 23-25</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Měšťanská 14</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Měšťanská 16</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Měšťanská 138</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Nádražní řádek 10</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Nádražní řádek 11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Nádražní řádek 27</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní tř.61</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní tř.63-65</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní tř.92</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Národní třída 94</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Nesyt 1-3</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Pánov 3132-3166</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Pánov 3699-3700</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Příční 9</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">P. Jilemnického 11-13</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Rohatec, U Školky 47</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Seifertova 4-6</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Seifertova 12-14</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Seifertova 7-9</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Úprkova 1</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Úprkova 3</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Radniční 4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">nám. Osvobození 4</div>
             </td>
 
             <!-- Kancelář č. 23 - Ing. Jaroňková -->
             <td class="p-4 sm align-top block md:table-cell">
               <span class="bg-green-300 rounded-lg font-bold md:hidden">Kancelář č. 23 (Ing. Jaroňková):</span>
-              <div class="hover:bg-gray-300 rounded-lg">I.Olbrachta 2-4</div>
-              <div class="hover:bg-gray-300 rounded-lg">I.Olbrachta 6-8</div>
-              <div class="hover:bg-gray-300 rounded-lg">I. Olbrachta 10-12</div>
-              <div class="hover:bg-gray-300 rounded-lg">I. Olbrachta 14-16</div>
-              <div class="hover:bg-gray-300 rounded-lg">I. Olbrachta 1-3</div>
-              <div class="hover:bg-gray-300 rounded-lg">I. Olbrachta 9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">I. Olbrachta 13-15</div>
-              <div class="hover:bg-gray-300 rounded-lg">I. Olbrachta 17-19</div>
-              <div class="hover:bg-gray-300 rounded-lg">I. Olbrachta 21</div>
-              <div class="hover:bg-gray-300 rounded-lg">Horní Valy 1</div>
-              <div class="hover:bg-gray-300 rounded-lg">Horní Valy 3-5-7</div>
-              <div class="hover:bg-gray-300 rounded-lg">Horní Valy 9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">Čajkovského 44</div>
-              <div class="hover:bg-gray-300 rounded-lg">Skácelova 3-5</div>
-              <div class="hover:bg-gray-300 rounded-lg">Skácelova 7-9</div>
-              <div class="hover:bg-gray-300 rounded-lg">Skácelova 11-13</div>
-              <div class="hover:bg-gray-300 rounded-lg">Skácelova 19-21</div>
-              <div class="hover:bg-gray-300 rounded-lg">Sušilova 57, PV 22</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 6-8</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 18-20</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 26-28</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 30-32</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 34-36</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 1-3-5</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 7-9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 13-15-17</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 19-21-23</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 25-27-29</div>
-              <div class="hover:bg-gray-300 rounded-lg">U Červených domků 31-33-35</div>
-              <div class="hover:bg-gray-300 rounded-lg">Žižkova 15</div>
-              <div class="hover:bg-gray-300 rounded-lg"><strong>NESVJ</strong></div>
-              <div class="hover:bg-gray-300 rounded-lg">Miličova 6</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brněnská 32</div>
-              <div class="hover:bg-gray-300 rounded-lg">Jarošova 24</div>
-              <div class="hover:bg-gray-300 rounded-lg">Jungmanova 1</div>
-              <div class="hover:bg-gray-300 rounded-lg">Purkyňova 4</div>
-              <div class="hover:bg-gray-300 rounded-lg">Sacharovova 25</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I.Olbrachta 2-4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I.Olbrachta 6-8</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I. Olbrachta 10-12</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I. Olbrachta 14-16</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I. Olbrachta 1-3</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I. Olbrachta 9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I. Olbrachta 13-15</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I. Olbrachta 17-19</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">I. Olbrachta 21</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Horní Valy 1</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Horní Valy 3-5-7</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Horní Valy 9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Čajkovského 44</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Skácelova 3-5</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Skácelova 7-9</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Skácelova 11-13</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Skácelova 19-21</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Sušilova 57, PV 22</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 6-8</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 18-20</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 26-28</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 30-32</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 34-36</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 1-3-5</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 7-9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 13-15-17</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 19-21-23</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 25-27-29</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">U Červených domků 31-33-35</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Žižkova 15</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg"><strong>NESVJ</strong></div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Miličova 6</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brněnská 32</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Jarošova 24</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Jungmanova 1</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Purkyňova 4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Sacharovova 25</div>
             </td>
 
             <!-- Kancelář č. 25 - p. Kuglíková -->
             <td class="p-4 sm align-top block md:table-cell">
               <span class="bg-blue-300 rounded-lg font-bold md:hidden">Kancelář č. 25 (p. Kuglíková):</span>
-              <div class="hover:bg-gray-300 rounded-lg">Anenská 2</div>
-              <div class="hover:bg-gray-300 rounded-lg">Anenská 4</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brněnská 30</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lesní 13-15-17</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lesní 1-3-5</div>
-              <div class="hover:bg-gray-300 rounded-lg">Lesní 7-9-11</div>
-              <div class="hover:bg-gray-300 rounded-lg">Brandlova 30, Muchova 13</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Anenská 2</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Anenská 4</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brněnská 30</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lesní 13-15-17</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lesní 1-3-5</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lesní 7-9-11</div>
+              <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Brandlova 30, Muchova 13</div>
               <!-- Tabulka bytových družstev -->
               <div class="mt-4">
                 <table class="min-w-full text-left">
@@ -274,13 +270,13 @@ const metadata = {
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="hover:bg-gray-300 rounded-lg">Pastelky</td>
+                      <td class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Pastelky</td>
                     </tr>
                     <tr>
-                      <td class="hover:bg-gray-300 rounded-lg">Lípa</td>
+                      <td class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Lípa</td>
                     </tr>
                     <tr>
-                      <td class="hover:bg-gray-300 rounded-lg">Kaštany</td>
+                      <td class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">Kaštany</td>
                     </tr>
                   </tbody>
                 </table>

@@ -1,7 +1,7 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-
+import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
@@ -12,11 +12,20 @@ const downloadPages = [{ title: 'Dokumenty ke stažení', url: '/ke-stazeni/bd-l
 ---
 
 <Layout metadata={metadata}>
+
+
+  <Hero
+  tagline="Bytové družstvo"
+  title="Lípa"
+  image={{
+    src: '../assets/images/bd-lipa.webp',
+    alt: 'Bytové družstvo Lípa',
+  }}
+/> 
+
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Lípa"
-    tagline="Bytové družstvo"
     columns={1}
     items={[
       {
@@ -112,7 +121,7 @@ const downloadPages = [{ title: 'Dokumenty ke stažení', url: '/ke-stazeni/bd-l
   </div>
 
   <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <ul class="space-y-4 bg-blue-300 rounded-lg">
+    <ul class="space-y-4 bg-blue-200 dark:bg-blue-900 rounded-lg">
       {
         downloadPages.map((page) => (
           <li class="p-4 shadow-sm flex justify-between items-center">

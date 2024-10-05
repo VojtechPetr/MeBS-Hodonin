@@ -5,6 +5,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Note from '~/components/widgets/Note.astro';
 import List from '~/components/widgets/List.astro';
+import Features21 from '~/components/widgets/Features21.astro';
 
 const metadata = {
   title: 'Tepelné hospodářství',
@@ -24,10 +25,73 @@ Tam, kde je teplo vedeno dvoutrubkovým rozvodem, jsou v objektech spotřeby ins
 Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zařízení, zejména výměny teplovodů.
 `
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      src: '/assets/images/tepelne-uvod.webp',
+      alt: 'Tepelné úvod',
     }}
   />
+
+  <div class="max-w-7xl m-auto px-4 sm:px-0">
+    <Features21
+      title="Personální struktura střediska"
+      columns={3}
+      structure={[
+        {
+          contacts: [
+            {
+              title: 'Ing. Petr Pacal',
+              name: 'Vedoucí',
+              icon: 'tabler:crown',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 524, 602 515 443',
+                },
+                {
+                  type: 'email',
+                  value: 'pacal@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'Jitka Vrábliková',
+              name: 'Provozní ekonomka, fakturace',
+              icon: 'tabler:zoom-money',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 529, 602 734 775',
+                },
+                {
+                  type: 'email',
+                  value: 'vrablikova@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: '',
+              name: 'centrální dispečink',
+              icon: 'tabler:headset',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '602 793 211',
+                },
+                {
+                  type: 'email',
+                  value: 'dispecink@bytovka.cz',
+                },
+              ],
+            },
+          ],
+        },
+      ]}
+    >
+      <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+      </Fragment>
+    </Features21>
+  </div>
+
   <!-- Features2 Widget ************** -->
 
   <Features2
@@ -63,14 +127,17 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
       'Průměrnou denní teplotou venkovního vzduchu je čtvrtina součtu venkovních teplot měřených ve stínu s vyloučením vlivu sálání okolních ploch v 7.00, 14.00 a ve 21.00 hod., přičemž teplota měřená ve 21.00 hod. se počítá dvakrát.',
       'Vytápění bytů a nebytových prostor v bytových a nebytových budovách se omezí nebo přeruší v otopném období tehdy, jestliže průměrná denní teplota venkovního vzduchu v příslušném místě nebo lokalitě vystoupí nad +13 °C ve 2 dnech po sobě následujících a podle vývoje počasí nelze očekávat pokles této teploty pro následující den. Omezení vytápění se provádí tak, aby byly dodrženy požadavky jejich teplotního útlumu zajišťujícího tepelnou stabilitu místnosti. Při následném poklesu průměrné denní teploty venkovního vzduchu pod +13 °C se vytápění obnoví.',
     ]}
-  />
-
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <p class="font-bold">
-      Pokud bude v přechodném období požadavek ze strany odběratelů na zahájení vytápění, může být akceptovaný pouze na
-      základě písemné žádosti předsedy SVJ např. mailem
-    </p>
-  </div>
+  >
+    <div slot="extra-content" class="container mx-auto pt-10 pl-6">
+      <p class="font-bold">
+        Pokud bude v přechodném období požadavek ze strany odběratelů na zahájení vytápění, může být akceptovaný pouze
+        na základě písemné žádosti předsedy SVJ např. mailem.
+      </p>
+    </div>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
+  </List>
 
   <Content
     isReversed
@@ -92,8 +159,8 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: '/assets/images/tepelne-ruce.webp',
+      alt: 'Tepelné - topná sezóna',
     }}
   >
     <Fragment slot="content">
@@ -102,7 +169,6 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
   </Content>
 
   <Content
-    isAfterContent
     items={[
       {
         title: 'V praxi tedy cena tepla roste pouze s růstem cen nakupovaných energií.',
@@ -126,17 +192,19 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      src: '/assets/images/tepelne-ceny.webp',
+      alt: 'Údržba - tvorba cen',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tvorba cen tepla</h3>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
   </Content>
 
   <Content
-    isAfterContent
     isSingle={true}
     columns={1}
     items={[

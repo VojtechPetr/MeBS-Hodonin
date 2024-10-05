@@ -27,31 +27,72 @@ const metadata = {
     Z hlediska nebytových prostor údržba bytového fondu zajišťuje běžnou údržbu a 
     opravy těchto prostor vyplývající z jejich běžného provozu.`
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      src: '/assets/images/udrzba-uvod.webp',
+      alt: 'Údržba úvod',
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Personální struktura střediska"
-    columns={3}
-    items={[
-      {
-        title: 'Vedoucí údržby',
-        icon: 'tabler:crown',
-      },
-      {
-        title: 'Provozní ekonom',
-        icon: 'tabler:zoom-money',
-      },
-      {
-        title: 'Vedoucí skladník, rozpočtář',
-        icon: 'tabler:forklift',
-      },
-    ]}
-  />
+  <div class="max-w-7xl m-auto px-4 sm:px-0">
+    <Features21
+      title="Personální struktura střediska"
+      columns={3}
+      structure={[
+        {
+          contacts: [
+            {
+              title: 'Miloslav Komosný',
+              name: 'Vedoucí údržby',
+              icon: 'tabler:crown',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 546, 607 829 808',
+                },
+                {
+                  type: 'email',
+                  value: 'komosny@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'Pavla Stanická',
+              name: 'Provozní ekonomka, fakturace',
+              icon: 'tabler:zoom-money',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 545, 607 273 900',
+                },
+                {
+                  type: 'email',
+                  value: 'stanicka@bytovka.cz',
+                },
+              ],
+            },
+            {
+              title: 'Jakub Nevečeřal',
+              name: 'Vedoucí skladník, rozpočtář',
+              icon: 'tabler:forklift',
+              contactInfo: [
+                {
+                  type: 'phone',
+                  value: '518 398 545, 607 001 912',
+                },
+                {
+                  type: 'email',
+                  value: 'neveceral@bytovka.cz',
+                },
+              ],
+            },
+          ],
+        },
+      ]}
+    >
+      <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+      </Fragment>
+    </Features21>
+  </div>
 
   <Stats
     title="Personál"
@@ -104,17 +145,19 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: '/assets/images/udrzba-voda.webp',
+      alt: 'Údržba - vodoinstalace',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblasti vodoinstalací</h3>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
   </Content>
 
   <Content
-    isAfterContent
     items={[
       {
         title: 'Výměna rozvodů domovní plynoinstalace',
@@ -144,8 +187,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      src: '/assets/images/udrzba-plyn.webp',
+      alt: 'Údržba - plynoinstalace',
     }}
   >
     <Fragment slot="content">
@@ -179,17 +222,19 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: '/assets/images/udrzba-topeni.webp',
+      alt: 'Údržba - topenářství',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblasti topenářství</h3>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
   </Content>
 
   <Content
-    isAfterContent
     items={[
       {
         title: 'Oprava a rekonstrukce rozvodů el. instalace v bytech i ve společných prostorech',
@@ -223,8 +268,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      src: '/assets/images/udrzba-vytahy.webp',
+      alt: 'Údržba - vytah',
     }}
   >
     <Fragment slot="content">
@@ -259,8 +304,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: '/assets/images/udrzba-podlahy.webp',
+      alt: 'Údržba - podlahy',
     }}
   >
     <Fragment slot="content">
@@ -268,10 +313,12 @@ const metadata = {
         Práce v oblasti stolařské a podlahářské
       </h3>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
   </Content>
 
   <Content
-    isAfterContent
     isSingle={true}
     columns={2}
     items={[
@@ -374,10 +421,11 @@ const metadata = {
         icon: 'tabler:truck',
       },
     ]}
-  />
-  <script>
-    console.log('Columns passed to Features2:', 2);
-  </script>
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 
   <Content
     title="Realizované akce 2024"
@@ -416,70 +464,11 @@ const metadata = {
           'Rekonstrukce bytů pro Město Hodonín v objektech )Polní 10 - 18, Slavíkova 17-21, Šafaříkova 1-3, Lipová alej 17, Brandlova 78)',
       },
     ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  />
 
   <Features21
     title="Důležité kontakty"
     structure={[
-      {
-        department: 'Tísňová volání',
-        contacts: [
-          {
-            name: 'Krizová linka',
-            icon: 'tabler:sos',
-            contactInfo: [
-              {
-                type: 'phone',
-                value: '112',
-              },
-            ],
-          },
-          {
-            name: 'Policie',
-            icon: 'tabler:brightness-up',
-            contactInfo: [
-              {
-                type: 'phone',
-                value: '158',
-              },
-            ],
-          },
-          {
-            name: 'Městská policie',
-            icon: 'tabler:brightness-up',
-            contactInfo: [
-              {
-                type: 'phone',
-                value: '156',
-              },
-            ],
-          },
-          {
-            name: 'Hasiči',
-            icon: 'tabler:fire-extinguisher',
-            contactInfo: [
-              {
-                type: 'phone',
-                value: '150',
-              },
-            ],
-          },
-          {
-            name: 'Rychlá zdravotní pomoc',
-            icon: 'tabler:hospital-circle',
-            contactInfo: [
-              {
-                type: 'phone',
-                value: '155',
-              },
-            ],
-          },
-        ],
-      },
       {
         department: 'Poruchová volání',
         contacts: [
@@ -550,6 +539,65 @@ const metadata = {
           },
         ],
       },
+      {
+        department: 'Tísňová volání',
+        contacts: [
+          {
+            name: 'Krizová linka',
+            icon: 'tabler:sos',
+            contactInfo: [
+              {
+                type: 'phone',
+                value: '112',
+              },
+            ],
+          },
+          {
+            name: 'Policie',
+            icon: 'tabler:brightness-up',
+            contactInfo: [
+              {
+                type: 'phone',
+                value: '158',
+              },
+            ],
+          },
+          {
+            name: 'Městská policie',
+            icon: 'tabler:brightness-up',
+            contactInfo: [
+              {
+                type: 'phone',
+                value: '156',
+              },
+            ],
+          },
+          {
+            name: 'Hasiči',
+            icon: 'tabler:fire-extinguisher',
+            contactInfo: [
+              {
+                type: 'phone',
+                value: '150',
+              },
+            ],
+          },
+          {
+            name: 'Rychlá zdravotní pomoc',
+            icon: 'tabler:hospital-circle',
+            contactInfo: [
+              {
+                type: 'phone',
+                value: '155',
+              },
+            ],
+          },
+        ],
+      },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
+  </Features21>
 </Layout>

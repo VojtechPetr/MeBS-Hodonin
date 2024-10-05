@@ -32,39 +32,59 @@ const {
       )}
     >
       {items.map(
-        ({ title, description, icon, image, callToAction, link = '', target = '_self', classes: itemClasses = {} }) => (
-          <a
-            href={link}
-            target={target}
-            class={twMerge(
-              'relative flex flex-col transition-transform duration-300 ease-in-out transform hover:scale-110',
-              panelClass,
-              itemClasses?.panel
-            )}
-          >
-            {image ? (
-              <div class="h-3/4">
-                <img src={image.src} alt={image.alt} class="w-full h-full object-cover rounded-md" />
-              </div>
-            ) : (
-              <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
-            )}
-            <div class="h-1/2 flex flex-col justify-center">
-              <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
-              {description && (
-                <p
-                  class={twMerge('text-muted mt-2', descriptionClass, itemClasses?.description)}
-                  set:html={description}
+        ({ title, description, icon, image, callToAction, link = '', target = '_self', classes: itemClasses = {} }) => {
+          const content = (
+            <>
+              {image ? (
+                <div class="h-3/4">
+                  <img src={image.src} alt={image.alt} class="w-full h-full object-cover rounded-md" />
+                </div>
+              ) : (
+                <Icon
+                  name={icon || defaultIcon}
+                  class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)}
                 />
               )}
-              {callToAction && (
-                <div class="mt-2">
-                  <Button {...callToAction} />
-                </div>
+              <div class="h-1/2 flex flex-col justify-center mt-4">
+                <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
+                {description && (
+                  <p
+                    class={twMerge('text-muted mt-2', descriptionClass, itemClasses?.description)}
+                    set:html={description}
+                  />
+                )}
+                {callToAction && (
+                  <div class="mt-2">
+                    <Button {...callToAction} />
+                  </div>
+                )}
+              </div>
+            </>
+          );
+          return link ? (
+            <a
+              href={link}
+              target={target}
+              class={twMerge(
+                'relative flex flex-col transition-transform duration-300 ease-in-out transform hover:scale-110',
+                panelClass,
+                itemClasses?.panel
               )}
+            >
+              {content}
+            </a>
+          ) : (
+            <div
+              class={twMerge(
+                'relative flex flex-col transition-transform duration-300 ease-in-out transform hover:scale-110',
+                panelClass,
+                itemClasses?.panel
+              )}
+            >
+              {content}
             </div>
-          </a>
-        )
+          );
+        }
       )}
     </div>
   )

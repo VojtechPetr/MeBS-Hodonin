@@ -26,24 +26,26 @@ const {
       structure.map((department) => (
         <div class="mb-8" data-key={department.department}>
           <h2 class="text-xl font-bold mb-4">{department.department}</h2>
-          <ItemGrid3
-            items={department.contacts.map((contact) => ({
-              title: contact.name,
-              description: contact.title,
-              icon: contact.icon,
-              contacts: contact.contactInfo,
-            }))}
-            columns={columns}
-            defaultIcon={defaultIcon}
-            classes={{
-              title: 'text-lg',
-              container: 'gap-4 md:gap-6',
-              panel:
-                'text-center bg-page items-center md:text-left rtl:md:text-right md:items-start p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-800',
-              icon: 'w-12 h-12 mb-6 text-primary',
-              ...((classes?.items as Record<string, never>) ?? {}),
-            }}
-          />
+          {department.contacts && (
+            <ItemGrid3
+              items={department.contacts.map((contact) => ({
+                title: contact.name,
+                description: contact.title,
+                icon: contact.icon,
+                contacts: contact.contactInfo,
+              }))}
+              columns={columns}
+              defaultIcon={defaultIcon}
+              classes={{
+                title: 'text-lg',
+                container: 'gap-4 md:gap-6',
+                panel:
+                  'text-center bg-page items-center md:text-left rtl:md:text-right md:items-start p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-800',
+                icon: 'w-12 h-12 mb-6 text-primary',
+                ...((classes?.items as Record<string, never>) ?? {}),
+              }}
+            />
+          )}
         </div>
       ))
   }

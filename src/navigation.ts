@@ -48,6 +48,11 @@ export const headerData = {
       href: '/teplo',
     },
     {
+      text: 'Hotel Krystal',
+      href: 'https://www.hotel-krystal.cz/',
+      target: '_blank',
+    },
+    {
       text: 'Ke stažení',
       href: '/ke-stazeni',
     },

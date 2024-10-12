@@ -1,4 +1,15 @@
 ---
+type Document = {
+  title: string;
+  url: string;
+  date: Date | string; 
+  size: string;
+};
+
+interface Props {
+  documents: Document[];
+}
+
 const { documents } = Astro.props;
 ---
 

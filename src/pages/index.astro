@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
+import Hero from '~/components/widgets/HeroMain.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import List from '~/components/widgets/List.astro';
 import Maps from '~/components/widgets/Maps.astro';
@@ -20,7 +20,7 @@ const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/
     </Fragment>
     <Fragment slot="bg">
       <div
-        class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
+        class="relative bg-cover bg-center h-full mt-20 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
       >
       </div>
     </Fragment>
@@ -28,8 +28,9 @@ const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/
 
   <Features2
     columns={2}
+    title="Naše služby"
     classes={{
-      container: 'mt-40',
+      container: 'mt-20 md:mt-10',
     }}
     items={[
       {

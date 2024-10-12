@@ -9,8 +9,8 @@ export interface Props {
 const { url, title = 'Kde nás najdete', width, height } = Astro.props;
 ---
 
-<section class="relative my-8 bg-blue-100 dark:bg-dark py-20">
-  {title && <h2 class="text-2xl font-bold text-center mb-6">{title}</h2>}
+<section class="relative my-8 bg-blue-100 dark:bg-dark pt-8 md:py-16">
+  {title && <h2 class="text-4xl md:text-6xl font-bold text-center mb-8 md:mb-14">{title}</h2>}
   <div class="relative mx-auto max-w-5xl rounded-lg overflow-hidden shadow-lg">
     <iframe
       src={url}

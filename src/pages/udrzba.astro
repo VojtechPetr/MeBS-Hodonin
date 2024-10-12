@@ -407,8 +407,13 @@ const metadata = {
 
   <Features2
     title="Služby autodopravy"
-    subtitle=`<strong>Možnost nadstandardního financování, komunikace se zákazníkem o tvorbě ceny akce.</strong>`
+    subtitle=`<strong>Možnost nadstandardního financování, komunikace se zákazníkem o tvorbě ceny.</strong>`
     columns={2}
+    classes={{
+      headline: {
+        title: 'text-5xl md:text-6xl mt-12', 
+      },
+    }}
     items={[
       {
         title: 'CITROËN Jumper',
@@ -423,7 +428,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+      <div class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/jumper1.webp')]"> </div>
     </Fragment>
   </Features2>
 
@@ -433,6 +438,9 @@ const metadata = {
     columns={2}
     isReversed
     isSingle={true}
+    classes={{
+      container: 'mt-10',
+    }}
     items={[
       {
         title:

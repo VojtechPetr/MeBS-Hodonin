@@ -1,35 +1,18 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import AvailableJobs from '~/components/widgets/AvailableJobs.astro';
 
 const metadata = {
-  title: 'Kontakt',
+  title: 'Kariéra',
 };
 ---
 
 <Layout metadata={metadata}>
-  <HeroText tagline="Kontakt" title="Pojďme se spojit" />
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="flex items-start">
-      <div class="flex-1 mt-4">
-        <p>
-          <span class="font-bold">Městská bytová správa, spol. s r.o.</span> je od 21. prosince 1995 zapsána v obchodním
-          rejstříku vedeném Krajským soudem v Brně v oddílu C, vložka 21697. Zakladatelem a jediným společníkem je Město
-          Hodonín.
-          <br /><br />
-          Sídlo: Hodonín, Rodinova 691/4, PSČ 695 01, IČ: 634 89 953, DIČ: CZ699001303<br />
-          Statutární orgán: Ing. Jana Bimková, jednatelka společnosti<br />
-          ID datové schránky: 4mimcfg
-          <br /><br />
-          <span class="font-bold">Pokladna</span><br />
-          Pondělí, středa 7.30 – 17.00, II. patro, dveře č. 16<br />
-          Rodinova 691/4, Hodonín
-        </p>
-      </div>
-      <div class="flex-shrink-0">
-        <img src="/assets/images/bytovka_kontakt_QR.png" alt="QR Code" class="w-48 h-48" />
-      </div>
+  <HeroText tagline="Kariéra" title="Hledáme talentované lidi" subtitle='Pokud máte zájem stát se součástí našeho přátelského a motivovaného týmu, rádi vám nabídneme prostředí, kde se cení spolupráce, inovace a spolehlivost. V Městské bytové správě věříme, že spokojení zaměstnanci jsou základem kvalitních služeb pro naše klienty.'/>
+  <div class="max-w-5xl mx-auto py-20 px-4 sm:px-6">
+    <div class="mt-8">
+      <AvailableJobs />
     </div>
-    <div class="border-b border-gray-300 mt-14"></div>
   </div>
 </Layout>

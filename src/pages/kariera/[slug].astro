@@ -1,0 +1,56 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
+import type { MDXInstance, GetStaticPaths } from 'astro';
+
+interface JobFrontmatter {
+  title: string;
+  excerpt: string;
+  location: string;
+  email: string;
+  icon: string;
+  publishDate:string;
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const jobs = (await Astro.glob('../../content/kariera/*.mdx')) as unknown as MDXInstance<JobFrontmatter>[];
+
+  return jobs.map((job) => ({
+    params: { slug: job.file.split('/').pop()?.replace('.mdx', '') },
+    props: { job },
+  }));
+};
+
+const { job } = Astro.props as { job: MDXInstance<JobFrontmatter> };
+
+// Metadata pro SEO a sociální sítě
+const metadata = {
+  title: job.frontmatter.title,
+  description: job.frontmatter.excerpt,
+};
+---
+
+<Layout metadata={metadata}>
+  <article class="max-w-3xl mx-auto p-6 my-16 bg-white rounded-lg shadow-md text-center border border-gray-200">
+    <header>
+      <Icon name="tabler:user-search" class="w-12 h-12 mx-auto text-blue-600 mb-4" />
+      <h1 class="text-2xl font-bold mb-2">{job.frontmatter.title}</h1>
+      <p class="text-gray-600 mb-4">{job.frontmatter.excerpt}</p>
+      <p class="text-sm text-gray-500 mb-4">
+        Publikováno: <time datetime={job.frontmatter.publishDate}
+          >{
+            new Date(job.frontmatter.publishDate).toLocaleDateString('cs-CZ', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })
+          }</time
+        >
+      </p>
+      <p><strong>Lokalita:</strong> {job.frontmatter.location}</p>
+    </header>
+    <div class="mt-8 prose prose-md text-left">
+      <job.Content />
+    </div>
+  </article>
+</Layout>

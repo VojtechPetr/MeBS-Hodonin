@@ -15,12 +15,12 @@ const metadata = {
     image={{
       src: '../assets/images/svj-onas.webp',
       alt: 'O nás',
-      class: '-mb-10 rounded-md',
+      class: 'rounded-md -my-80 md:mt-28 md:mb-12 md:mx-auto w-full',
     }}
   >
     <Fragment slot="title">
       Komplexní správa nemovitostí <br />
-      <span class="text-accent dark:text-white highlight"> Pro Váš klid a pohodlí</span>
+
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -300,4 +300,13 @@ const metadata = {
       'Zajišťování 24hodinové havarijní služby pro případ havárie rozvodů vody, dodávek tepla, poruchy výtahu při níž došlo k uvíznutí osob a okamžité odstraňování těchto havarijních stavů',
     ]}
   />
+
+  <Hero mtOffset={1}>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
+    <Fragment slot="image">
+      <img src="/assets/images/publicita-cihlarska.webp" alt="Publicita Cihlářská EU" class="max-w-full h-auto" />
+    </Fragment>
+  </Hero>
 </Layout>

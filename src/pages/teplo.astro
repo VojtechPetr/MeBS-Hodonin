@@ -34,6 +34,9 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
     <Features21
       title="Personální struktura střediska"
       columns={3}
+      classes={{
+        container: 'mb-44',
+      }}
       structure={[
         {
           contacts: [
@@ -97,14 +100,21 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
   <Features2
     title="Plánované opravy"
     subtitle="v roce 2024"
+    classes={{
+      container: '-mt-20',
+      headline: {
+        title: 'text-white pt-10',
+        subtitle: 'text-white',
+      },
+    }}
     columns={2}
     items={[
       {
-        title: 'Výměna teplovodu Lesní /Sigma/',
+        title: 'Výměna teplovodu Lesní - Sigma',
         icon: 'tabler:switch-3',
       },
       {
-        title: 'Výměna teplovodu Lesní /Lesanka/',
+        title: 'Výměna teplovodu Lesní - Lesanka',
         icon: 'tabler:switch-3',
       },
       {
@@ -116,7 +126,11 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
         icon: 'tabler:switch-3',
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/kominy.webp')]"></div>
+    </Fragment>
+  </Features2>
 
   <List
     title="Pravidla pro vytápění "

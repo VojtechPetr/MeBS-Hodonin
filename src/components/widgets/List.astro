@@ -18,7 +18,7 @@ const {
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
 
   <ul class="mt-24 list-decimal pl-6 text-left w-full space-y-4">
-    {items.map((item) => <li class="w-full">{item}</li>)}
+    {items.map((item: string) => <li class="w-full">{item}</li>)}
   </ul>
   <slot name="extra-content" />
 </WidgetWrapper>

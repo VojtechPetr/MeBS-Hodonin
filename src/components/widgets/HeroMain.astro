@@ -15,11 +15,10 @@ const {
 
   id,
   bg = await Astro.slots.render('bg'),
-
 } = Astro.props;
 ---
 
-<section class="relative not-prose min-h-screen -mt-32 md:-mt-14"{...(id ? { id } : {})}>
+<section class="relative not-prose min-h-screen -mt-32 md:-mt-14" {...id ? { id } : {}}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
     <slot name="bg">
       {bg ? <Fragment set:html={bg} /> : null}

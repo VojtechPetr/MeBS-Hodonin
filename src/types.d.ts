@@ -171,6 +171,29 @@ export interface Disclaimer {
   label?: string;
 }
 
+export interface Property {
+  adresa: string;
+}
+
+export interface Office {
+  cislo: string;       
+  spravce: string;     
+  barva: string;       
+  nemovitosti: Property[];  
+}
+
+export interface HousingAssociation {
+  nazev: string; 
+}
+
+export interface ContentData {
+  titulek: string;                   
+  podtitulek: string;     
+  kancelare: Office[];         
+  bytova_druzstva: HousingAssociation[];
+}
+
+
 // COMPONENTS
 export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
   variant?: 'primary' | 'secondary' | 'tertiary' | 'link';

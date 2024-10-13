@@ -1,199 +1,199 @@
 kancelare:
-  - cislo: "20"
-    barva: "pink"
-    spravce: "p. Zaorálková"
+  - cislo: '20'
+    barva: 'pink'
+    spravce: 'p. Zaorálková'
     nemovitosti:
-      - adresa: "Družstevní 12"
-      - adresa: "Erbenova 7-9-11"
-      - adresa: "J. Suka 10-12-14"
-      - adresa: "J. Suka 16-18-20"
-      - adresa: "J. Suka 3-5-7"
-      - adresa: "J. Suka 9-11-13"
-      - adresa: "J. Suka 15-17-19"
-      - adresa: "Jungmannova 3-5-7"
-      - adresa: "Luční 7-9-11"
-      - adresa: "Luční 13-15"
-      - adresa: "nám. B. Martinů 1-2-3"
-      - adresa: "nám. B. Martinů 7-8-9"
-      - adresa: "nám. B. Martinů 10-11-12"
-      - adresa: "nám. B. Martinů 13-14-15"
-      - adresa: "Partyzánská 26"
-      - adresa: "P. Veselého 54"
-      - adresa: "P. Veselého 56"
-      - adresa: "Sadová 7"
-      - adresa: "Sadová 8"
-      - adresa: "Sadová 11"
-      - adresa: "Slavíkova 2"
-      - adresa: "Slavíkova 4"
-      - adresa: "Slunečná 18-20"
-      - adresa: "Slunečná 22-24"
-      - adresa: "U Cihelny 4"
-  - cislo: "20"
-    barva: "pink"
-    spravce: "p. Svatošová"
+      - adresa: 'Družstevní 12'
+      - adresa: 'Erbenova 7-9-11'
+      - adresa: 'J. Suka 10-12-14'
+      - adresa: 'J. Suka 16-18-20'
+      - adresa: 'J. Suka 3-5-7'
+      - adresa: 'J. Suka 9-11-13'
+      - adresa: 'J. Suka 15-17-19'
+      - adresa: 'Jungmannova 3-5-7'
+      - adresa: 'Luční 7-9-11'
+      - adresa: 'Luční 13-15'
+      - adresa: 'nám. B. Martinů 1-2-3'
+      - adresa: 'nám. B. Martinů 7-8-9'
+      - adresa: 'nám. B. Martinů 10-11-12'
+      - adresa: 'nám. B. Martinů 13-14-15'
+      - adresa: 'Partyzánská 26'
+      - adresa: 'P. Veselého 54'
+      - adresa: 'P. Veselého 56'
+      - adresa: 'Sadová 7'
+      - adresa: 'Sadová 8'
+      - adresa: 'Sadová 11'
+      - adresa: 'Slavíkova 2'
+      - adresa: 'Slavíkova 4'
+      - adresa: 'Slunečná 18-20'
+      - adresa: 'Slunečná 22-24'
+      - adresa: 'U Cihelny 4'
+  - cislo: '20'
+    barva: 'pink'
+    spravce: 'p. Svatošová'
     nemovitosti:
-      - adresa: "Brandlova 86-88-90"
-      - adresa: "Brandlova 101-103-105"
-      - adresa: "Brandlova 119-121-123"
-      - adresa: "Brandlova 125-127-129"
-      - adresa: "Brandlova 131-133-135"
-      - adresa: "Brandlova 137-139-141"
-      - adresa: "Brandlova 71-73-75-77-79-81"
-      - adresa: "Cihlářská 17-18"
-      - adresa: "Dobrovolského 13"
-      - adresa: "Dobrovolského 13A"
-      - adresa: "Lužní 1-3-5"
-      - adresa: "M. Benky 29A, 29B, 29C"
-      - adresa: "Marxova 21"
-      - adresa: "Třída Bří Čapků 11, 13"
-      - adresa: "Velkomoravská 5"
-      - adresa: "Vřesová 1-3-5"
-      - adresa: "Vřesová 7-9"
-  - cislo: "5"
-    barva: "yellow"
-    spravce: "p. Lenka Holá"
+      - adresa: 'Brandlova 86-88-90'
+      - adresa: 'Brandlova 101-103-105'
+      - adresa: 'Brandlova 119-121-123'
+      - adresa: 'Brandlova 125-127-129'
+      - adresa: 'Brandlova 131-133-135'
+      - adresa: 'Brandlova 137-139-141'
+      - adresa: 'Brandlova 71-73-75-77-79-81'
+      - adresa: 'Cihlářská 17-18'
+      - adresa: 'Dobrovolského 13'
+      - adresa: 'Dobrovolského 13A'
+      - adresa: 'Lužní 1-3-5'
+      - adresa: 'M. Benky 29A, 29B, 29C'
+      - adresa: 'Marxova 21'
+      - adresa: 'Třída Bří Čapků 11, 13'
+      - adresa: 'Velkomoravská 5'
+      - adresa: 'Vřesová 1-3-5'
+      - adresa: 'Vřesová 7-9'
+  - cislo: '5'
+    barva: 'yellow'
+    spravce: 'p. Lenka Holá'
     nemovitosti:
-      - adresa: "J. Suka 4-6-8"
-      - adresa: "Masarykovo nám, Jánošíkova, Radniční"
-      - adresa: "nám. Osvobození 7"
-      - adresa: "nám. Osvobození 8"
-      - adresa: "Národní tř.34"
-      - adresa: "Národní tř.40"
-      - adresa: "Národní tř.46"
-      - adresa: "Očovská 22-24"
-      - adresa: "Sv. Čecha 1"
-      - adresa: "Tyršova 6"
-      - adresa: "Vančurova 1-3-5-7-9"
-      - adresa: "V Chalupách Lužice"
-      - adresa: "Lesní 10"
-  - cislo: "21"
-    barva: "yellow"
-    spravce: "p. Štylárková"
+      - adresa: 'J. Suka 4-6-8'
+      - adresa: 'Masarykovo nám, Jánošíkova, Radniční'
+      - adresa: 'nám. Osvobození 7'
+      - adresa: 'nám. Osvobození 8'
+      - adresa: 'Národní tř.34'
+      - adresa: 'Národní tř.40'
+      - adresa: 'Národní tř.46'
+      - adresa: 'Očovská 22-24'
+      - adresa: 'Sv. Čecha 1'
+      - adresa: 'Tyršova 6'
+      - adresa: 'Vančurova 1-3-5-7-9'
+      - adresa: 'V Chalupách Lužice'
+      - adresa: 'Lesní 10'
+  - cislo: '21'
+    barva: 'yellow'
+    spravce: 'p. Štylárková'
     nemovitosti:
-      - adresa: "Erbenova 1-3-5"
-      - adresa: "Erbenova 18-20-22-24"
-      - adresa: "Erbenova 2-4-6-8"
-      - adresa: "Erbenova 26-28-30"
-      - adresa: "Erbenova 27-29-31"
-      - adresa: "Křičkova 12-14-16"
-      - adresa: "Křičkova 13-15-17-19"
-      - adresa: "Křičkova 1-3-5-7"
-      - adresa: "Křičkova 18-20"
-      - adresa: "Křičkova 21-23"
-      - adresa: "Křičkova 22-24-26"
-      - adresa: "Křičkova 2-4-6"
-      - adresa: "Křičkova 25-27-29-31"
-      - adresa: "Křičkova 8-10"
-      - adresa: "Křičkova 9-11"
-      - adresa: "Patočkova 1-3"
-      - adresa: "Patočkova 13-15"
-      - adresa: "Patočkova 17-19"
-      - adresa: "Patočkova 21-23"
-      - adresa: "Patočkova 5-7"
-      - adresa: "Patočkova 8-10"
-      - adresa: "Patočkova 9-11"
-      - adresa: "Vřesová 11-13-15"
-      - adresa: "Na Ovčírnách 1274, Mutěnice"
-      - adresa: "tř. Dukelských hrdinů 55"
-      - adresa: "Marxova 11-13-15-17-19"
-  - cislo: "23"
-    barva: "green"
-    spravce: "p. Králová"
+      - adresa: 'Erbenova 1-3-5'
+      - adresa: 'Erbenova 18-20-22-24'
+      - adresa: 'Erbenova 2-4-6-8'
+      - adresa: 'Erbenova 26-28-30'
+      - adresa: 'Erbenova 27-29-31'
+      - adresa: 'Křičkova 12-14-16'
+      - adresa: 'Křičkova 13-15-17-19'
+      - adresa: 'Křičkova 1-3-5-7'
+      - adresa: 'Křičkova 18-20'
+      - adresa: 'Křičkova 21-23'
+      - adresa: 'Křičkova 22-24-26'
+      - adresa: 'Křičkova 2-4-6'
+      - adresa: 'Křičkova 25-27-29-31'
+      - adresa: 'Křičkova 8-10'
+      - adresa: 'Křičkova 9-11'
+      - adresa: 'Patočkova 1-3'
+      - adresa: 'Patočkova 13-15'
+      - adresa: 'Patočkova 17-19'
+      - adresa: 'Patočkova 21-23'
+      - adresa: 'Patočkova 5-7'
+      - adresa: 'Patočkova 8-10'
+      - adresa: 'Patočkova 9-11'
+      - adresa: 'Vřesová 11-13-15'
+      - adresa: 'Na Ovčírnách 1274, Mutěnice'
+      - adresa: 'tř. Dukelských hrdinů 55'
+      - adresa: 'Marxova 11-13-15-17-19'
+  - cislo: '23'
+    barva: 'green'
+    spravce: 'p. Králová'
     nemovitosti:
-      - adresa: "Bezručova 13-15"
-      - adresa: "Bezručova 35"
-      - adresa: "Blažkova 6"
-      - adresa: "Blažkova 8, Palackého 45"
-      - adresa: "Brandlova 74-76"
-      - adresa: "Brněnská 28"
-      - adresa: "G. Preissové 2-4"
-      - adresa: "G. Preissové 6-8"
-      - adresa: "Janáčkova 25"
-      - adresa: "Janáčkova 27"
-      - adresa: "Kolískova 9"
-      - adresa: "Legionářů 2"
-      - adresa: "Legionářů 22"
-      - adresa: "Legionářů 24"
-      - adresa: "Lesní 12"
-      - adresa: "Lesní 14"
-      - adresa: "Lesní 16"
-      - adresa: "Marxova 23-25"
-      - adresa: "Měšťanská 14"
-      - adresa: "Měšťanská 16"
-      - adresa: "Měšťanská 138"
-      - adresa: "Nádražní řádek 10"
-      - adresa: "Nádražní řádek 11"
-      - adresa: "Nádražní řádek 27"
-      - adresa: "Národní tř.61"
-      - adresa: "Národní tř.63-65"
-      - adresa: "Národní tř.92"
-      - adresa: "Národní třída 94"
-      - adresa: "Nesyt 1-3"
-      - adresa: "Pánov 3132-3166"
-      - adresa: "Pánov 3699-3700"
-      - adresa: "Příční 9"
-      - adresa: "P. Jilemnického 11-13"
-      - adresa: "Rohatec, U Školky 47"
-      - adresa: "Seifertova 4-6"
-      - adresa: "Seifertova 12-14"
-      - adresa: "Seifertova 7-9"
-      - adresa: "Úprkova 1"
-      - adresa: "Úprkova 3"
-      - adresa: "Radniční 4"
-      - adresa: "nám. Osvobození 4"
-  - cislo: "23"
-    barva: "green"
-    spravce: "Ing. Jaroňková"
+      - adresa: 'Bezručova 13-15'
+      - adresa: 'Bezručova 35'
+      - adresa: 'Blažkova 6'
+      - adresa: 'Blažkova 8, Palackého 45'
+      - adresa: 'Brandlova 74-76'
+      - adresa: 'Brněnská 28'
+      - adresa: 'G. Preissové 2-4'
+      - adresa: 'G. Preissové 6-8'
+      - adresa: 'Janáčkova 25'
+      - adresa: 'Janáčkova 27'
+      - adresa: 'Kolískova 9'
+      - adresa: 'Legionářů 2'
+      - adresa: 'Legionářů 22'
+      - adresa: 'Legionářů 24'
+      - adresa: 'Lesní 12'
+      - adresa: 'Lesní 14'
+      - adresa: 'Lesní 16'
+      - adresa: 'Marxova 23-25'
+      - adresa: 'Měšťanská 14'
+      - adresa: 'Měšťanská 16'
+      - adresa: 'Měšťanská 138'
+      - adresa: 'Nádražní řádek 10'
+      - adresa: 'Nádražní řádek 11'
+      - adresa: 'Nádražní řádek 27'
+      - adresa: 'Národní tř.61'
+      - adresa: 'Národní tř.63-65'
+      - adresa: 'Národní tř.92'
+      - adresa: 'Národní třída 94'
+      - adresa: 'Nesyt 1-3'
+      - adresa: 'Pánov 3132-3166'
+      - adresa: 'Pánov 3699-3700'
+      - adresa: 'Příční 9'
+      - adresa: 'P. Jilemnického 11-13'
+      - adresa: 'Rohatec, U Školky 47'
+      - adresa: 'Seifertova 4-6'
+      - adresa: 'Seifertova 12-14'
+      - adresa: 'Seifertova 7-9'
+      - adresa: 'Úprkova 1'
+      - adresa: 'Úprkova 3'
+      - adresa: 'Radniční 4'
+      - adresa: 'nám. Osvobození 4'
+  - cislo: '23'
+    barva: 'green'
+    spravce: 'Ing. Jaroňková'
     nemovitosti:
-      - adresa: "I. Olbrachta 2-4"
-      - adresa: "I. Olbrachta 6-8"
-      - adresa: "I. Olbrachta 10-12"
-      - adresa: "I. Olbrachta 14-16"
-      - adresa: "I. Olbrachta 1-3"
-      - adresa: "I. Olbrachta 9-11"
-      - adresa: "I. Olbrachta 13-15"
-      - adresa: "I. Olbrachta 17-19"
-      - adresa: "I. Olbrachta 21"
-      - adresa: "Horní Valy 1"
-      - adresa: "Horní Valy 3-5-7"
-      - adresa: "Horní Valy 9-11"
-      - adresa: "Čajkovského 44"
-      - adresa: "Skácelova 3-5"
-      - adresa: "Skácelova 7-9"
-      - adresa: "Skácelova 11-13"
-      - adresa: "Skácelova 19-21"
-      - adresa: "Sušilova 57, PV 22"
-      - adresa: "U Červených domků 6-8"
-      - adresa: "U Červených domků 18-20"
-      - adresa: "U Červených domků 26-28"
-      - adresa: "U Červených domků 30-32"
-      - adresa: "U Červených domků 34-36"
-      - adresa: "U Červených domků 1-3-5"
-      - adresa: "U Červených domků 7-9-11"
-      - adresa: "U Červených domků 13-15-17"
-      - adresa: "U Červených domků 19-21-23"
-      - adresa: "U Červených domků 25-27-29"
-      - adresa: "U Červených domků 31-33-35"
-      - adresa: "Žižkova 15"
-      - adresa: "NESVJ"
-      - adresa: "Miličova 6"
-      - adresa: "Brněnská 32"
-      - adresa: "Jarošova 24"
-      - adresa: "Jungmanova 1"
-      - adresa: "Purkyňova 4"
-      - adresa: "Sacharovova 25"
-  - cislo: "25"
-    barva: "blue"
-    spravce: "p. Kuglíková"
+      - adresa: 'I. Olbrachta 2-4'
+      - adresa: 'I. Olbrachta 6-8'
+      - adresa: 'I. Olbrachta 10-12'
+      - adresa: 'I. Olbrachta 14-16'
+      - adresa: 'I. Olbrachta 1-3'
+      - adresa: 'I. Olbrachta 9-11'
+      - adresa: 'I. Olbrachta 13-15'
+      - adresa: 'I. Olbrachta 17-19'
+      - adresa: 'I. Olbrachta 21'
+      - adresa: 'Horní Valy 1'
+      - adresa: 'Horní Valy 3-5-7'
+      - adresa: 'Horní Valy 9-11'
+      - adresa: 'Čajkovského 44'
+      - adresa: 'Skácelova 3-5'
+      - adresa: 'Skácelova 7-9'
+      - adresa: 'Skácelova 11-13'
+      - adresa: 'Skácelova 19-21'
+      - adresa: 'Sušilova 57, PV 22'
+      - adresa: 'U Červených domků 6-8'
+      - adresa: 'U Červených domků 18-20'
+      - adresa: 'U Červených domků 26-28'
+      - adresa: 'U Červených domků 30-32'
+      - adresa: 'U Červených domků 34-36'
+      - adresa: 'U Červených domků 1-3-5'
+      - adresa: 'U Červených domků 7-9-11'
+      - adresa: 'U Červených domků 13-15-17'
+      - adresa: 'U Červených domků 19-21-23'
+      - adresa: 'U Červených domků 25-27-29'
+      - adresa: 'U Červených domků 31-33-35'
+      - adresa: 'Žižkova 15'
+      - adresa: 'NESVJ'
+      - adresa: 'Miličova 6'
+      - adresa: 'Brněnská 32'
+      - adresa: 'Jarošova 24'
+      - adresa: 'Jungmanova 1'
+      - adresa: 'Purkyňova 4'
+      - adresa: 'Sacharovova 25'
+  - cislo: '25'
+    barva: 'blue'
+    spravce: 'p. Kuglíková'
     nemovitosti:
-      - adresa: "Anenská 2"
-      - adresa: "Anenská 4"
-      - adresa: "Brněnská 30"
-      - adresa: "Lesní 13-15-17"
-      - adresa: "Lesní 1-3-5"
-      - adresa: "Lesní 7-9-11"
-      - adresa: "Brandlova 30, Muchova 13"
+      - adresa: 'Anenská 2'
+      - adresa: 'Anenská 4'
+      - adresa: 'Brněnská 30'
+      - adresa: 'Lesní 13-15-17'
+      - adresa: 'Lesní 1-3-5'
+      - adresa: 'Lesní 7-9-11'
+      - adresa: 'Brandlova 30, Muchova 13'
 bytova_druzstva:
-  - nazev: "Pastelky"
-  - nazev: "Lípa"
-  - nazev: "Kaštany"
+  - nazev: 'Pastelky'
+  - nazev: 'Lípa'
+  - nazev: 'Kaštany'

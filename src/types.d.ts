@@ -176,23 +176,22 @@ export interface Property {
 }
 
 export interface Office {
-  cislo: string;       
-  spravce: string;     
-  barva: string;       
-  nemovitosti: Property[];  
+  cislo: string;
+  spravce: string;
+  barva: string;
+  nemovitosti: Property[];
 }
 
 export interface HousingAssociation {
-  nazev: string; 
+  nazev: string;
 }
 
 export interface ContentData {
-  titulek: string;                   
-  podtitulek: string;     
-  kancelare: Office[];         
+  titulek: string;
+  podtitulek: string;
+  kancelare: Office[];
   bytova_druzstva: HousingAssociation[];
 }
-
 
 // COMPONENTS
 export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {

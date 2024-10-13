@@ -8,13 +8,18 @@ const metadata = {
   title: content ? content.titulek : 'Rozdělení SVJ',
 };
 
-function getBgColor(color) {
+function getBgColor(color: string) {
   switch (color) {
-    case 'pink': return 'bg-pink-300';
-    case 'yellow': return 'bg-yellow-300';
-    case 'green': return 'bg-green-300';
-    case 'blue': return 'bg-blue-300';
-    default: return '';
+    case 'pink':
+      return 'bg-pink-300';
+    case 'yellow':
+      return 'bg-yellow-300';
+    case 'green':
+      return 'bg-green-300';
+    case 'blue':
+      return 'bg-blue-300';
+    default:
+      return '';
   }
 }
 ---
@@ -25,72 +30,69 @@ function getBgColor(color) {
       Seznam správců a přiřazených nemovitostí <br />
     </Fragment>
     <Fragment slot="subtitle">
-      Jednotlivé společenství vlastníků (SVJ) jsme rozdělili na 6 okruhů. Toto rozdělení jsme provedli pro zjednodušení a přehlednost.
+      Jednotlivé společenství vlastníků (SVJ) jsme rozdělili na 6 okruhů. Toto rozdělení jsme provedli pro zjednodušení
+      a přehlednost.
     </Fragment>
   </Hero>
 
-  {content ? (
-    <div class="container mx-auto mb-20 2xl:-mt-60 px-4 sm:px-6 lg:px-8 z-10 relative">
-      <div class="overflow-x-auto">
-        <table class="min-w-full table-auto text-left">
-          <thead class="hidden md:table-header-group bg-gray-100 dark:bg-gray-800 border-b-2 rounded-lg">
-            <tr>
-              {content.kancelare?.map((kancelar) => (
-                <th scope="col" class="p-4 text-center text-md font-medium align-top">
-                  <div>Kancelář č. {kancelar.cislo}</div>
-                  <div class={`rounded-lg font-semibold dark:text-black ${getBgColor(kancelar.barva)}`}>
-                    {kancelar.spravce}
-                  </div>
-                </th>
-              ))}
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr class="block md:table-row align-top">
-              {content.kancelare?.map((kancelar, index) => (
-                <td class="p-4 align-top block md:table-cell border-t dark:border-gray-700">
-                  <span class={`rounded-lg font-bold md:hidden ${getBgColor(kancelar.barva)}`}>
-                    Kancelář č. {kancelar.cislo} ({kancelar.spravce}):
-                  </span>
-                  {kancelar.nemovitosti?.map((nemovitost) => (
-                    <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">
-                      {nemovitost.adresa === "NESVJ" ? (
-                        <strong>{nemovitost.adresa}</strong>
-                      ) : (
-                        nemovitost.adresa
-                      )}
+  {
+    content ? (
+      <div class="container mx-auto mb-20 2xl:-mt-60 px-4 sm:px-6 lg:px-8 z-10 relative">
+        <div class="overflow-x-auto">
+          <table class="min-w-full table-auto text-left">
+            <thead class="hidden md:table-header-group bg-gray-100 dark:bg-gray-800 border-b-2 rounded-lg">
+              <tr>
+                {content.kancelare?.map((kancelar) => (
+                  <th scope="col" class="p-4 text-center text-md font-medium align-top">
+                    <div>Kancelář č. {kancelar.cislo}</div>
+                    <div class={`rounded-lg font-semibold dark:text-black ${getBgColor(kancelar.barva)}`}>
+                      {kancelar.spravce}
                     </div>
-                  ))}
+                  </th>
+                ))}
+              </tr>
+            </thead>
 
-                  {index === content.kancelare.length - 1 && content.bytova_druzstva && (
-                    <div class="mt-4">
-                      <table class="min-w-full text-left">
-                        <thead>
-                          <tr>
-                            <th class="font-bold text-lg">Bytová družstva</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {content.bytova_druzstva.map((druzstvo) => (
+            <tbody>
+              <tr class="block md:table-row align-top">
+                {content.kancelare?.map((kancelar, index) => (
+                  <td class="p-4 align-top block md:table-cell border-t dark:border-gray-700">
+                    <span class={`rounded-lg font-bold md:hidden ${getBgColor(kancelar.barva)}`}>
+                      Kancelář č. {kancelar.cislo} ({kancelar.spravce}):
+                    </span>
+                    {kancelar.nemovitosti?.map((nemovitost) => (
+                      <div class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">
+                        {nemovitost.adresa === 'NESVJ' ? <strong>{nemovitost.adresa}</strong> : nemovitost.adresa}
+                      </div>
+                    ))}
+
+                    {index === content.kancelare.length - 1 && content.bytova_druzstva && (
+                      <div class="mt-4">
+                        <table class="min-w-full text-left">
+                          <thead>
                             <tr>
-                              <td class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">
-                                {druzstvo.nazev}
-                              </td>
+                              <th class="font-bold text-lg">Bytová družstva</th>
                             </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
-                </td>
-              ))}
-            </tr>
-          </tbody>
-        </table>
+                          </thead>
+                          <tbody>
+                            {content.bytova_druzstva.map((druzstvo) => (
+                              <tr>
+                                <td class="hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg">{druzstvo.nazev}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  ) : (
-    <p class="text-center text-red-500">Data se nepodařilo načíst.</p>
-  )}
+    ) : (
+      <p class="text-center text-red-500">Data se nepodařilo načíst.</p>
+    )
+  }
 </Layout>

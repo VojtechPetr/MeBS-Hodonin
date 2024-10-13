@@ -44,10 +44,8 @@ collections:
           - label: 'Nemovitosti'
             name: 'nemovitosti'
             widget: 'list'
-            field:
-              { label: 'Adresa', name: 'adresa', widget: 'string' }
+            field: { label: 'Adresa', name: 'adresa', widget: 'string' }
       - label: 'Bytová Družstva'
         name: 'bytova_druzstva'
         widget: 'list'
-        field:
-          { label: 'Název', name: 'nazev', widget: 'string' }
+        field: { label: 'Název', name: 'nazev', widget: 'string' }

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import yaml from 'js-yaml';
 import path from 'path';
-import type { ContentData } from '~/types'; 
+import type { ContentData } from '~/types';
 
 export async function getContent(fileName: string): Promise<ContentData | null> {
   try {

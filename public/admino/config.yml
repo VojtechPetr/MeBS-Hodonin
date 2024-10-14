@@ -65,7 +65,6 @@ collections:
         name: 'soubory'
         widget: 'list'
         fields:
-          - { label: 'Název souboru', name: 'title', widget: 'string' }
           - { label: 'Soubor', name: 'file', widget: 'file', media_folder: 'public/assets/files/bd-kastany', public_folder: '/assets/files/bd-kastany' }
 
   - label: 'Dokumenty BD Pastelky'

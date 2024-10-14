@@ -2,8 +2,9 @@
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { getContent } from '~/utils/getContent';
+import type { ContentData } from '~/types';
 
-const content = await getContent('editable/rozdeleni-svj');
+const content = await getContent<ContentData>('rozdeleni-svj');
 const metadata = {
   title: content ? content.titulek : 'Rozdělení SVJ',
 };
@@ -66,7 +67,7 @@ function getBgColor(color: string) {
                       </div>
                     ))}
 
-                    {index === content.kancelare.length - 1 && content.bytova_druzstva && (
+                    {index === (content.kancelare?.length || 0) - 1 && content.bytova_druzstva && (
                       <div class="mt-4">
                         <table class="min-w-full text-left">
                           <thead>

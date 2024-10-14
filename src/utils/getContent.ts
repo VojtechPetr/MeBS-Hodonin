@@ -1,13 +1,15 @@
 import fs from 'fs';
 import yaml from 'js-yaml';
 import path from 'path';
-import type { ContentData } from '~/types';
+import type { ContentData, KontaktyData } from '~/types';
 
-export async function getContent(fileName: string): Promise<ContentData | null> {
+type AvailableDataTypes = ContentData | KontaktyData;
+
+export async function getContent<T extends AvailableDataTypes>(fileName: string): Promise<T | null> {
   try {
-    const filePath = path.join(process.cwd(), 'src/content', `${fileName}.yml`);
+    const filePath = path.join(process.cwd(), 'src/content/editable', `${fileName}.yml`);
     const fileContents = fs.readFileSync(filePath, 'utf8');
-    const data = yaml.load(fileContents) as ContentData;
+    const data = yaml.load(fileContents) as T;
     return data;
   } catch (error) {
     console.error(`Error loading content from ${fileName}:`, error);

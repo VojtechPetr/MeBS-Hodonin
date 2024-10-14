@@ -187,10 +187,14 @@ export interface HousingAssociation {
 }
 
 export interface ContentData {
-  titulek: string;
-  podtitulek: string;
-  kancelare: Office[];
-  bytova_druzstva: HousingAssociation[];
+  titulek?: string;
+  podtitulek?: string;
+  kancelare?: Office[];
+  bytova_druzstva?: HousingAssociation[];
+}
+
+export interface KontaktyData {
+  departments: Department[];
 }
 
 // COMPONENTS

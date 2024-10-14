@@ -1,0 +1,31 @@
+---
+title: Dokumenty BD Pastelky
+soubory:
+  - file: zápis-z-rozhodnutí-per-rollam-účetní-závěrka-2020.pdf
+  - file: zápis-z-členské-schůze-družstva-pastelky-ze-dne-3.-11.-2021.pdf
+  - file: výsledovka-2020-pastelky.pdf
+  - file: usnesení-z-náhradní-členské-schůze-26.-6.-2019-pastelky.pdf
+  - file: usnesení-z-členské-schůze-ze-dne-30.-1.-2024.pdf
+  - file: usnesení-z-členské-schůze-29.-6.-2020-pastelky.pdf
+  - file: usnesení-z-členské-schůze-8.-6.-2022-pastelky.pdf
+  - file: usnesení-členské-schůze-ze-dne-30.-5.-2023.pdf
+  - file: usnesení-členské-schůze-ze-dne-29.-4.-2024-pastelky.pdf
+  - file: usnesení-čl.-schůze-ze-dne-21.-6.-2023.pdf
+  - file: stanovy-sbd-pastelky.pdf
+  - file: rozvaha-2020-pastelky.pdf
+  - file: rozhodnutí-zastupitelstva-města-dar.-smlouva-15.-3.-2023.pdf
+  - file: pozvánka-na-členskou-schůzi-družstva-pastelky-30.-1.-2024.pdf
+  - file: příloha-k-účetní-závěrce-2020.pdf
+  - file: pozvánka-na-členskou-schůzi-pastelky-29.-4.-2024.pdf
+  - file: pozvánka-na-členskou-schůzi-pastelky-10.-9.-2024.pdf
+  - file: pastelky-smlouva-o-budoucí-darovací-smlouvě.pdf
+  - file: pastelky-změna-stanov-pro-členskou-schůzi-dne-30.-5.-2023.pdf
+  - file: pastelky-pozvánka-na-členskou-schůzi-dne-21.-6.-2023.pdf
+  - file: pastelky-stanovy-schválené-dne-30.-5.-2023.pdf
+  - file: oznámení-o-výsledky-hlasování-per-rollam-6-2021-hv-za-rok-2020-.pdf
+  - file: oznámení-o-výsledky-hlasování-per-rollam-6-2021-hv-za-rok-2020-.pdf
+  - file: oznámení-o-výsledku-hlasování-per-rollam-05-2021.pdf
+  - file: ochrana-osobních-údajů-gdpr-družstvo-pastelky.pdf
+  - file: informace-pro-členy-družstva-a-klienty-gdpr-družstvo-pastelky.pdf
+  - file: darovací-smlouva-město-hodonín-pastelky.pdf
+---

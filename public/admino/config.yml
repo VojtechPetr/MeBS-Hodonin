@@ -61,21 +61,123 @@ collections:
     media_folder: ''
     public_folder: ''
     fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
-          - { label: 'Název souboru', name: 'title', widget: 'string' }
+          - { label: 'Soubor', name: 'file', widget: 'file' }
+
+  - label: 'Dokumenty BD Lípa'
+    name: 'bd_lipa'
+    folder: 'public/assets/files/bd-lipa'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
+      - label: 'Soubory'
+        name: 'soubory'
+        widget: 'list'
+        fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
 
   - label: 'Dokumenty BD Pastelky'
     name: 'bd_pastelky'
-    media_folder: 'public/assets/files/bd-pastelky'
-    public_folder: '/assets/files/bd-pastelky'
-    files:
+    folder: 'public/assets/files/bd-pastelky'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
       - label: 'Soubory'
         name: 'soubory'
-        file: ''
+        widget: 'list'
         fields:
-          - { label: 'Název', name: 'name', widget: 'string' }
+          - { label: 'Soubor', name: 'file', widget: 'file' }
+
+  - label: 'Dokumenty Bytová Údržba'
+    name: 'bytova_udrzba'
+    folder: 'public/assets/files/bytova-udrzba'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
+      - label: 'Soubory'
+        name: 'soubory'
+        widget: 'list'
+        fields:
+          - { label: 'Soubor', name: 'file', widget: 'file' }
+
+  - label: 'Dokumenty Obecné Dokumenty'
+    name: 'obecne_dokumenty'
+    folder: 'public/assets/files/obecne-dokumenty'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
+      - label: 'Soubory'
+        name: 'soubory'
+        widget: 'list'
+        fields:
+          - { label: 'Soubor', name: 'file', widget: 'file' }
+
+  - label: 'Dokumenty Pro Zaměstnance'
+    name: 'pro_zamestnance'
+    folder: 'public/assets/files/pro-zamestnance'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
+      - label: 'Soubory'
+        name: 'soubory'
+        widget: 'list'
+        fields:
+          - { label: 'Soubor', name: 'file', widget: 'file' }
+
+  - label: 'Dokumenty Správa Prod. Bytů'
+    name: 'sprava_prodanych_bytu'
+    folder: 'public/assets/files/sprava-prodanych-bytu'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
+      - label: 'Soubory'
+        name: 'soubory'
+        widget: 'list'
+        fields:
+          - { label: 'Soubor', name: 'file', widget: 'file' }
+
+  - label: 'Dokumenty Tepelné Hospodářství'
+    name: 'tepelne_hospodarstvi'
+    folder: 'public/assets/files/tepelne-hospodarstvi'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - label: 'Název dokumentu'
+        name: 'title'
+        widget: 'string'
+      - label: 'Soubory'
+        name: 'soubory'
+        widget: 'list'
+        fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }

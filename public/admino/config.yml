@@ -3,7 +3,6 @@ backend:
   repo: VojtechPetr/MeBS-Hodonin
   branch: main
 
-
 media_folder: 'public/assets/images'
 public_folder: 'src/assets/images'
 
@@ -23,7 +22,7 @@ collections:
           allow_add: true,
           allow_delete: true,
           collapsed: false,
-          field: { label: 'Tag', name: 'tag', widget: 'string' }
+          field: { label: 'Tag', name: 'tag', widget: 'string' },
         }
       - { label: 'Image', name: 'image', widget: 'string' }
       - { label: 'Publish Date', name: 'publishDate', widget: 'datetime', required: false }
@@ -54,7 +53,7 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Název', name: 'nazev', widget: 'string' }
-              
+
   - label: 'Dokumenty BD Kaštany'
     name: 'bd_kastany'
     folder: 'public/assets/files/bd-kastany'
@@ -63,7 +62,6 @@ collections:
     public_folder: '/assets/files/bd-kastany'
     fields:
       - { label: 'Soubory', name: 'file', widget: 'file', media_folder: '', public_folder: '' }
-
 
   - label: 'Dokumenty BD Pastelky'
     name: 'bd_pastelky'

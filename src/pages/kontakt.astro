@@ -35,8 +35,6 @@ const kontakty = await getContent<KontaktyData>('kontakty');
   </div>
 
   <div class="max-w-7xl m-auto px-4 sm:px-0">
-    {kontakty && (
-      <Features21 structure={kontakty.departments} />
-    )}
+    {kontakty && <Features21 structure={kontakty.departments} />}
   </div>
 </Layout>

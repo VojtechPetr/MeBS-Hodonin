@@ -4,8 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import { getContent } from '~/utils/getContent';
 import type { ContentData } from '~/types';
 
-
-const content = await getContent<ContentData>('rozdeleni-svj')
+const content = await getContent<ContentData>('rozdeleni-svj');
 const metadata = {
   title: content ? content.titulek : 'Rozdělení SVJ',
 };

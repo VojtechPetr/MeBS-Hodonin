@@ -54,6 +54,22 @@ collections:
             fields:
               - { label: 'Název', name: 'nazev', widget: 'string' }
 
+  - name: 'cenik'
+    label: 'Ceník'
+    files:
+      - label: 'Ceník 2024'
+        name: 'cenik_2024'
+        file: 'src/content/editable/cenik.yml'
+        format: 'yml'
+        fields:
+          - label: 'Položky ceníku'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Název služby', name: 'service', widget: 'string' }
+              - { label: 'MěBS (částka)', name: 'price', widget: 'string' }
+              - { label: 'Cena s DPH', name: 'price_with_tax', widget: 'string' }
+
   - label: 'Dokumenty BD Kaštany'
     name: 'bd_kastany'
     folder: 'public/assets/files/bd-kastany'

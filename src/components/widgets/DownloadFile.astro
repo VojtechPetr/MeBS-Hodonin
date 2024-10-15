@@ -17,7 +17,7 @@ const { documents } = Astro.props;
   <ul class="space-y-4">
     {
       documents
-        .filter(doc => !doc.url.endsWith('.md'))
+        .filter((doc) => !doc.url.endsWith('.md'))
         .map((doc) => (
           <li class="p-4 border rounded-lg shadow-sm flex justify-between items-center">
             <div>

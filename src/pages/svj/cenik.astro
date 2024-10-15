@@ -1,10 +1,15 @@
 ---
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { getContent } from '~/utils/getContent';
+import type { CenikData } from '~/types';
 
 const metadata = {
   title: 'Ceník 2024 SVJ nad rámec smluv',
 };
+
+const cenikData = await getContent<CenikData>('cenik');
+const items = cenikData?.items ?? [];
 ---
 
 <Layout metadata={metadata}>
@@ -40,103 +45,20 @@ const metadata = {
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800">
-            <td class="p-4 align-top">Vyřízení stavebního povolení</td>
-            <td class="p-4 align-top">4 871 Kč</td>
-            <td class="p-4 align-top">5 894 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Výběrové řízení na 1 dodavatele</td>
-            <td class="p-4 align-top">zdarma</td>
-            <td class="p-4 align-top">zdarma</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Výběrové řízení na více dodavatelů</td>
-            <td class="p-4 align-top">3 653 Kč</td>
-            <td class="p-4 align-top">4 420 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Technický dozor 0,25%, minimálně</td>
-            <td class="p-4 align-top">12 177 Kč</td>
-            <td class="p-4 align-top">14 734 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Změny předpisů úhrad služeb</td>
-            <td class="p-4 align-top">zdarma</td>
-            <td class="p-4 align-top">zdarma</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Zajištění úvěrů, zpracování podkladů pro výběrové řízení a uzavření úvěru</td>
-            <td class="p-4 align-top">4 871 Kč</td>
-            <td class="p-4 align-top">5 894 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Kalkulace nákladů na opravy většího rozsahu a revitalizace jednotlivých bytů</td>
-            <td class="p-4 align-top">zdarma</td>
-            <td class="p-4 align-top">zdarma</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Rozúčtování dotací za rok zpětně, včetně zasílání podkladů na ČMZRB a.s.</td>
-            <td class="p-4 align-top">zdarma</td>
-            <td class="p-4 align-top">zdarma</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Ekonomické a organizační zabezpečení vzniku SVJ</td>
-            <td class="p-4 align-top">3 044 Kč</td>
-            <td class="p-4 align-top">3 684 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Poplatek za zaslání upomínky</td>
-            <td class="p-4 align-top">75 Kč</td>
-            <td class="p-4 align-top">91 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Odměna za obstarávání jednotek</td>
-            <td class="p-4 align-top">dle smluv*</td>
-            <td class="p-4 align-top">dle smluv*</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Odměna za profi předsedu SVJ</td>
-            <td class="p-4 align-top">od 119 Kč/byt/měs</td>
-            <td class="p-4 align-top">od 144 Kč/byt/měs</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top"
-              >Poplatek za vystavení potvrzení o bezdlužnosti bytové jednotky ve vlastnictví osob</td
-            >
-            <td class="p-4 align-top">122 Kč</td>
-            <td class="p-4 align-top">147 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Poplatek za vklad v hotovosti na pokladně - 1x měsíčně</td>
-            <td class="p-4 align-top">zdarma</td>
-            <td class="p-4 align-top">zdarma</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Poplatek za proplácení v hotovosti - 1x měsíčně</td>
-            <td class="p-4 align-top">zdarma</td>
-            <td class="p-4 align-top">zdarma</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Poplatek za další proplácení v hotovosti za měsíc</td>
-            <td class="p-4 align-top">12 Kč</td>
-            <td class="p-4 align-top">15 Kč</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Poplatek za zpracování pozvánky na shromáždění vlastníků</td>
-            <td class="p-4 align-top">zdarma</td>
-            <td class="p-4 align-top">zdarma</td>
-          </tr>
-          <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 rounded-lg">
-            <td class="p-4 align-top">Příprava podkladů pro zápis změny do rejstříku SVJ (změna statutárního orgánu)</td
-            >
-            <td class="p-4 align-top">554 Kč/h**</td>
-            <td class="p-4 align-top">670 Kč/h**</td>
-          </tr>
+          {
+            items.map((item) => (
+              <tr class="border-b border-gray-200 hover:bg-gray-300 dark:border-gray-800 dark:hover:bg-gray-800 transition duration-300 ease-in-out">
+                <td class="p-4 align-top">{item.service}</td>
+                <td class="p-4 align-top">{item.price}</td>
+                <td class="p-4 align-top">{item.price_with_tax}</td>
+              </tr>
+            ))
+          }
         </tbody>
       </table>
     </div>
   </div>
+
   <div class="container max-w-5xl my-8 mx-auto px-4 sm:px-6 lg:px-8">
     <p class="text-sm">* 181,7 Kč/měs/jednotka</p>
     <p class="text-sm">** Netýká se SVJ, kde MěBS vykonává funkci předsedy společenství</p>

@@ -53,3 +53,6 @@ items:
   - service: 'Příprava podkladů pro zápis změny do rejstříku SVJ (změna statutárního orgánu)'
     price: '554 Kč/h**'
     price_with_tax: '670 Kč/h**'
+footer_text_1: '* 181,7 Kč/měs/jednotka'
+footer_text_2: '** Netýká se SVJ, kde MěBS vykonává funkci předsedy společenství'
+footer_text_3: 'Všechny ceny bez DPH'

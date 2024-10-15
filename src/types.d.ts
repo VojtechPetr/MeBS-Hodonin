@@ -197,15 +197,16 @@ export interface KontaktyData {
   departments: Department[];
 }
 
-export interface CenikItem {
-  service: string;
-  price: string;
-  price_with_tax: string;
-}
-
-export interface CenikData {
-  items: CenikItem[];
-}
+export type CenikData = {
+  items: {
+    service: string;
+    price: string;
+    price_with_tax: string;
+  }[];
+  footer_text_1: string;
+  footer_text_2: string;
+  footer_text_3: string;
+};
 
 // COMPONENTS
 export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {

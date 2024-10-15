@@ -10,6 +10,9 @@ const metadata = {
 
 const cenikData = await getContent<CenikData>('cenik');
 const items = cenikData?.items ?? [];
+const footerText1 = cenikData?.footer_text_1 ?? '* 181,7 Kč/měs/jednotka';
+const footerText2 = cenikData?.footer_text_2 ?? '** Netýká se SVJ, kde MěBS vykonává funkci předsedy společenství';
+const footerText3 = cenikData?.footer_text_3 ?? 'Všechny ceny bez DPH';
 ---
 
 <Layout metadata={metadata}>
@@ -60,8 +63,8 @@ const items = cenikData?.items ?? [];
   </div>
 
   <div class="container max-w-5xl my-8 mx-auto px-4 sm:px-6 lg:px-8">
-    <p class="text-sm">* 181,7 Kč/měs/jednotka</p>
-    <p class="text-sm">** Netýká se SVJ, kde MěBS vykonává funkci předsedy společenství</p>
-    <p class="text-md font-bold mt-6 mb-24">Všechny ceny bez DPH</p>
+    <p class="text-sm">{footerText1}</p>
+    <p class="text-sm">{footerText2}</p>
+    <p class="text-md font-bold mt-6 mb-24">{footerText3}</p>
   </div>
 </Layout>

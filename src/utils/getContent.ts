@@ -3,7 +3,7 @@ import yaml from 'js-yaml';
 import path from 'path';
 import type { ContentData, KontaktyData, CenikData, AkceData, TeploData } from '~/types';
 
-type AvailableDataTypes = ContentData | KontaktyData | CenikData | AkceData |TeploData;
+type AvailableDataTypes = ContentData | KontaktyData | CenikData | AkceData | TeploData;
 
 export async function getContent<T extends AvailableDataTypes>(fileName: string): Promise<T | null> {
   try {

@@ -1,9 +1,9 @@
 import fs from 'fs';
 import yaml from 'js-yaml';
 import path from 'path';
-import type { ContentData, KontaktyData, CenikData, AkceData, TeploData } from '~/types';
+import type { ContentData, KontaktyData, CenikData, AkceData, TeploData, SVJKontaktyData } from '~/types';
 
-type AvailableDataTypes = ContentData | KontaktyData | CenikData | AkceData | TeploData;
+type AvailableDataTypes = ContentData | KontaktyData | CenikData | AkceData | TeploData | SVJKontaktyData;
 
 export async function getContent<T extends AvailableDataTypes>(fileName: string): Promise<T | null> {
   try {

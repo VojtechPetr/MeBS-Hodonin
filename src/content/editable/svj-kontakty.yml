@@ -1,0 +1,126 @@
+contacts:
+  - name: 'Pavel Schöndorf'
+    title: 'Vedoucí'
+    icon: 'tabler:crown'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 528, 723 154 227'
+      - type: 'email'
+        value: 'schondorf@bytovka.cz'
+
+  - name: 'Mgr. Eva Holá'
+    title: 'Právník'
+    icon: 'tabler:section-sign'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 515'
+      - type: 'email'
+        value: 'hola@bytovka.cz'
+
+  - name: 'Michal Hedrich'
+    title: 'Technik'
+    icon: 'tabler:tools'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 519, 606 648 953'
+      - type: 'email'
+        value: 'hedrich@bytovka.cz'
+
+  - name: 'Aleš Bábíček'
+    title: 'Technik'
+    icon: 'tabler:tools'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 526, 606 387 498'
+      - type: 'email'
+        value: 'babicek@bytovka.cz'
+
+  - name: 'Jiří Foltýn'
+    title: 'Technik'
+    icon: 'tabler:tools'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 540, 724 986 064'
+      - type: 'email'
+        value: 'foltyn@bytovka.cz'
+
+  - name: 'Ing. Dana Jaroňková'
+    title: 'Vedoucí účetní'
+    icon: 'tabler:user-dollar'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 537, 724 358 677'
+      - type: 'email'
+        value: 'jaronkova@bytovka.cz'
+
+  - name: 'Jana Králová'
+    title: 'Účetní'
+    icon: 'tabler:calculator'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 531, 724 118 869'
+      - type: 'email'
+        value: 'kralova@bytovka.cz'
+
+  - name: 'Hana Svatošová'
+    title: 'Účetní'
+    icon: 'tabler:calculator'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 534, 724 755 322'
+      - type: 'email'
+        value: 'svatosova@bytovka.cz'
+
+  - name: 'Dana Zaorálková'
+    title: 'Účetní'
+    icon: 'tabler:calculator'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 541, 602 552 758'
+      - type: 'email'
+        value: 'zaoralkova@bytovka.cz'
+
+  - name: 'Iva Kuglíková'
+    title: 'Účetní'
+    icon: 'tabler:calculator'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 535, 725 796 491'
+      - type: 'email'
+        value: 'kuglikova@bytovka.cz'
+
+  - name: 'Jana Štylárková'
+    title: 'Účetní'
+    icon: 'tabler:calculator'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 540, 725 788 731'
+      - type: 'email'
+        value: 'stylarkova@bytovka.cz'
+
+  - name: 'Bc. Lenka Holá, BA'
+    title: 'Účetní - PROFI'
+    icon: 'tabler:calculator'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 517, 607 804 188'
+      - type: 'email'
+        value: 'lenka.hola@bytovka.cz'
+
+  - name: 'Zuzana Adamcová'
+    title: 'Účetní – PROFI, technik, projekce'
+    icon: 'tabler:calculator'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 513, 736 624 070'
+      - type: 'email'
+        value: 'adamcova@bytovka.cz'
+
+  - name: 'Ing. Zdeňka Drutarovská'
+    title: 'Bytová družstva'
+    icon: 'tabler:building-community'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 535'
+      - type: 'email'
+        value: 'drutarovska@bytovka.cz'

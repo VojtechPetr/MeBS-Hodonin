@@ -334,6 +334,10 @@ export interface ContactInfo {
   value?: string;
 }
 
+export interface SVJKontaktyData {
+  contacts: Contact[];
+}
+
 export interface Contact {
   name?: string;
   title?: string;

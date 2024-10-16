@@ -115,11 +115,33 @@ collections:
                         name: 'value'
                         widget: 'string'
 
+  #kontakty svj
+  - name: 'svj-kontakty'
+    label: 'Kontakty SVJ'
+    folder: 'src/content/editable'
+    create: true
+    format: 'yml'
+    filter: { field: 'type', value: 'contact' }
+    fields:
+      - label: 'Kontakty'
+        name: 'contacts'
+        widget: 'list'
+        fields:
+          - { label: 'Jméno', name: 'name', widget: 'string' }
+          - { label: 'Pozice', name: 'title', widget: 'string' }
+          - { label: 'Ikona', name: 'icon', widget: 'string' }
+          - label: 'Kontaktní informace'
+            name: 'contactInfo'
+            widget: 'list'
+            fields:
+              - { label: 'Typ', name: 'type', widget: 'select', options: ['phone', 'email'] }
+              - { label: 'Hodnota', name: 'value', widget: 'string' }
+
   #udrzba
-  - label: 'Realizované akce'
+  - label: 'Udržba'
     name: 'realizovane_akce'
     files:
-      - label: 'Udržba - realizované akce 20XX'
+      - label: 'Realizované akce 20XX'
         name: 'realizovane_akce_2024'
         file: 'src/content/editable/udrzba.yml'
         fields:
@@ -137,45 +159,48 @@ collections:
   #teplo
   - name: 'teplo'
     label: 'Tepelné hospodářství'
-    file: 'src/content/editable/teplo.yml'
-    fields:
-      - label: 'Plánované opravy'
-        name: 'planned_repairs'
-        widget: 'object'
+    files:
+      - label: 'Tepelné hospodářství'
+        name: 'teplo'
+        file: 'src/content/editable/teplo.yml'
         fields:
-          - { label: 'Titul', name: 'title', widget: 'string' }
-          - { label: 'Podtitul', name: 'subtitle', widget: 'string' }
-          - label: 'Položky'
-            name: 'items'
-            widget: 'list'
+          - label: 'Plánované opravy'
+            name: 'planned_repairs'
+            widget: 'object'
             fields:
               - { label: 'Titul', name: 'title', widget: 'string' }
-              - { label: 'Ikona', name: 'icon', widget: 'string' }
+              - { label: 'Podtitul', name: 'subtitle', widget: 'string' }
+              - label: 'Položky'
+                name: 'items'
+                widget: 'list'
+                fields:
+                  - { label: 'Titul', name: 'title', widget: 'string' }
+                  - { label: 'Ikona', name: 'icon', widget: 'string' }
 
-      - label: 'Průběh topné sezóny'
-        name: 'heating_season'
-        widget: 'object'
-        fields:
-          - { label: 'Titul', name: 'title', widget: 'string' }
-          - label: 'Položky'
-            name: 'items'
-            widget: 'list'
+          - label: 'Průběh topné sezóny'
+            name: 'heating_season'
+            widget: 'object'
             fields:
-              - { label: 'Popis', name: 'description', widget: 'markdown' }
-              - { label: 'Ikona', name: 'icon', widget: 'string' }
+              - { label: 'Titul', name: 'title', widget: 'string' }
+              - label: 'Položky'
+                name: 'items'
+                widget: 'list'
+                fields:
+                  - { label: 'Popis', name: 'description', widget: 'markdown' }
+                  - { label: 'Ikona', name: 'icon', widget: 'string' }
 
-      - label: 'Tvorba cen tepla'
-        name: 'pricing'
-        widget: 'object'
-        fields:
-          - { label: 'Titul', name: 'title', widget: 'string' }
-          - label: 'Položky'
-            name: 'items'
-            widget: 'list'
+          - label: 'Tvorba cen tepla'
+            name: 'pricing'
+            widget: 'object'
             fields:
-              - { label: 'Titul', name: 'title', widget: 'string', required: false }
-              - { label: 'Popis', name: 'description', widget: 'markdown' }
-              - { label: 'Ikona', name: 'icon', widget: 'string' }
+              - { label: 'Titul', name: 'title', widget: 'string' }
+              - label: 'Položky'
+                name: 'items'
+                widget: 'list'
+                fields:
+                  - { label: 'Titul', name: 'title', widget: 'string', required: false }
+                  - { label: 'Popis', name: 'description', widget: 'markdown' }
+                  - { label: 'Ikona', name: 'icon', widget: 'string' }
 
   #dokumenty
   - label: 'Dokumenty BD Kaštany'

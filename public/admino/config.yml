@@ -29,6 +29,7 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Content', name: 'body', widget: 'markdown' }
 
+  #rozdeleni SVJ
   - label: 'Rozdělení SVJ'
     name: 'rozdeleni_svj'
     files:
@@ -54,6 +55,7 @@ collections:
             fields:
               - { label: 'Název', name: 'nazev', widget: 'string' }
 
+  #cenik
   - name: 'cenik'
     label: 'Ceník'
     files:
@@ -70,6 +72,112 @@ collections:
               - { label: 'MěBS (částka)', name: 'price', widget: 'string' }
               - { label: 'Cena s DPH', name: 'price_with_tax', widget: 'string' }
 
+  #kontakty
+  - label: 'Kontakty'
+    name: 'kontakty'
+    files:
+      - label: 'Kontakty'
+        name: 'kontakty'
+        file: 'src/content/editable/kontakty.yml'
+        fields:
+          - label: 'Oddělení'
+            name: 'departments'
+            widget: 'list'
+            fields:
+              - label: 'Název oddělení'
+                name: 'department'
+                widget: 'string'
+              - label: 'Kontakty'
+                name: 'contacts'
+                widget: 'list'
+                fields:
+                  - label: 'Titul'
+                    name: 'name'
+                    widget: 'string'
+                  - label: 'Jméno'
+                    name: 'title'
+                    widget: 'string'
+                    required: false
+                  - label: 'Ikona'
+                    name: 'icon'
+                    widget: 'string'
+                  - label: 'Kontaktní informace'
+                    name: 'contactInfo'
+                    widget: 'list'
+                    fields:
+                      - label: 'Typ'
+                        name: 'type'
+                        widget: 'select'
+                        options:
+                          - { label: 'Telefon', value: 'phone' }
+                          - { label: 'Email', value: 'email' }
+                      - label: 'Hodnota'
+                        name: 'value'
+                        widget: 'string'
+
+  #udrzba
+  - label: 'Realizované akce'
+    name: 'realizovane_akce'
+    files:
+      - label: 'Udržba - realizované akce 20XX'
+        name: 'realizovane_akce_2024'
+        file: 'src/content/editable/udrzba.yml'
+        fields:
+          - label: 'Titul'
+            name: 'title'
+            widget: 'string'
+          - label: 'Položky'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - label: 'Titul položky'
+                name: 'title'
+                widget: 'string'
+
+  #teplo
+  - name: 'teplo'
+    label: 'Tepelné hospodářství'
+    file: 'src/content/editable/teplo.yml'
+    fields:
+      - label: 'Plánované opravy'
+        name: 'planned_repairs'
+        widget: 'object'
+        fields:
+          - { label: 'Titul', name: 'title', widget: 'string' }
+          - { label: 'Podtitul', name: 'subtitle', widget: 'string' }
+          - label: 'Položky'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Titul', name: 'title', widget: 'string' }
+              - { label: 'Ikona', name: 'icon', widget: 'string' }
+
+      - label: 'Průběh topné sezóny'
+        name: 'heating_season'
+        widget: 'object'
+        fields:
+          - { label: 'Titul', name: 'title', widget: 'string' }
+          - label: 'Položky'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Popis', name: 'description', widget: 'markdown' }
+              - { label: 'Ikona', name: 'icon', widget: 'string' }
+
+      - label: 'Tvorba cen tepla'
+        name: 'pricing'
+        widget: 'object'
+        fields:
+          - { label: 'Titul', name: 'title', widget: 'string' }
+          - label: 'Položky'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Titul', name: 'title', widget: 'string', required: false }
+              - { label: 'Popis', name: 'description', widget: 'markdown' }
+              - { label: 'Ikona', name: 'icon', widget: 'string' }
+
+  #dokumenty
   - label: 'Dokumenty BD Kaštany'
     name: 'bd_kastany'
     folder: 'public/assets/files/bd-kastany'

@@ -6,10 +6,16 @@ import Layout from '~/layouts/PageLayout.astro';
 import Note from '~/components/widgets/Note.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Features21 from '~/components/widgets/Features21.astro';
+import { getContent } from '~/utils/getContent';
+import type { AkceData } from '~/types';
 
 const metadata = {
   title: 'Údržba',
 };
+
+const akceData = await getContent<AkceData>('udrzba');
+const akceTitle = akceData?.title || 'Realizované akce 2024';
+const akceItems = akceData?.items || [];
 ---
 
 <Layout metadata={metadata}>
@@ -433,45 +439,14 @@ const metadata = {
   </Features2>
 
   <Content
-    title="Realizované akce 2024"
-    subtitle=""
+    title={akceTitle}
     columns={2}
     isReversed
     isSingle={true}
     classes={{
       container: 'mt-10',
     }}
-    items={[
-      {
-        title:
-          'Výměny stoupacího potrubí vody a kanalizace pro SVJ (Pr.Veselého 56,U Červených domků 6 a 30-32,Seifrtova 4, a 14,Hotel Panon, Národní třída 61, Lesní 14):',
-      },
-      {
-        title: 'Výměny páteřního rozvodu teplé a cirkulační vody  ( U Červených domků 6-8)',
-      },
-      {
-        title: 'Výměny světel pro ČSAD Hodonín na autobusovém nádraží všechny nástupiště',
-      },
-      {
-        title: 'Výměny stupaček plynu pro SVJ Nám.Osvobození 3',
-      },
-      {
-        title: 'Rekonstrukce bytových jader (Anenská 4, Pr.Veselého 56, I.Olbrachta 1)',
-      },
-      {
-        title: 'Rekonstrukce prádelen pro SVJ Brandlova 137-139-141',
-      },
-      {
-        title: 'Rekonstrukce učeben v suterénu ZŠ Mírové náměstí',
-      },
-      {
-        title: 'Rekonstrukce ZTI v objektu MŠ Jánošíkova',
-      },
-      {
-        title:
-          'Rekonstrukce bytů pro Město Hodonín v objektech )Polní 10 - 18, Slavíkova 17-21, Šafaříkova 1-3, Lipová alej 17, Brandlova 78)',
-      },
-    ]}
+    items={akceItems.map((item) => ({ title: item.title }))}
   />
 
   <Features21

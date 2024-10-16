@@ -208,6 +208,52 @@ export type CenikData = {
   footer_text_3: string;
 };
 
+export interface AkceItem {
+  title: string;
+}
+
+export interface AkceData {
+  title: string;
+  items: AkceItem[];
+}
+
+export interface PlannedRepairItem {
+  title: string;
+  icon: string;
+}
+
+// TeploData
+export interface TeploData {
+  planned_repairs: {
+    title: string;
+    subtitle: string;
+    items: PlannedRepairItem[];
+  };
+  heating_season: {
+    title: string;
+    items: HeatingSeasonItem[];
+  };
+  pricing: {
+    title: string;
+    items: PricingItem[];
+  };
+}
+
+export interface PlannedRepairItem {
+  title: string;
+  icon: string;
+}
+
+export interface HeatingSeasonItem {
+  description: string;
+  icon: string;
+}
+
+export interface PricingItem {
+  description: string;
+  icon: string;
+}
+
 // COMPONENTS
 export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
   variant?: 'primary' | 'secondary' | 'tertiary' | 'link';

@@ -203,6 +203,8 @@ export type CenikData = {
     price: string;
     price_with_tax: string;
   }[];
+  hero_title: string;
+  hero_subtitle: string;
   footer_text_1: string;
   footer_text_2: string;
   footer_text_3: string;

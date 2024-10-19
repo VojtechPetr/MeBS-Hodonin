@@ -30,7 +30,7 @@ collections:
       - { label: 'Content', name: 'body', widget: 'markdown' }
 
   #rozdeleni SVJ
-  - label: 'Rozdělení SVJ'
+  - label: 'SVJ/Rozdělení SVJ'
     name: 'rozdeleni_svj'
     files:
       - label: 'Rozdělení SVJ'
@@ -57,7 +57,7 @@ collections:
 
   #cenik
   - name: 'cenik'
-    label: 'Ceník'
+    label: 'SVJ/Ceník'
     files:
       - label: 'Ceník 2024'
         name: 'cenik_2024'
@@ -71,53 +71,25 @@ collections:
               - { label: 'Název služby', name: 'service', widget: 'string' }
               - { label: 'MěBS (částka)', name: 'price', widget: 'string' }
               - { label: 'Cena s DPH', name: 'price_with_tax', widget: 'string' }
+          - label: 'Titulek (Hero)'
+            name: 'hero_title'
+            widget: 'string'
+          - label: 'Podtitulek (Hero)'
+            name: 'hero_subtitle'
+            widget: 'text'
+          - label: 'Zápatí text 1'
+            name: 'footer_text_1'
+            widget: 'string'
+          - label: 'Zápatí text 2'
+            name: 'footer_text_2'
+            widget: 'string'
+          - label: 'Zápatí text 3'
+            name: 'footer_text_3'
+            widget: 'string'
 
-  #kontakty
-  - label: 'Kontakty'
-    name: 'kontakty'
-    files:
-      - label: 'Kontakty'
-        name: 'kontakty'
-        file: 'src/content/editable/kontakty.yml'
-        fields:
-          - label: 'Oddělení'
-            name: 'departments'
-            widget: 'list'
-            fields:
-              - label: 'Název oddělení'
-                name: 'department'
-                widget: 'string'
-              - label: 'Kontakty'
-                name: 'contacts'
-                widget: 'list'
-                fields:
-                  - label: 'Titul'
-                    name: 'name'
-                    widget: 'string'
-                  - label: 'Jméno'
-                    name: 'title'
-                    widget: 'string'
-                    required: false
-                  - label: 'Ikona'
-                    name: 'icon'
-                    widget: 'string'
-                  - label: 'Kontaktní informace'
-                    name: 'contactInfo'
-                    widget: 'list'
-                    fields:
-                      - label: 'Typ'
-                        name: 'type'
-                        widget: 'select'
-                        options:
-                          - { label: 'Telefon', value: 'phone' }
-                          - { label: 'Email', value: 'email' }
-                      - label: 'Hodnota'
-                        name: 'value'
-                        widget: 'string'
-
-  # Kontakty SVJ
+    # Kontakty SVJ
   - name: 'svj-kontakty'
-    label: 'Kontakty SVJ'
+    label: 'SVJ/Kontakty'
     files:
       - label: 'Kontakty SVJ'
         name: 'svj-kontakty'
@@ -138,7 +110,7 @@ collections:
                   - { label: 'Typ', name: 'type', widget: 'select', options: ['phone', 'email'] }
                   - { label: 'Hodnota', name: 'value', widget: 'string' }
 
-  #údržba
+    #údržba
   - label: 'Udržba'
     name: 'realizovane_akce'
     files:
@@ -158,40 +130,31 @@ collections:
                 widget: 'string'
 
   #kontakty údržba
-  - label: 'Kontakty údržby'
-    name: 'udrzba_kontakty'
-    file: 'src/content/editable/udrzba-kontakty.yml'
-    fields:
-      - label: 'Kontakty'
-        name: 'contacts'
-        widget: 'list'
+  - name: 'udrzba-kontakty'
+    label: 'Údržba/Kontakty'
+    files:
+      - label: 'Kontakty údržby'
+        name: 'udrzba-kontakty'
+        file: 'src/content/editable/udrzba-kontakty.yml'
+        format: 'yml'
         fields:
-          - label: 'Jméno'
-            name: 'name'
-            widget: 'string'
-          - label: 'Pozice'
-            name: 'title'
-            widget: 'string'
-          - label: 'Ikona'
-            name: 'icon'
-            widget: 'string'
-          - label: 'Kontaktní informace'
-            name: 'contactInfo'
+          - label: 'Kontakty'
+            name: 'contacts'
             widget: 'list'
             fields:
-              - label: 'Typ'
-                name: 'type'
-                widget: 'select'
-                options:
-                  - { label: 'Telefon', value: 'phone' }
-                  - { label: 'Email', value: 'email' }
-              - label: 'Hodnota'
-                name: 'value'
-                widget: 'string'
+              - { label: 'Jméno', name: 'name', widget: 'string' }
+              - { label: 'Pozice', name: 'title', widget: 'string' }
+              - { label: 'Ikona', name: 'icon', widget: 'string' }
+              - label: 'Kontaktní informace'
+                name: 'contactInfo'
+                widget: 'list'
+                fields:
+                  - { label: 'Typ', name: 'type', widget: 'select', options: ['phone', 'email'] }
+                  - { label: 'Hodnota', name: 'value', widget: 'string' }
 
   #teplo
   - name: 'teplo'
-    label: 'Tepelné hospodářství'
+    label: 'Teplo'
     files:
       - label: 'Tepelné hospodářství'
         name: 'teplo'
@@ -236,36 +199,70 @@ collections:
                   - { label: 'Ikona', name: 'icon', widget: 'string' }
 
   #teplo kontakty
-  - label: 'Kontakty Tepla'
-    name: 'teplo_kontakty'
-    file: 'src/content/editable/teplo-kontakty.yml'
-    fields:
-      - label: 'Kontakty'
-        name: 'contacts'
-        widget: 'list'
+  - name: 'teplo-kontakty'
+    label: 'Teplo/Kontakty'
+    files:
+      - label: 'Kontakty Tepla'
+        name: 'teplo-kontakty'
+        file: 'src/content/editable/teplo-kontakty.yml'
+        format: 'yml'
         fields:
-          - label: 'Jméno'
-            name: 'name'
-            widget: 'string'
-          - label: 'Pozice'
-            name: 'title'
-            widget: 'string'
-          - label: 'Ikona'
-            name: 'icon'
-            widget: 'string'
-          - label: 'Kontaktní informace'
-            name: 'contactInfo'
+          - label: 'Kontakty'
+            name: 'contacts'
             widget: 'list'
             fields:
-              - label: 'Typ'
-                name: 'type'
-                widget: 'select'
-                options:
-                  - { label: 'Telefon', value: 'phone' }
-                  - { label: 'Email', value: 'email' }
-              - label: 'Hodnota'
-                name: 'value'
+              - { label: 'Jméno', name: 'name', widget: 'string' }
+              - { label: 'Pozice', name: 'title', widget: 'string' }
+              - { label: 'Ikona', name: 'icon', widget: 'string' }
+              - label: 'Kontaktní informace'
+                name: 'contactInfo'
+                widget: 'list'
+                fields:
+                  - { label: 'Typ', name: 'type', widget: 'select', options: ['phone', 'email'] }
+                  - { label: 'Hodnota', name: 'value', widget: 'string' }
+
+  #kontakty
+  - label: 'Kontakty'
+    name: 'kontakty'
+    files:
+      - label: 'Kontakty'
+        name: 'kontakty'
+        file: 'src/content/editable/kontakty.yml'
+        fields:
+          - label: 'Oddělení'
+            name: 'departments'
+            widget: 'list'
+            fields:
+              - label: 'Název oddělení'
+                name: 'department'
                 widget: 'string'
+              - label: 'Kontakty'
+                name: 'contacts'
+                widget: 'list'
+                fields:
+                  - label: 'Titul'
+                    name: 'name'
+                    widget: 'string'
+                  - label: 'Jméno'
+                    name: 'title'
+                    widget: 'string'
+                    required: false
+                  - label: 'Ikona'
+                    name: 'icon'
+                    widget: 'string'
+                  - label: 'Kontaktní informace'
+                    name: 'contactInfo'
+                    widget: 'list'
+                    fields:
+                      - label: 'Typ'
+                        name: 'type'
+                        widget: 'select'
+                        options:
+                          - { label: 'Telefon', value: 'phone' }
+                          - { label: 'Email', value: 'email' }
+                      - label: 'Hodnota'
+                        name: 'value'
+                        widget: 'string'
 
   #dokumenty
   - label: 'Dokumenty BD Kaštany'

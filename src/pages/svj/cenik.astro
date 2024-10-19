@@ -10,6 +10,10 @@ const metadata = {
 
 const cenikData = await getContent<CenikData>('cenik');
 const items = cenikData?.items ?? [];
+const heroTitle = cenikData?.hero_title ?? 'Ceník služeb pro SVJ na rok 2024';
+const heroSubtitle =
+  cenikData?.hero_subtitle ??
+  'Tento ceník obsahuje všechny nadstandardní služby nad rámec smluvních povinností poskytované pro SVJ v roce 2024.';
 const footerText1 = cenikData?.footer_text_1 ?? '* 181,7 Kč/měs/jednotka';
 const footerText2 = cenikData?.footer_text_2 ?? '** Netýká se SVJ, kde MěBS vykonává funkci předsedy společenství';
 const footerText3 = cenikData?.footer_text_3 ?? 'Všechny ceny bez DPH';
@@ -18,11 +22,12 @@ const footerText3 = cenikData?.footer_text_3 ?? 'Všechny ceny bez DPH';
 <Layout metadata={metadata}>
   <Hero tagline="Ceník">
     <Fragment slot="title">
-      Ceník služeb pro SVJ na rok 2024 <br />
+      {heroTitle}
+      <br />
     </Fragment>
 
     <Fragment slot="subtitle">
-      Tento ceník obsahuje všechny nadstandardní služby nad rámec smluvních povinností poskytované pro SVJ v roce 2024.
+      {heroSubtitle}
     </Fragment>
   </Hero>
 

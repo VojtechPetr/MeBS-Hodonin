@@ -151,7 +151,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                 <Button
                   {...btnProps}
                   class:list={[
-                    ' ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto hover:bg-blue-200 dark:hover:bg-blue-200 transition duration-500 ease-in-out',
+                    ' ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto border-blue-600 border-4 hover:bg-blue-200 dark:hover:bg-blue-200 transition duration-500 ease-in-out',
                     { 'aw-link-active rounded-3xl bg-blue-600 text-white': btnProps.href === currentPath },
                   ]}
                 />

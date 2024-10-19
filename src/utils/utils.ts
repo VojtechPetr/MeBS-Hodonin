@@ -1,8 +1,6 @@
-import { I18N } from 'astrowind:config';
-
-export const formatter: Intl.DateTimeFormat = new Intl.DateTimeFormat(I18N?.language, {
+export const formatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('cs-CZ', {
   year: 'numeric',
-  month: 'short',
+  month: 'long',
   day: 'numeric',
   timeZone: 'UTC',
 });

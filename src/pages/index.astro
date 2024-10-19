@@ -15,12 +15,12 @@ const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/
 <Layout metadata={metadata}>
   <Hero>
     <Fragment slot="title">
-      Městská bytová správa, spol. s.r.o.
-      <span class="text-secondary dark:text-white highlight">Hodonín</span>
+      <span class="text-4xl md:text-6xl highlight">Městská bytová správa, spol. s r.o.</span>
+      <span class="text-secondary text-4xl md:text-6xl dark:text-blue-200 highlight">Hodonín</span>
     </Fragment>
     <Fragment slot="bg">
       <div
-        class="relative bg-cover bg-center h-full mt-20 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
+        class="relative bg-cover bg-center h-full mt-24 md:mt-14 2xl:mt-14 bg-[url('/assets/images/Full.webp')] dark:bg-[url('/assets/images/NamNoc2.webp')]"
       >
       </div>
     </Fragment>
@@ -103,7 +103,7 @@ const downloadPages = [{ title: 'Dokumenty pro zaměstnance', url: '/ke-stazeni/
             <div>
               <h3 class="text-lg font-semibold">{page.title}</h3>
             </div>
-            <a href={page.url} class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+            <a href={page.url} class="bg-blue-600 text-white px-4 py-2 rounded-md">
               Zobrazit
             </a>
           </li>

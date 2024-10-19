@@ -60,7 +60,7 @@ collections:
     label: 'SVJ/Ceník'
     files:
       - label: 'Ceník 2024'
-        name: 'cenik_2024'
+        name: 'SVJ/Ceník_2024'
         file: 'src/content/editable/cenik.yml'
         format: 'yml'
         fields:

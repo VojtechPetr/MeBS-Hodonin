@@ -7,7 +7,13 @@ import Note from '~/components/widgets/Note.astro';
 import List from '~/components/widgets/List.astro';
 import Features21 from '~/components/widgets/Features21.astro';
 import { getContent } from '~/utils/getContent';
-import type { TeploData } from '~/types';
+import type { TeploData, SVJKontaktyData } from '~/types';
+
+const teploKontakty: SVJKontaktyData | null = await getContent<SVJKontaktyData>('teplo-kontakty');
+
+if (!teploKontakty) {
+  throw new Error('Data nebyla načtena.');
+}
 
 const metadata = {
   title: 'Tepelné hospodářství',
@@ -47,53 +53,12 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
       }}
       structure={[
         {
-          contacts: [
-            {
-              title: 'Ing. Petr Pacal',
-              name: 'Vedoucí',
-              icon: 'tabler:crown',
-              contactInfo: [
-                {
-                  type: 'phone',
-                  value: '518 398 524, 602 515 443',
-                },
-                {
-                  type: 'email',
-                  value: 'pacal@bytovka.cz',
-                },
-              ],
-            },
-            {
-              title: 'Jitka Vrábliková',
-              name: 'Provozní ekonomka, fakturace',
-              icon: 'tabler:zoom-money',
-              contactInfo: [
-                {
-                  type: 'phone',
-                  value: '518 398 529, 602 734 775',
-                },
-                {
-                  type: 'email',
-                  value: 'vrablikova@bytovka.cz',
-                },
-              ],
-            },
-            {
-              title: '',
-              name: 'centrální dispečink',
-              icon: 'tabler:headset',
-              contactInfo: [
-                {
-                  type: 'phone',
-                  value: '602 793 211',
-                },
-                {
-                  type: 'email',
-                  value: 'dispecink@bytovka.cz',
-                },
-              ],
-            },
-          ],
+          contacts: teploKontakty.contacts.map((contact) => ({
+            title: contact.title,
+            name: contact.name,
+            icon: contact.icon,
+            contactInfo: contact.contactInfo,
+          })),
         },
       ]}
     >

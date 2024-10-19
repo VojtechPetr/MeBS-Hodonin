@@ -7,7 +7,13 @@ import Note from '~/components/widgets/Note.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Features21 from '~/components/widgets/Features21.astro';
 import { getContent } from '~/utils/getContent';
-import type { AkceData } from '~/types';
+import type { AkceData, SVJKontaktyData } from '~/types';
+
+const udrzbaKontakty: SVJKontaktyData | null = await getContent<SVJKontaktyData>('udrzba-kontakty');
+
+if (!udrzbaKontakty) {
+  throw new Error('Data nebyla načtena.');
+}
 
 const metadata = {
   title: 'Údržba',
@@ -44,53 +50,12 @@ const akceItems = akceData?.items || [];
       columns={3}
       structure={[
         {
-          contacts: [
-            {
-              title: 'Miloslav Komosný',
-              name: 'Vedoucí údržby',
-              icon: 'tabler:crown',
-              contactInfo: [
-                {
-                  type: 'phone',
-                  value: '518 398 546, 607 829 808',
-                },
-                {
-                  type: 'email',
-                  value: 'komosny@bytovka.cz',
-                },
-              ],
-            },
-            {
-              title: 'Pavla Stanická',
-              name: 'Provozní ekonomka, fakturace',
-              icon: 'tabler:zoom-money',
-              contactInfo: [
-                {
-                  type: 'phone',
-                  value: '518 398 545, 607 273 900',
-                },
-                {
-                  type: 'email',
-                  value: 'stanicka@bytovka.cz',
-                },
-              ],
-            },
-            {
-              title: 'Jakub Nevečeřal',
-              name: 'Vedoucí skladník, rozpočtář',
-              icon: 'tabler:forklift',
-              contactInfo: [
-                {
-                  type: 'phone',
-                  value: '518 398 545, 607 001 912',
-                },
-                {
-                  type: 'email',
-                  value: 'neveceral@bytovka.cz',
-                },
-              ],
-            },
-          ],
+          contacts: udrzbaKontakty.contacts.map((contact) => ({
+            title: contact.name,
+            name: contact.title,
+            icon: contact.icon,
+            contactInfo: contact.contactInfo,
+          })),
         },
       ]}
     >

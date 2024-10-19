@@ -1,0 +1,27 @@
+contacts:
+  - name: 'Miloslav Komosný'
+    title: 'Vedoucí údržby'
+    icon: 'tabler:crown'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 546, 607 829 808'
+      - type: 'email'
+        value: 'komosny@bytovka.cz'
+
+  - name: 'Pavla Stanická'
+    title: 'Provozní ekonomka, fakturace'
+    icon: 'tabler:zoom-money'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 545, 607 273 900'
+      - type: 'email'
+        value: 'stanicka@bytovka.cz'
+
+  - name: 'Jakub Nevečeřal'
+    title: 'Vedoucí skladník, rozpočtář'
+    icon: 'tabler:forklift'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 545, 607 001 912'
+      - type: 'email'
+        value: 'neveceral@bytovka.cz'

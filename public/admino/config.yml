@@ -115,29 +115,30 @@ collections:
                         name: 'value'
                         widget: 'string'
 
-  #kontakty svj
+  # Kontakty SVJ
   - name: 'svj-kontakty'
     label: 'Kontakty SVJ'
-    folder: 'src/content/editable'
-    create: true
-    format: 'yml'
-    filter: { field: 'type', value: 'contact' }
-    fields:
-      - label: 'Kontakty'
-        name: 'contacts'
-        widget: 'list'
+    files:
+      - label: 'Kontakty SVJ'
+        name: 'svj-kontakty'
+        file: 'src/content/editable/svj-kontakty.yml'
+        format: 'yml'
         fields:
-          - { label: 'Jméno', name: 'name', widget: 'string' }
-          - { label: 'Pozice', name: 'title', widget: 'string' }
-          - { label: 'Ikona', name: 'icon', widget: 'string' }
-          - label: 'Kontaktní informace'
-            name: 'contactInfo'
+          - label: 'Kontakty'
+            name: 'contacts'
             widget: 'list'
             fields:
-              - { label: 'Typ', name: 'type', widget: 'select', options: ['phone', 'email'] }
-              - { label: 'Hodnota', name: 'value', widget: 'string' }
+              - { label: 'Jméno', name: 'name', widget: 'string' }
+              - { label: 'Pozice', name: 'title', widget: 'string' }
+              - { label: 'Ikona', name: 'icon', widget: 'string' }
+              - label: 'Kontaktní informace'
+                name: 'contactInfo'
+                widget: 'list'
+                fields:
+                  - { label: 'Typ', name: 'type', widget: 'select', options: ['phone', 'email'] }
+                  - { label: 'Hodnota', name: 'value', widget: 'string' }
 
-  #udrzba
+  #údržba
   - label: 'Udržba'
     name: 'realizovane_akce'
     files:
@@ -154,6 +155,38 @@ collections:
             fields:
               - label: 'Titul položky'
                 name: 'title'
+                widget: 'string'
+
+  #kontakty údržba
+  - label: 'Kontakty údržby'
+    name: 'udrzba_kontakty'
+    file: 'src/content/editable/udrzba-kontakty.yml'
+    fields:
+      - label: 'Kontakty'
+        name: 'contacts'
+        widget: 'list'
+        fields:
+          - label: 'Jméno'
+            name: 'name'
+            widget: 'string'
+          - label: 'Pozice'
+            name: 'title'
+            widget: 'string'
+          - label: 'Ikona'
+            name: 'icon'
+            widget: 'string'
+          - label: 'Kontaktní informace'
+            name: 'contactInfo'
+            widget: 'list'
+            fields:
+              - label: 'Typ'
+                name: 'type'
+                widget: 'select'
+                options:
+                  - { label: 'Telefon', value: 'phone' }
+                  - { label: 'Email', value: 'email' }
+              - label: 'Hodnota'
+                name: 'value'
                 widget: 'string'
 
   #teplo
@@ -201,6 +234,38 @@ collections:
                   - { label: 'Titul', name: 'title', widget: 'string', required: false }
                   - { label: 'Popis', name: 'description', widget: 'markdown' }
                   - { label: 'Ikona', name: 'icon', widget: 'string' }
+
+  #teplo kontakty
+  - label: 'Kontakty Tepla'
+    name: 'teplo_kontakty'
+    file: 'src/content/editable/teplo-kontakty.yml'
+    fields:
+      - label: 'Kontakty'
+        name: 'contacts'
+        widget: 'list'
+        fields:
+          - label: 'Jméno'
+            name: 'name'
+            widget: 'string'
+          - label: 'Pozice'
+            name: 'title'
+            widget: 'string'
+          - label: 'Ikona'
+            name: 'icon'
+            widget: 'string'
+          - label: 'Kontaktní informace'
+            name: 'contactInfo'
+            widget: 'list'
+            fields:
+              - label: 'Typ'
+                name: 'type'
+                widget: 'select'
+                options:
+                  - { label: 'Telefon', value: 'phone' }
+                  - { label: 'Email', value: 'email' }
+              - label: 'Hodnota'
+                name: 'value'
+                widget: 'string'
 
   #dokumenty
   - label: 'Dokumenty BD Kaštany'

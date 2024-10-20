@@ -23,7 +23,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 const { job } = Astro.props as { job: MDXInstance<JobFrontmatter> };
 
-// Metadata pro SEO a sociální sítě
 const metadata = {
   title: job.frontmatter.title,
   description: job.frontmatter.excerpt,

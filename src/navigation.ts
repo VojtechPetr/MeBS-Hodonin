@@ -89,13 +89,14 @@ export const footerData = {
     },
   ],
   footNote: `
-    Každá stránka má svůj příběh – <a class="text-blue-600 dark:text-muted" href="https://petrv.eu"> </a>
-    <a href="https://petrv.eu" target="_blank">
-        <img class="w-5 h-4 md:w-10 md:h-4 md:ml-2 md:mt-1 float-right rtl:float-right rounded-sm dark:hidden" 
+    Každá stránka má svůj příběh – 
+    <a class="text-blue-600 dark:text-muted inline-flex items-center" href="https://petrv.eu" target="_blank">
+        <img class="w-10 h-4 translate-y-1 md:w-11 md:h-4 md:ml-1 md:mt-1 rounded-sm dark:hidden" 
              src="/assets/images/logo_petrv_RGB.png" 
              alt="PetrV_logo">
 
-        <img class="w-5 h-4 md:w-10 md:h-4 md:ml-2 md:mt-1 float-right rtl:float-right rounded-sm hidden dark:block" 
+        <img class="w-10 h-4 translate-y-1 md:w-11 md:h-4 md:ml-1 md:mt-1 rounded-sm hidden dark:block" 
              src="/assets/images/logo_petrv_inverzni_RGB.png" 
-             alt="PetrV_logo_dark">    </a>  `,
+             alt="PetrV_logo_dark">    
+    </a>`,
 };

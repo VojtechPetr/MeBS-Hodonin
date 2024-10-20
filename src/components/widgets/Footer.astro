@@ -25,13 +25,18 @@ export interface Props {
 const { socialLinks = [], secondaryLinks = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+<footer
+  class:list={[
+    { dark: theme === 'dark' },
+    'relative pt-6 sm:pt-0 border-t border-gray-200 dark:border-slate-800 not-prose',
+  ]}
+>
   <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
     <div class="text-center md:pt-4">
       <a class="inline-block font-bold text-xl !break-normal" href={getHomePermalink()}>
-        <img src="/assets/images/MBS-logo.png" class="h-16 w-auto inline-block dark:hidden" alt="Logo MBS světlé" />
-        <img src="/assets/images/MBS-logo-dark.png" class="h-16 w-auto hidden dark:block" alt="Logo MBS tmavé" />
+        <img src="/assets/images/MBS-logo.png" class="h-14 w-auto inline-block dark:hidden" alt="Logo MBS světlé" />
+        <img src="/assets/images/MBS-logo-dark.png" class="h-14 w-auto hidden dark:block" alt="Logo MBS tmavé" />
       </a>
     </div>
     <div class="flex justify-between items-center py-6">

@@ -102,7 +102,7 @@ departments:
           - type: 'email'
             value: 'pacal@bytovka.cz'
       - name: 'ekonomka, fakturace'
-        title: 'Jitka Vrábliková'
+        title: 'Jitka Brichtová Vrábliková'
         icon: 'tabler:user'
         contactInfo:
           - type: 'phone'

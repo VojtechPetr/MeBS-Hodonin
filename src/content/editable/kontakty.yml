@@ -243,6 +243,14 @@ departments:
 
   - department: 'Hotel Krystal'
     contacts:
+      - name: 'Manažerka hotelu'
+        title: 'Mgr. Bc. Ludmila Pijáčková'
+        icon: 'tabler:user'
+        contactInfo:
+          - type: 'phone'
+            value: '724 357 166'
+          - type: ''
+            value: ''
       - name: 'recepce'
         title: ''
         icon: 'tabler:bed'

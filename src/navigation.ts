@@ -3,7 +3,7 @@ import { getPermalink, getBlogPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'SVJ',
+      text: 'SVJ a družstva',
       links: [
         {
           text: 'O nás',

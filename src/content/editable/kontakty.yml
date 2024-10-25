@@ -90,6 +90,14 @@ departments:
             value: '518 398 545, 607 273 900'
           - type: 'email'
             value: 'stanicka@bytovka.cz'
+      - name: 'revizní technik'
+        title: 'František Horný'
+        icon: 'tabler:user'
+        contactInfo:
+          - type: 'phone'
+            value: '518 398 522, 606 392 464'
+          - type: 'email'
+            value: 'horny@bytovka.cz'
 
   - department: 'Tepelné'
     contacts:

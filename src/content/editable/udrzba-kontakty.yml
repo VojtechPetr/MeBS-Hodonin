@@ -25,3 +25,12 @@ contacts:
         value: '518 398 545, 607 001 912'
       - type: 'email'
         value: 'neveceral@bytovka.cz'
+
+  - name: 'revizní technik'
+    title: 'František Horný'
+    icon: 'tabler:tools'
+    contactInfo:
+      - type: 'phone'
+        value: '518 398 522, 606 392 464'
+      - type: 'email'
+        value: 'horny@bytovka.cz'

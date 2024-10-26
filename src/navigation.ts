@@ -67,10 +67,10 @@ export const headerData = {
           text: 'Seznam aktualit',
           href: getBlogPermalink(),
         },
-        {
-          text: 'Oznámení o odstávce tepla a teplé vody',
-          href: getPermalink('oznameni-odstavka-teplo', 'post'),
-        },
+        //{
+        //  text: 'Oznámení o odstávce tepla a teplé vody',
+        //  href: getPermalink('oznameni-odstavka-teplo', 'post'),
+        //},
       ],
     },
   ],

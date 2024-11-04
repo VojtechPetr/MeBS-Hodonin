@@ -2,11 +2,10 @@ backend:
   name: github
   repo: VojtechPetr/MeBS-Hodonin
   branch: main
-  auth:
-    client_id: 'Ov23li4P1rJmx2UWaWmP'
-    scope: 'repo'
-    base_url: 'https://mebs-hodonin-oauth.vercel.app'
-    auth_endpoint: 'auth'
+  client_id: 'Ov23li4P1rJmx2UWaWmP'
+  scope: 'repo'
+  base_url: 'https://mebs-hodonin-oauth.vercel.app'
+  auth_endpoint: 'auth'
 
 media_folder: 'public/assets/images'
 public_folder: 'src/assets/images'

@@ -8,7 +8,7 @@ interface Props {
 
 const {
   placeholder = 'Hledej...',
-  searchIndexPath = '/search-index.json',
+  searchIndexPath = '/search-index.json', // Default static path
 } = Astro.props;
 ---
 
@@ -38,10 +38,9 @@ const {
   </div>
 
   <script>
-    const searchIndexPath = "{{ searchIndexPath }}";
+    const searchIndexPath = '/search-index.json';
     let isSearchVisible = false;
 
-    // Toggle the visibility of the search bar
     const toggleSearchBar = () => {
       isSearchVisible = !isSearchVisible;
       const searchBar = document.getElementById('search-bar');
@@ -62,19 +61,12 @@ const {
     };
 
     document.addEventListener('DOMContentLoaded', () => {
-      // Toggle button click event
       const toggleButton = document.querySelector('[aria-label="Open Search"]');
-      if (toggleButton) {
-        toggleButton.addEventListener('click', toggleSearchBar);
-      }
+      toggleButton?.addEventListener('click', toggleSearchBar);
 
-      // Search input event
       const searchInput = document.getElementById('search-input');
       searchInput?.addEventListener('keyup', async (event) => {
-        const target = event.target as HTMLInputElement | null;
-        if (!target) return;
-
-        const query = target.value.toLowerCase();
+        const query = event.target.value.toLowerCase();
         const resultsContainer = document.getElementById('search-results');
         if (!resultsContainer) return;
 
@@ -85,7 +77,12 @@ const {
 
         try {
           const response = await fetch(searchIndexPath);
+          if (!response.ok) {
+            throw new Error(`Error fetching search index: ${response.status}`);
+          }
+
           const index = await response.json();
+
           const results = index.filter((item) =>
             item.title.toLowerCase().includes(query) ||
             item.content.toLowerCase().includes(query)
@@ -102,27 +99,24 @@ const {
             .join('');
         } catch (error) {
           console.error('Failed to fetch search index:', error);
+          resultsContainer.innerHTML = '<li class="text-red-500">Search unavailable</li>';
         }
       });
 
-      // Close the search bar when clicking outside
       document.addEventListener('click', (event) => {
         const searchBar = document.getElementById('search-bar');
         const toggleButton = document.querySelector('[aria-label="Open Search"]');
-        
-        const target = event.target as HTMLElement | null;
 
         if (
           searchBar &&
           toggleButton &&
-          !searchBar.contains(target) &&
-          !toggleButton.contains(target)
+          !searchBar.contains(event.target) &&
+          !toggleButton.contains(event.target)
         ) {
           closeSearchBar();
         }
       });
 
-      // Close the search bar when pressing "Esc"
       document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && isSearchVisible) {
           closeSearchBar();

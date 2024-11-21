@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Features21 from '~/components/widgets/Features21.astro';
 import { getContent } from '~/utils/getContent';
 import type { KontaktyData } from '~/types';
@@ -31,8 +32,24 @@ const kontakty = await getContent<KontaktyData>('kontakty');
         <img src="/assets/images/bytovka_kontakt_QR.png" alt="QR Code" class="w-48 h-48" />
       </div>
     </div>
-    <div class="border-b border-gray-300 mt-14"></div>
   </div>
+
+  <Features2
+    columns={1}
+    items={[
+      {
+        title: 'Provozní doba',
+        description: `<br/>
+      Pondělí: &nbsp;&nbsp;&nbsp;8:00 - 12 hod. &nbsp;&nbsp;&nbsp;   13:00 - 17:00 hod. <br/><br/>
+      Úterý: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8:00 - 12 hod. &nbsp;&nbsp;&nbsp;   13:00 - 15:00 hod. <br/><br/>
+      Středa: &nbsp;&nbsp;&nbsp;&nbsp;8:00 - 12 hod. &nbsp;&nbsp;&nbsp;   13:00 - 17:00 hod. <br/><br/>
+      Čtvrtek: &nbsp;&nbsp;&nbsp;8:00 - 12 hod. &nbsp;&nbsp;&nbsp;   13:00 - 15:00 hod. <br/><br/>
+      Pátek: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8:00 - 12 hod. &nbsp;&nbsp;&nbsp;   13:00 - 13:30 hod.
+      `,
+        icon: 'tabler:clock-hour-3',
+      },
+    ]}
+  />
 
   <div class="max-w-7xl m-auto px-4 sm:px-0">
     {kontakty && <Features21 structure={kontakty.departments} />}

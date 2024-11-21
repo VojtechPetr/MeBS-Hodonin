@@ -31,10 +31,7 @@ async function generateSearchIndex() {
       const fileContents = fs.readFileSync(filePath, 'utf8');
       const data = yaml.load(fileContents) as Record<string, unknown>;
 
-      const content = extractContent(data)
-        .replace(/\n+/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
+      const content = extractContent(data).replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
 
       searchIndex.push({
         id: file,
@@ -63,47 +60,45 @@ async function generateSearchIndex() {
       const listItems = content.match(/<List[^>]*items=\{([\s\S]*?)\}/)?.[1] || '';
 
       extractedData.content = [featuresItems, listItems]
-        .map((item) => item.replace(/<[^>]*>/g, '').replace(/[\[\]\{\}"']/g, '').trim())
+        .map((item) =>
+          item
+            .replace(/<[^>]*>/g, '')
+            .replace(/[\[\]\{\}"']/g, '')
+            .trim()
+        )
         .join(' ');
-      extractedData.title = 'Homepage';
-
     } else if (file === 'teplo.astro') {
       const heroTitle = content.match(/<Hero[^>]*title="([^"]+)"/)?.[1] || '';
       const heroSubtitle = content.match(/<Hero[^>]*subtitle="([^"]+)"/)?.[1] || '';
       const listItems = content.match(/<List[^>]*items=\{([\s\S]*?)\}/)?.[1] || '';
 
       extractedData.content = [heroTitle, heroSubtitle, listItems]
-        .map((item) => item.replace(/<[^>]*>/g, '').replace(/[\[\]\{\}"']/g, '').trim())
+        .map((item) =>
+          item
+            .replace(/<[^>]*>/g, '')
+            .replace(/[\[\]\{\}"']/g, '')
+            .trim()
+        )
         .join(' ');
-      extractedData.title = 'Teplovodní služby';
-
     } else if (file === 'udrzba.astro') {
       // Extrahování všech titles z <Content>, <Stats>, a <Features2>
-      const contentTitles = [...content.matchAll(/<Content[^>]*items=\{([\s\S]*?)\}/g)]
-        .flatMap((block) => {
-          const items = block[1];
-          return [...items.matchAll(/title:\s*'([^']+)'/g)].map((match) => match[1]);
-        });
+      const contentTitles = [...content.matchAll(/<Content[^>]*items=\{([\s\S]*?)\}/g)].flatMap((block) => {
+        const items = block[1];
+        return [...items.matchAll(/title:\s*'([^']+)'/g)].map((match) => match[1]);
+      });
 
-      const statsTitles = [...content.matchAll(/<Stats[^>]*stats=\{([\s\S]*?)\}/g)]
-        .flatMap((block) => {
-          const items = block[1];
-          return [...items.matchAll(/title:\s*'([^']+)'/g)].map((match) => match[1]);
-        });
+      const statsTitles = [...content.matchAll(/<Stats[^>]*stats=\{([\s\S]*?)\}/g)].flatMap((block) => {
+        const items = block[1];
+        return [...items.matchAll(/title:\s*'([^']+)'/g)].map((match) => match[1]);
+      });
 
-      const featuresTitles = [...content.matchAll(/<Features2[^>]*items=\{([\s\S]*?)\}/g)]
-        .flatMap((block) => {
-          const items = block[1];
-          return [...items.matchAll(/title:\s*'([^']+)'/g)].map((match) => match[1]);
-        });
+      const featuresTitles = [...content.matchAll(/<Features2[^>]*items=\{([\s\S]*?)\}/g)].flatMap((block) => {
+        const items = block[1];
+        return [...items.matchAll(/title:\s*'([^']+)'/g)].map((match) => match[1]);
+      });
 
       // Kombinace všech získaných titles
-      extractedData.content = [
-        ...contentTitles,
-        ...statsTitles,
-        ...featuresTitles,
-      ].join(', ');
-      extractedData.title = 'Údržba';
+      extractedData.content = [...contentTitles, ...statsTitles, ...featuresTitles].join(', ');
     }
 
     if (extractedData.content.trim()) {
@@ -112,9 +107,10 @@ async function generateSearchIndex() {
   }
 
   // Extrakce souborů v `public/assets/files`
-  const directories = fs.readdirSync(filesDir, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name);
+  const directories = fs
+    .readdirSync(filesDir, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
 
   for (const dir of directories) {
     const directoryPath = path.join(filesDir, dir);
@@ -127,7 +123,7 @@ async function generateSearchIndex() {
         id: fileName,
         title: fileName,
         url: pageUrl,
-        content: `File name: ${fileName}`
+        content: `File name: ${fileName}`,
       });
     }
   }

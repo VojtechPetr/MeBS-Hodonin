@@ -14,19 +14,12 @@ const {
 
 <div class="relative">
   <!-- Magnifier Icon -->
-  <button
-    type="button"
-    class="text-muted hover:bg-blue-200 rounded-full p-2"
-    aria-label="Open Search"
-  >
+  <button type="button" class="text-muted hover:bg-blue-200 rounded-full p-2" aria-label="Open Search">
     <Icon name="tabler:search" class="w-6 h-6" />
   </button>
 
   <!-- Search Bar -->
-  <div
-    id="search-bar"
-    class="hidden absolute top-12 right-0 bg-white shadow-lg rounded-md p-4 w-96 z-50"
-  >
+  <div id="search-bar" class="hidden absolute top-12 right-0 bg-white shadow-lg rounded-md p-4 w-96 z-50">
     <input
       type="text"
       id="search-input"
@@ -83,9 +76,8 @@ const {
 
           const index = await response.json();
 
-          const results = index.filter((item) =>
-            item.title.toLowerCase().includes(query) ||
-            item.content.toLowerCase().includes(query)
+          const results = index.filter(
+            (item) => item.title.toLowerCase().includes(query) || item.content.toLowerCase().includes(query)
           );
 
           resultsContainer.innerHTML = results
@@ -107,12 +99,7 @@ const {
         const searchBar = document.getElementById('search-bar');
         const toggleButton = document.querySelector('[aria-label="Open Search"]');
 
-        if (
-          searchBar &&
-          toggleButton &&
-          !searchBar.contains(event.target) &&
-          !toggleButton.contains(event.target)
-        ) {
+        if (searchBar && toggleButton && !searchBar.contains(event.target) && !toggleButton.contains(event.target)) {
           closeSearchBar();
         }
       });

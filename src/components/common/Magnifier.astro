@@ -71,8 +71,8 @@ const { placeholder = 'Hledej...', searchIndexPath = '/search-index.json' } = As
       isSearchVisible = false;
     };
 
-    const handleSearchInput = async (event) => {
-      const query = event.target.value.toLowerCase();
+    const handleSearchInput = async (event: KeyboardEvent) => {
+      const query = (event.target as HTMLInputElement).value.toLowerCase();
       const resultsContainer = document.getElementById('search-results');
       if (!resultsContainer) return;
 
@@ -89,12 +89,13 @@ const { placeholder = 'Hledej...', searchIndexPath = '/search-index.json' } = As
 
         const index = await response.json();
         const results = index.filter(
-          (item) => item.title.toLowerCase().includes(query) || item.content.toLowerCase().includes(query)
+          (item: { title: string; content: string }) =>
+            item.title.toLowerCase().includes(query) || item.content.toLowerCase().includes(query)
         );
 
         resultsContainer.innerHTML = results
           .map(
-            (result) => `
+            (result: { url: string; title: string }) => `
             <li>
               <a href="${result.url}" class="block p-2 hover:bg-blue-200 rounded-md">${result.title}</a>
             </li>
@@ -107,16 +108,16 @@ const { placeholder = 'Hledej...', searchIndexPath = '/search-index.json' } = As
       }
     };
 
-    const handleDocumentClick = (event) => {
+    const handleDocumentClick = (event: MouseEvent) => {
       const searchBar = document.getElementById('search-bar');
       const toggleButton = document.querySelector('[aria-label="Open Search"]');
 
-      if (searchBar && toggleButton && !searchBar.contains(event.target) && !toggleButton.contains(event.target)) {
+      if (searchBar && toggleButton && !searchBar.contains(event.target as Node) && !toggleButton.contains(event.target as Node)) {
         closeSearchBar();
       }
     };
 
-    const handleEscapeKey = (event) => {
+    const handleEscapeKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && isSearchVisible) {
         closeSearchBar();
       }

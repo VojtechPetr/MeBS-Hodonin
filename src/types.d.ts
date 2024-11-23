@@ -288,6 +288,16 @@ export interface Form {
   description?: string;
 }
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export interface YamlSearchData {
+  id?: string;
+  title?: string;
+  slug?: string;
+  content?: string;
+  [key: string]: any;
+}
+/* eslint-enable @typescript-eslint/no-explicit-any */
+
 // WIDGETS
 export interface Hero extends Omit<Headline, 'classes'>, Omit<Widget, 'isDark' | 'classes'> {
   mtOffset?: number;
@@ -349,6 +359,7 @@ export interface Contact {
 
 export interface Department {
   department?: string;
+  anchor?: string;
   contacts?: Array<Contact>;
 }
 
@@ -416,3 +427,10 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
 }
 
 export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
+
+declare global {
+  interface Window {
+    toggleSearchBar: () => void;
+    search: (event: KeyboardEvent) => Promise<void>;
+  }
+}

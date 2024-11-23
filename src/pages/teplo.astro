@@ -45,7 +45,7 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
     }}
   />
 
-  <div class="max-w-7xl m-auto px-4 sm:px-0">
+  <div id="kontakty" class="max-w-7xl m-auto px-4 sm:px-0">
     <Features21
       title="Personální struktura střediska"
       columns={3}
@@ -69,23 +69,25 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
     </Features21>
   </div>
 
-  <Features2
-    title={plannedRepairs.title}
-    subtitle={plannedRepairs.subtitle}
-    classes={{
-      container: '-mt-20',
-      headline: {
-        title: 'text-white pt-10',
-        subtitle: 'text-white',
-      },
-    }}
-    columns={2}
-    items={plannedRepairs.items}
-  >
-    <Fragment slot="bg">
-      <div class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/kominy.webp')]"></div>
-    </Fragment>
-  </Features2>
+  <div id="opravy">
+    <Features2
+      title={plannedRepairs.title}
+      subtitle={plannedRepairs.subtitle}
+      classes={{
+        container: '-mt-20',
+        headline: {
+          title: 'text-white pt-10',
+          subtitle: 'text-white',
+        },
+      }}
+      columns={2}
+      items={plannedRepairs.items}
+    >
+      <Fragment slot="bg">
+        <div class="relative bg-cover bg-center h-full md:mt-20 2xl:mt-14 bg-[url('/assets/images/kominy.webp')]"></div>
+      </Fragment>
+    </Features2>
+  </div>
 
   <List
     title="Pravidla pro vytápění "
@@ -108,33 +110,37 @@ Každoročně jsou mimo topné období prováděny opravy a rekonstrukce zaříz
     </Fragment>
   </List>
 
-  <Content
-    isReversed
-    items={heatingSeason.items}
-    image={{
-      src: '/assets/images/tepelne-ruce.webp',
-      alt: 'Tepelné - topná sezóna',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">{heatingSeason.title}</h3>
-    </Fragment>
-  </Content>
+  <div id="topna-sezona">
+    <Content
+      isReversed
+      items={heatingSeason.items}
+      image={{
+        src: '/assets/images/tepelne-ruce.webp',
+        alt: 'Tepelné - topná sezóna',
+      }}
+    >
+      <Fragment slot="content">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">{heatingSeason.title}</h3>
+      </Fragment>
+    </Content>
+  </div>
 
-  <Content
-    items={pricing.items}
-    image={{
-      src: '/assets/images/tepelne-ceny.webp',
-      alt: 'Údržba - tvorba cen',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">{pricing.title}</h3>
-    </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  <div id="tvorba-cen">
+    <Content
+      items={pricing.items}
+      image={{
+        src: '/assets/images/tepelne-ceny.webp',
+        alt: 'Údržba - tvorba cen',
+      }}
+    >
+      <Fragment slot="content">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">{pricing.title}</h3>
+      </Fragment>
+      <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+      </Fragment>
+    </Content>
+  </div>
 
   <Content
     isSingle={true}

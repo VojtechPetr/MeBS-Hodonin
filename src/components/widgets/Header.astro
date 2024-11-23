@@ -4,6 +4,7 @@ import Logo from '~/components/Logo.astro';
 import ToggleTheme from '~/components/common/ToggleTheme.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 import Button from '~/components/ui/Button.astro';
+import Magnifier from '~/components/common/Magnifier.astro';
 
 import { getHomePermalink } from '~/utils/permalinks';
 import { trimSlash } from '~/utils/permalinks';
@@ -156,7 +157,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                 <Button
                   {...btnProps}
                   class:list={[
-                    ' ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto dark:hover:text-black dark:border-blue-600 border-blue-600 border-4 hover:bg-blue-200 dark:hover:bg-blue-200 transition duration-500 ease-in-out',
+                    'py-2.5 px-5.5 md:px-4 font-semibold shadow-none text-sm w-auto dark:hover:text-black dark:border-blue-600 border-blue-600 border-4 hover:bg-blue-200 dark:hover:bg-blue-200 transition duration-500 ease-in-out',
                     { 'aw-link-active rounded-3xl bg-blue-600 text-white': btnProps.href === currentPath },
                   ]}
                 />
@@ -166,8 +167,9 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
             ''
           )
         }
-        <div class="flex ml-5">
+        <div class="flex">
           {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block " />}
+          <Magnifier placeholder="Hledej..." searchIndexPath="/search-index.json" />
         </div>
       </div>
     </div>

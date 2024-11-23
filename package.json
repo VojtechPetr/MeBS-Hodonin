@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build:index": "node --loader ts-node/esm scripts/generateSearchIndex.ts",
+    "build": "npm run build:index && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "check": "npm run check:astro && npm run check:eslint && npm run check:prettier",
@@ -25,13 +26,15 @@
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
     "@astrolib/analytics": "^0.5.0",
-    "@astrolib/seo": "^1.0.0-beta.6",
+    "@astrolib/seo": "^1.0.0-beta.8",
     "@fontsource-variable/inter": "^5.1.0",
     "astro": "^4.15.5",
     "astro-embed": "^0.7.2",
     "astro-icon": "^1.1.1",
+    "gray-matter": "^4.0.3",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
+    "lunr": "^2.3.9",
     "netlify-cms-app": "^2.15.72",
     "unpic": "^3.18.0"
   },
@@ -63,7 +66,8 @@
     "sharp": "0.33.5",
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "^3.4.11",
-    "typescript": "^5.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
     "typescript-eslint": "^8.6.0",
     "unist-util-visit": "^5.0.0"
   }

@@ -24,7 +24,11 @@ const {
   {
     structure &&
       structure.map((department, index) => (
-        <div class={`mb-8 ${index % 2 === 0 ? 'bg-blue-100' : ''} p-4`} data-key={department.department}>
+        <div
+          id={department.anchor || undefined}
+          class={`mb-8 ${index % 2 === 0 ? 'bg-blue-100' : ''} p-4`}
+          data-key={department.department}
+        >
           <h2 class="text-xl font-bold mb-4">{department.department}</h2>
           {department.contacts && (
             <ItemGrid3

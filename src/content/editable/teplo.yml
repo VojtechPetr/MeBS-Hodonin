@@ -2,6 +2,7 @@ title: 'Teplo'
 url: '/teplo'
 planned_repairs:
   title: 'Plánované opravy'
+  anchor: 'opravy'
   subtitle: 'v roce 2024'
   items:
     - title: 'Výměna teplovodu Lesní - Sigma'
@@ -15,6 +16,7 @@ planned_repairs:
 
 heating_season:
   title: 'Průběh topné sezóny'
+  anchor: 'topna-sezona'
   items:
     - description: 'Průběh a ukončení topné sezóny v 1. pololetí 2024 byl bez výpadků v dodávce tepla. Teplotně bylo 1.pololetí výrazně teplejší proti roku 2023, v denostupních o 18,4 %. Vytápění bylo ukončeno 10. května.'
       icon: 'tabler:info-circle'
@@ -25,6 +27,7 @@ heating_season:
 
 pricing:
   title: 'Tvorba cen tepla'
+  anchor: 'tvorba-cen'
   items:
     - title: 'V praxi tedy cena tepla roste pouze s růstem cen nakupovaných energií.'
       description: 'Cena tepla je vypočtena jako podíl skutečných nákladů a vyrobených/dodaných GJ za topnou sezónu - kalendářní rok. Rozúčtování na jednotlivé odběratele je prováděno počítačovým programem HEAT. Regulace cen tepelné energie probíhá formou věcného usměrňování cen.'

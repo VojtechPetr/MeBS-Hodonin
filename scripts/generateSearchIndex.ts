@@ -33,6 +33,37 @@ async function generateSearchIndex() {
 
       const content = extractContent(data).replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
 
+      // Handle anchors for departments
+      if (data.departments) {
+        for (const department of data.departments as Array<Record<string, unknown>>) {
+          if (department.anchor && department.department) {
+            searchIndex.push({
+              id: `${file}#${department.anchor}`,
+              title: String(department.department),
+              url: `${data.url}#${department.anchor}`,
+              content: extractContent(department),
+            });
+          }
+        }
+      }
+
+      // Handle anchors for specific sections (e.g., planned_repairs, heating_season, pricing)
+      const sections = ['planned_repairs', 'heating_season', 'pricing'];
+      for (const section of sections) {
+        if (data[section]) {
+          const sectionData = data[section] as Record<string, unknown>;
+          if (sectionData.anchor) {
+            searchIndex.push({
+              id: `${file}#${sectionData.anchor}`,
+              title: String(sectionData.title || section),
+              url: `${data.url}#${sectionData.anchor}`,
+              content: extractContent(sectionData),
+            });
+          }
+        }
+      }
+
+      // Add general entry for the file if no anchors are specified
       searchIndex.push({
         id: file,
         title: String(data.hero_title || data.title || 'Untitled'),

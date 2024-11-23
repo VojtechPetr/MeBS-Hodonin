@@ -359,6 +359,7 @@ export interface Contact {
 
 export interface Department {
   department?: string;
+  anchor?: string;
   contacts?: Array<Contact>;
 }
 

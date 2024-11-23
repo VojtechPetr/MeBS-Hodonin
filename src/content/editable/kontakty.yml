@@ -1,7 +1,8 @@
 title: 'Kontakty'
-url: '/kontakty'
+url: '/kontakt'
 departments:
   - department: 'Správa'
+    anchor: 'sprava'
     contacts:
       - name: 'jednatelka'
         title: 'Ing. Jana Bimková'
@@ -67,6 +68,7 @@ departments:
             value: 'suchankova@bytovka.cz'
 
   - department: 'Údržba'
+    anchor: 'udrzba'
     contacts:
       - name: 'vedoucí'
         title: 'Miloslav Komosný'
@@ -102,6 +104,7 @@ departments:
             value: 'horny@bytovka.cz'
 
   - department: 'Tepelné'
+    anchor: 'teplo'
     contacts:
       - name: 'vedoucí'
         title: 'Ing. Petr Pacal'
@@ -129,6 +132,7 @@ departments:
             value: 'dispecink@bytovka.cz'
 
   - department: 'SVJ a družstva'
+    anchor: 'svj'
     contacts:
       - name: 'vedoucí'
         title: 'Pavel Schöndorf'
@@ -244,6 +248,7 @@ departments:
             value: 'drutarovska@bytovka.cz'
 
   - department: 'Hotel Krystal'
+    anchor: 'krystal'
     contacts:
       - name: 'Manažerka hotelu'
         title: 'Mgr. Bc. Ludmila Pijáčková'

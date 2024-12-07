@@ -112,7 +112,12 @@ const { placeholder = 'Hledej...', searchIndexPath = '/search-index.json' } = As
       const searchBar = document.getElementById('search-bar');
       const toggleButton = document.querySelector('[aria-label="Open Search"]');
 
-      if (searchBar && toggleButton && !searchBar.contains(event.target as Node) && !toggleButton.contains(event.target as Node)) {
+      if (
+        searchBar &&
+        toggleButton &&
+        !searchBar.contains(event.target as Node) &&
+        !toggleButton.contains(event.target as Node)
+      ) {
         closeSearchBar();
       }
     };

@@ -243,9 +243,6 @@ departments:
             value: 518 398 535
           - type: email
             value: drutarovska@bytovka.cz
-      - name: Technik
-        title: JIří Foltýn
-        icon: tabler:user
   - department: Hotel Krystal
     anchor: krystal
     contacts:

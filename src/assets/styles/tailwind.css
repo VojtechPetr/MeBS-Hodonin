@@ -57,6 +57,7 @@
   right: 0;
   bottom: 70px !important;
   padding: 0 5px;
+  overflow-y: auto;
 }
 
 .dropdown:focus .dropdown-menu,

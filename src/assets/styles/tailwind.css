@@ -52,12 +52,14 @@
 } */
 
 #header.expanded nav {
-  top: 70px;
+  position: absolute;
+  top: 100%;
   left: 0;
-  right: 0;
-  bottom: 70px !important;
-  padding: 0 5px;
+  z-index: 40;
+  background-color: var(--aw-color-bg-page);
+  border-radius: 0.375rem;
   overflow-y: auto;
+  max-height: calc(110vh - 340px); 
 }
 
 .dropdown:focus .dropdown-menu,

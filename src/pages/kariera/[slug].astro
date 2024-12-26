@@ -13,12 +13,26 @@ interface JobFrontmatter {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const jobs = (await Astro.glob('../../content/kariera/*.mdx')) as unknown as MDXInstance<JobFrontmatter>[];
+  try {
+    const jobs = (await Astro.glob('../../content/kariera/*.mdx')) as unknown as MDXInstance<JobFrontmatter>[];
 
-  return jobs.map((job) => ({
-    params: { slug: job.file.split('/').pop()?.replace('.mdx', '') },
-    props: { job },
-  }));
+    if (jobs.length === 0) {
+      // No matching files, return an empty paths array
+      return [];
+    }
+
+    return jobs.map((job) => ({
+      params: { slug: job.file.split('/').pop()?.replace('.mdx', '') },
+      props: { job },
+    }));
+  } catch (error) {
+    if (error.name === 'AstroGlobNoMatch') {
+      console.warn('No job positions found. Returning empty paths.');
+      return []; // Return empty paths if no files match
+    } else {
+      throw error; // Rethrow any other errors
+    }
+  }
 };
 
 const { job } = Astro.props as { job: MDXInstance<JobFrontmatter> };

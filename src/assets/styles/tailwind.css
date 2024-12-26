@@ -52,7 +52,6 @@
 } */
 
 #header.expanded nav {
-  position: fixed;
   top: 70px;
   left: 0;
   right: 0;

@@ -28,4 +28,5 @@ soubory:
   - file: ochrana-osobních-údajů-gdpr-družstvo-pastelky.pdf
   - file: informace-pro-členy-družstva-a-klienty-gdpr-družstvo-pastelky.pdf
   - file: darovací-smlouva-město-hodonín-pastelky.pdf
+  - file: pozvánka-na-členskou-schůzi-pastelky-27.-1.-2025.pdf
 ---

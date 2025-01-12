@@ -363,6 +363,13 @@ export interface Department {
   contacts?: Array<Contact>;
 }
 
+export interface PopUpProps {
+  timer?: number; // Delay before showing the popup
+  imageURL?: string; // Image source URL
+  href?: string; // Link URL for the image
+  description: string; // ARIA label description
+}
+
 export interface Features21 extends Omit<Headline, 'classes'>, Widget {
   image?: string | unknown;
   video?: Video;
@@ -433,4 +440,20 @@ declare global {
     toggleSearchBar: () => void;
     search: (event: KeyboardEvent) => Promise<void>;
   }
+
+  interface PopUpElement extends HTMLElement {
+    timer: number | null;
+    popUpClose: HTMLButtonElement | null;
+    boundHandleOutsideClick: (e: MouseEvent) => void;
+    boundHandleEscapeKey: (e: KeyboardEvent) => void;
+    boundClosePop: () => void;
+  }
+
+  
+  interface CloseButtonProps {
+    id?: string; // Optional ID for the button
+    customClass?: string; // Custom CSS class
+    onclick?: () => void; // Optional click handler
+  }
+  
 }

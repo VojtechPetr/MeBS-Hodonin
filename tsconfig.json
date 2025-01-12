@@ -11,7 +11,8 @@
     "skipLibCheck": true,
     "paths": {
       "~/*": ["src/*"]
-    }
+    },
+    "types": ["astro/client", "./src/types.d.ts"],
   },
   "include": ["scripts/**/*.ts", "src/**/*"],
   "exclude": ["dist/"]

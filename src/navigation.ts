@@ -68,8 +68,8 @@ export const headerData = {
           href: getBlogPermalink(),
         },
         {
-          text: 'Provozní doba MěBS o vánočních svátcích',
-          href: getPermalink('provoz-vanoce', 'post'),
+          text: 'Pozvánka na členskou schůzi družstva PASTELKY',
+          href: getPermalink('pozvanka', 'post'),
         },
       ],
     },

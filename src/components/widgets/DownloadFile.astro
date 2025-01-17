@@ -11,26 +11,28 @@ interface Props {
 }
 
 const { documents } = Astro.props;
+
+const sortedDocuments = documents
+  .filter((doc) => !doc.url.endsWith('.md'))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:mb-72">
   <ul class="space-y-4">
     {
-      documents
-        .filter((doc) => !doc.url.endsWith('.md'))
-        .map((doc) => (
-          <li class="p-4 border rounded-lg shadow-sm flex justify-between items-center">
-            <div>
-              <h3 class="text-lg">{doc.title}</h3>
-              <p class="text-sm text-gray-500">
-                Datum nahrání: {new Date(doc.date).toLocaleDateString()} | Velikost: {doc.size} KB
-              </p>
-            </div>
-            <a href={doc.url} download class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-              Stáhnout
-            </a>
-          </li>
-        ))
+      sortedDocuments.map((doc) => (
+        <li class="p-4 border rounded-lg shadow-sm flex justify-between items-center">
+          <div>
+            <h3 class="text-lg">{doc.title}</h3>
+            <p class="text-sm text-gray-500">
+              Datum nahrání: {new Date(doc.date).toLocaleDateString()} | Velikost: {doc.size} KB
+            </p>
+          </div>
+          <a href={doc.url} download class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+            Stáhnout
+          </a>
+        </li>
+      ))
     }
   </ul>
 </section>

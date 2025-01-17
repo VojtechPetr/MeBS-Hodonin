@@ -103,14 +103,14 @@ if (!timer) {
       document.removeEventListener('keydown', this.boundHandleEscapeKey);
     }
 
-    handleOutsideClick(e) {
+    handleOutsideClick(e: MouseEvent) {
       const popupContent = this.querySelector('.popup-content');
-      if (popupContent && !popupContent.contains(e.target)) {
+      if (popupContent && e.target instanceof Node && !popupContent.contains(e.target)) {
         this.closePop();
       }
     }
 
-    handleEscapeKey(e) {
+    handleEscapeKey(e: KeyboardEvent) {
       if (e.key === 'Escape') {
         this.closePop();
       }

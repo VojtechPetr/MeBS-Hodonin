@@ -8,4 +8,5 @@ soubory:
   - file: pravidla-pro-vytápění.doc
   - file: oznámení-o-odstávce-tepelné-energie.pdf
   - file: denostupne2024ext.xls
+  - file: předpokládané-ceny-tepla-na-rok-2025.doc
 ---

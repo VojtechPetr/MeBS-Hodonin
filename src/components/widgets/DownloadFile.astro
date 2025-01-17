@@ -14,7 +14,11 @@ const { documents } = Astro.props;
 
 const sortedDocuments = documents
   .filter((doc) => !doc.url.endsWith('.md'))
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  .sort((a, b) => {
+    const dateA = typeof a.date === 'string' ? new Date(a.date).getTime() : a.date.getTime();
+    const dateB = typeof b.date === 'string' ? new Date(b.date).getTime() : b.date.getTime();
+    return dateB - dateA;
+  });
 ---
 
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:mb-72">

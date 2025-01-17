@@ -6,16 +6,14 @@ interface Props {
   searchIndexPath?: string;
 }
 
-const { placeholder = 'Hledej...', searchIndexPath = '/search-index.json' } = Astro.props;
+const { placeholder = 'Hledej...' } = Astro.props;
 ---
 
 <div class="relative">
-  <!-- Magnifier Icon -->
   <button type="button" class="text-muted hover:bg-blue-200 rounded-full p-2" aria-label="Open Search">
     <Icon name="tabler:search" class="w-6 h-6" />
   </button>
 
-  <!-- Search Bar -->
   <div id="search-bar" class="hidden absolute top-12 right-0 bg-white shadow-lg rounded-md p-4 w-96 z-50">
     <input
       type="text"

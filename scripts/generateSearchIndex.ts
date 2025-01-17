@@ -94,7 +94,7 @@ async function generateSearchIndex() {
         .map((item) =>
           item
             .replace(/<[^>]*>/g, '')
-            .replace(/[\[\]\{\}"']/g, '')
+            .replace(/[[\]{}"']/g, '')
             .trim()
         )
         .join(' ');
@@ -107,7 +107,7 @@ async function generateSearchIndex() {
         .map((item) =>
           item
             .replace(/<[^>]*>/g, '')
-            .replace(/[\[\]\{\}"']/g, '')
+            .replace(/[[\]{}"']/g, '') 
             .trim()
         )
         .join(' ');

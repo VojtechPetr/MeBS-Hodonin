@@ -1,14 +1,12 @@
 ---
 import merge from 'lodash.merge';
-// @ts-ignore
-import { AstroSeo } from '@astrolib/seo';
-// @ts-ignore
-import type { Props as AstroSeoProps } from '@astrolib/seo';
+
+import { default as AstroSeo } from 'node_modules/@astrolib/seo/src/AstroSeo.astro';
+import type { AstroSeoProps } from 'node_modules/@astrolib/seo/src/types';
 
 import { SITE, METADATA, I18N } from 'astrowind:config';
 import type { MetaData } from '~/types';
 import { getCanonical } from '~/utils/permalinks';
-
 import { adaptOpenGraphImages } from '~/utils/images';
 
 export interface Props extends MetaData {

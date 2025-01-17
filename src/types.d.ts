@@ -449,11 +449,9 @@ declare global {
     boundClosePop: () => void;
   }
 
-  
   interface CloseButtonProps {
     id?: string; // Optional ID for the button
     customClass?: string; // Custom CSS class
     onclick?: () => void; // Optional click handler
   }
-  
 }

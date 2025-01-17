@@ -81,7 +81,11 @@ export const footerData = {
   secondaryLinks: [{ text: 'Zpracování osobních údajů', href: getPermalink('/privacy') }],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/bytovka_hodonin/' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61571060969082' },
+    {
+      ariaLabel: 'Facebook',
+      icon: 'tabler:brand-facebook',
+      href: 'https://www.facebook.com/profile.php?id=61571060969082',
+    },
     {
       ariaLabel: 'LinkedIn',
       icon: 'tabler:brand-linkedin',

@@ -1,6 +1,7 @@
 ---
 const { id, customClass, onclick } = Astro.props;
 ---
+
 <div class={`flex justify-end ${customClass}`}>
   <button
     aria-label="Close"
@@ -8,11 +9,7 @@ const { id, customClass, onclick } = Astro.props;
     onclick={onclick ?? null}
     class="w-8 h-8 flex items-center justify-center rounded-full relative bg-transparent hover:scale-110 transition-transform duration-300"
   >
-    <span
-      class="block w-[2px] h-5 bg-black transform rotate-45 absolute"
-    ></span>
-    <span
-      class="block w-[2px] h-5 bg-black transform -rotate-45 absolute"
-    ></span>
+    <span class="block w-[2px] h-5 bg-black transform rotate-45 absolute"></span>
+    <span class="block w-[2px] h-5 bg-black transform -rotate-45 absolute"></span>
   </button>
 </div>

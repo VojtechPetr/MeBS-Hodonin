@@ -1,15 +1,15 @@
 ---
-import CloseButton from "./CloseButton.astro";
+import CloseButton from './CloseButton.astro';
 const { timer, imageURL, href, description, title } = Astro.props;
 
 if (!timer) {
-  throw new Error("Timer attribute is a must.");
+  throw new Error('Timer attribute is a must.');
 } else if (!href) {
-  throw new Error("href attribute is a must.");
+  throw new Error('href attribute is a must.');
 } else if (!description) {
-  throw new Error("Description attribute is a must.");
+  throw new Error('Description attribute is a must.');
 } else if (!title) {
-  throw new Error("Title attribute is a must.");
+  throw new Error('Title attribute is a must.');
 }
 ---
 
@@ -29,21 +29,23 @@ if (!timer) {
         <h2 class="text-xl font-bold text-blue-600 pt-5">{title}</h2>
       </div>
 
-      {imageURL && (
-        <div class="image-container w-full flex items-center justify-center mb-4">
-          <img src={imageURL} alt="" class="max-w-full max-h-40 object-contain" />
-        </div>
-      )}
+      {
+        imageURL && (
+          <div class="image-container w-full flex items-center justify-center mb-4">
+            <img src={imageURL} alt="" class="max-w-full max-h-40 object-contain" />
+          </div>
+        )
+      }
 
       <div class="description text-center text-gray-800 px-4">
         <p>{description}</p>
       </div>
       <a
-      href={href}
-      class="bg-blue-600 text-white px-4 py-1 mt-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
-    >
-      Více informací
-    </a>
+        href={href}
+        class="bg-blue-600 text-white px-4 py-1 mt-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
+      >
+        Více informací
+      </a>
     </div>
     <CloseButton customClass="popclose absolute right-3 top-3 left-auto z-10" />
   </div>
@@ -56,12 +58,10 @@ if (!timer) {
     boundHandleOutsideClick: (e: MouseEvent) => void;
     boundHandleEscapeKey: (e: KeyboardEvent) => void;
     boundClosePop: () => void;
-    
+
     constructor() {
       super();
-      this.timer = this.getAttribute("data-message")
-        ? parseInt(this.getAttribute("data-message") as string)
-        : null;
+      this.timer = this.getAttribute('data-message') ? parseInt(this.getAttribute('data-message') as string) : null;
       this.popUpClose = null;
       // Bind event handlers
       this.boundHandleOutsideClick = this.handleOutsideClick.bind(this);
@@ -70,63 +70,66 @@ if (!timer) {
     }
 
     connectedCallback() {
-      if (sessionStorage.getItem("popupShown")) {
+      if (sessionStorage.getItem('popupShown')) {
         return; // Popup has already been shown
       }
 
-      sessionStorage.setItem("popupShown", "true");
+      sessionStorage.setItem('popupShown', 'true');
 
-      setTimeout(() => {
-        this.popUpClose = this.querySelector(".popclose");
+      setTimeout(
+        () => {
+          this.popUpClose = this.querySelector('.popclose');
 
-        if (!this.popUpClose) {
-          console.error("Close button not found");
-          return;
-        }
+          if (!this.popUpClose) {
+            console.error('Close button not found');
+            return;
+          }
 
-        this.popUpClose.addEventListener("click", this.boundClosePop);
-        this.addEventListener("click", this.boundHandleOutsideClick);
-        document.addEventListener("keydown", this.boundHandleEscapeKey);
+          this.popUpClose.addEventListener('click', this.boundClosePop);
+          this.addEventListener('click', this.boundHandleOutsideClick);
+          document.addEventListener('keydown', this.boundHandleEscapeKey);
 
-        this.openPop();
-      }, (this.timer ?? 0) * 1000);
+          this.openPop();
+        },
+        (this.timer ?? 0) * 1000
+      );
     }
 
     disconnectedCallback() {
       if (this.popUpClose) {
-        this.popUpClose.removeEventListener("click", this.boundClosePop);
+        this.popUpClose.removeEventListener('click', this.boundClosePop);
       }
-      this.removeEventListener("click", this.boundHandleOutsideClick);
-      document.removeEventListener("keydown", this.boundHandleEscapeKey);
+      this.removeEventListener('click', this.boundHandleOutsideClick);
+      document.removeEventListener('keydown', this.boundHandleEscapeKey);
     }
 
     handleOutsideClick(e) {
-      const popupContent = this.querySelector(".popup-content");
+      const popupContent = this.querySelector('.popup-content');
       if (popupContent && !popupContent.contains(e.target)) {
         this.closePop();
       }
     }
 
     handleEscapeKey(e) {
-      if (e.key === "Escape") {
+      if (e.key === 'Escape') {
         this.closePop();
       }
     }
 
     openPop() {
-      this.classList.remove("hidden");
-      this.classList.add("flex");
-      document.body.style.overflow = "hidden";
-      this.setAttribute("aria-modal", "true");
+      this.classList.remove('hidden');
+      this.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      this.setAttribute('aria-modal', 'true');
     }
 
     closePop() {
-      this.classList.add("hidden");
-      this.classList.remove("flex");
-      document.body.style.overflow = "";
-      this.setAttribute("aria-modal", "false");
+      this.classList.add('hidden');
+      this.classList.remove('flex');
+      document.body.style.overflow = '';
+      this.setAttribute('aria-modal', 'false');
     }
   }
 
-  customElements.define("pop-up", PopUp);
+  customElements.define('pop-up', PopUp);
 </script>

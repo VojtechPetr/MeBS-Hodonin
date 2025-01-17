@@ -1,8 +1,9 @@
 ---
 import merge from 'lodash.merge';
-
-import AstroSeo from '@astrolib/seo/src/AstroSeo.astro';
-import type { Props as AstroSeoProps } from '@astrolib/seo/src/AstroSeo.astro';
+// @ts-ignore
+import { AstroSeo } from '@astrolib/seo';
+// @ts-ignore
+import type { Props as AstroSeoProps } from '@astrolib/seo';
 
 import { SITE, METADATA, I18N } from 'astrowind:config';
 import type { MetaData } from '~/types';

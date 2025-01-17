@@ -7,6 +7,5 @@ soubory:
   - file: předávací-stanice-napojené-domy.doc
   - file: pravidla-pro-vytápění.doc
   - file: oznámení-o-odstávce-tepelné-energie.pdf
-  - file: denostupně-2022.xls
-  - file: denostupně-2021.xls
+  - file: denostupne2024ext.xls
 ---

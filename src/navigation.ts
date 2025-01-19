@@ -71,6 +71,10 @@ export const headerData = {
           text: 'Pozvánka na členskou schůzi družstva PASTELKY',
           href: getPermalink('pozvanka', 'post'),
         },
+        {
+          text: 'Oznámení o přerušení dodávky elektrické energie',
+          href: getPermalink('oznameni-odstavka', 'post'),
+        },
       ],
     },
   ],

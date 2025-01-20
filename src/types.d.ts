@@ -363,6 +363,16 @@ export interface Department {
   contacts?: Array<Contact>;
 }
 
+export type FileData = {
+  file: string; // Název souboru
+  uploadDate: string; // Datum nahrání z DecapCMS
+};
+
+export type DocumentData = {
+  title: string; // Název kategorie
+  soubory: FileData[]; // Pole souborů
+};
+
 export interface PopUpProps {
   timer?: number; // Delay before showing the popup
   imageURL?: string; // Image source URL

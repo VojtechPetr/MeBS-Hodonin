@@ -4,21 +4,24 @@ import DocumentList from '~/components/widgets/DownloadFile.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import fs from 'fs';
 import path from 'path';
+import fileData from 'public/assets/files/bd-pastelky/bd-pastelky.md';
+import type { DocumentData } from '~/types';
 
 const metadata = {
   title: 'Bytové družstvo Pastelky',
 };
 
+const typedFileData = fileData as unknown as DocumentData;
 const directoryPath = path.resolve('./public/assets/files/bd-pastelky');
 
-const documents = fs.readdirSync(directoryPath).map((fileName) => {
-  const filePath = path.join(directoryPath, fileName);
-  const stats = fs.statSync(filePath);
+const documents = typedFileData.soubory.map((file) => {
+  const filePath = path.join(directoryPath, file.file);
+  const stats = fs.existsSync(filePath) ? fs.statSync(filePath) : { size: 0 };
 
   return {
-    title: fileName,
-    url: `/assets/files/bd-pastelky/${fileName}`,
-    date: stats.mtime,
+    title: file.file,
+    url: `/assets/files/bd-pastelky/${file.file}`,
+    date: file.uploadDate,
     size: (stats.size / 1024).toFixed(2),
   };
 });

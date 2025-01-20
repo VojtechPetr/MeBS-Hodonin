@@ -11,7 +11,7 @@ const metadata = {
   title: 'Bytové družstvo Pastelky',
 };
 
-const filePath = path.resolve('./content/ke-stazeni/bd-pastelky.md');
+const filePath = path.resolve('src/content/ke-stazeni/bd-pastelky.md');
 
 const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
 const parsedMarkdown = matter(rawMarkdown);

@@ -5,6 +5,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Note from '~/components/widgets/Note.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import Button from '~/components/ui/Button.astro';
 import Features21 from '~/components/widgets/Features21.astro';
 import { getContent } from '~/utils/getContent';
 import type { AkceData, SVJKontaktyData } from '~/types';
@@ -44,6 +45,14 @@ const akceItems = akceData?.items || [];
       class: 'md:mt-16 2xl:mt-0 mx-auto w-full',
     }}
   />
+
+  <div class="flex items-center justify-center mb-20">
+    <Button
+      variant="primary"
+      href="assets/files/bytova-udrzba/cen%C3%ADk-prac%C3%AD-%C3%BAdr%C5%BEby-bytov%C3%A9ho-a-tepeln%C3%A9ho-hospod%C3%A1%C5%99stv%C3%AD.pdf"
+      text="Náhled ceníku služeb"
+    />
+  </div>
 
   <div class="max-w-6xl m-auto px-4 sm:px-0">
     <Features21

@@ -29,7 +29,7 @@ const sortedDocuments = documents
           <div>
             <h3 class="text-lg">{doc.title}</h3>
             <p class="text-sm text-gray-500">
-              Datum nahrání: {new Date(doc.date).toLocaleDateString()} | Velikost: {doc.size} KB
+              Datum nahrání: {new Date(doc.date).toLocaleDateString('cs-CZ')} | Velikost: {doc.size} KB
             </p>
           </div>
           <a href={doc.url} download class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">

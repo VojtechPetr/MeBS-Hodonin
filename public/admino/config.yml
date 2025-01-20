@@ -257,13 +257,12 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }
 
   - label: 'Dokumenty BD Lípa'
     name: 'bd_lipa'
@@ -275,13 +274,12 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }
 
   - label: 'Dokumenty BD Pastelky'
     name: 'bd_pastelky'
@@ -293,13 +291,12 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }
 
   - label: 'Dokumenty Bytová Údržba'
     name: 'bytova_udrzba'
@@ -311,13 +308,12 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }
 
   - label: 'Dokumenty Obecné Dokumenty'
     name: 'obecne_dokumenty'
@@ -329,13 +325,12 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }
 
   - label: 'Dokumenty Pro Zaměstnance'
     name: 'pro_zamestnance'
@@ -347,13 +342,12 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }
 
   - label: 'Dokumenty Správa Prod. Bytů'
     name: 'sprava_prodanych_bytu'
@@ -365,13 +359,12 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }
 
   - label: 'Dokumenty Tepelné Hospodářství'
     name: 'tepelne_hospodarstvi'
@@ -383,10 +376,9 @@ collections:
       - label: 'Název dokumentu'
         name: 'title'
         widget: 'string'
-      - label: 'Datum nahrání'
-        name: 'uploadDate'
       - label: 'Soubory'
         name: 'soubory'
         widget: 'list'
         fields:
           - { label: 'Soubor', name: 'file', widget: 'file' }
+          - { label: 'Datum nahrání', name: 'uploadDate', widget: 'datetime' }

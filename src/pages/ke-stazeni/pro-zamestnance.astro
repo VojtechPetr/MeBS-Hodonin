@@ -4,21 +4,30 @@ import DocumentList from '~/components/widgets/DownloadFile.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import fs from 'fs';
 import path from 'path';
+import type { DocumentData } from '~/types';
+import matter from 'gray-matter';
 
 const metadata = {
   title: 'Pro zaměstnance',
 };
 
+const filePath = path.resolve('src/content/ke-stazeni/dokumenty-pro-zaměstnance.md');
+
+const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
+const parsedMarkdown = matter(rawMarkdown);
+
+const typedFileData = parsedMarkdown.data as unknown as DocumentData;
+
 const directoryPath = path.resolve('./public/assets/files/pro-zamestnance');
 
-const documents = fs.readdirSync(directoryPath).map((fileName) => {
-  const filePath = path.join(directoryPath, fileName);
-  const stats = fs.statSync(filePath);
+const documents = typedFileData.soubory.map((file) => {
+  const filePath = path.join(directoryPath, file.file);
+  const stats = fs.existsSync(filePath) ? fs.statSync(filePath) : { size: 0 };
 
   return {
-    title: fileName,
-    url: `/assets/files/pro-zamestnance/${fileName}`,
-    date: stats.mtime,
+    title: file.file,
+    url: `/assets/files/pro-zamestnance/${file.file}`,
+    date: file.uploadDate,
     size: (stats.size / 1024).toFixed(2),
   };
 });

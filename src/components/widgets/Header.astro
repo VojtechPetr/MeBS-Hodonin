@@ -115,7 +115,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                       <li>
                         <a
                           class:list={[
-                            'hover:bg-blue-200 hover:text-black transition duration-500 ease-in-out py-1 px-5 block whitespace-no-wrap rounded-3xl',
+                            'hover:bg-blue-200 hover:text-black transition duration-500 ease-in-out py-1 px-5 block whitespace-normal rounded-3xl break-normal',
                             { 'aw-link-active rounded-3xl bg-blue-600 text-white': href2 === currentPath },
                           ]}
                           href={href2}

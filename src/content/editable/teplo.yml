@@ -11,7 +11,7 @@ planned_repairs:
       icon: tabler:switch-3
     - title: Výměna systému měření a regulace Cihlářská - Družstevní
       icon: tabler:switch-3
-    - title: " V roce 2025 bude metrologicky ověřeno 75 ks měřidel tepla"
+    - title: ' V roce 2025 bude metrologicky ověřeno 75 ks měřidel tepla'
       icon: tabler:thermometer
 heating_season:
   title: Průběh topné sezóny

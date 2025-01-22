@@ -72,6 +72,10 @@ export const headerData = {
           href: getPermalink('pozvanka', 'post'),
         },
         {
+          text: 'Termíny shromáždění PROFI PŘEDSEDA',
+          href: getPermalink('pozvanka-svj', 'post'),
+        },
+        {
           text: 'Oznámení o přerušení dodávky elektrické energie',
           href: getPermalink('oznameni-odstavka', 'post'),
         },

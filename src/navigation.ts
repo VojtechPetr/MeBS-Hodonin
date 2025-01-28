@@ -68,10 +68,6 @@ export const headerData = {
           href: getBlogPermalink(),
         },
         {
-          text: 'Pozvánka na členskou schůzi družstva PASTELKY',
-          href: getPermalink('pozvanka', 'post'),
-        },
-        {
           text: 'Termíny shromáždění PROFI PŘEDSEDA',
           href: getPermalink('pozvanka-svj', 'post'),
         },

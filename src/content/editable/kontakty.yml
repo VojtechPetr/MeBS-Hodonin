@@ -121,7 +121,7 @@ departments:
           - type: email
             value: vrablikova@bytovka.cz
       - name: centrální dispečink
-        title: ''
+        title: ""
         icon: tabler:headset
         contactInfo:
           - type: phone
@@ -168,7 +168,7 @@ departments:
         icon: tabler:user
         contactInfo:
           - type: phone
-            value: 518 398 539, 724 986 064
+            value: 518 398 526, 724 986 064
           - type: email
             value: foltyn@bytovka.cz
       - name: vedoucí účetní
@@ -255,7 +255,7 @@ departments:
           - type: email
             value: pijackova@bytovka.cz
       - name: recepce
-        title: ''
+        title: ""
         icon: tabler:bed
         contactInfo:
           - type: phone

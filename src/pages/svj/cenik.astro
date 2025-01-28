@@ -5,16 +5,16 @@ import { getContent } from '~/utils/getContent';
 import type { CenikData } from '~/types';
 
 const metadata = {
-  title: 'Ceník 2024 SVJ nad rámec smluv',
+  title: 'Ceník 2025 SVJ nad rámec smluv',
 };
 
 const cenikData = await getContent<CenikData>('cenik');
 const items = cenikData?.items ?? [];
-const heroTitle = cenikData?.hero_title ?? 'Ceník služeb pro SVJ na rok 2024';
+const heroTitle = cenikData?.hero_title ?? 'Ceník služeb pro SVJ na rok 2025';
 const heroSubtitle =
   cenikData?.hero_subtitle ??
-  'Tento ceník obsahuje všechny nadstandardní služby nad rámec smluvních povinností poskytované pro SVJ v roce 2024.';
-const footerText1 = cenikData?.footer_text_1 ?? '* 181,7 Kč/měs/jednotka';
+  'Tento ceník obsahuje všechny nadstandardní služby nad rámec smluvních povinností poskytované pro SVJ v roce 2025.';
+const footerText1 = cenikData?.footer_text_1 ?? '* 186,1 Kč/měs/jednotka';
 const footerText2 = cenikData?.footer_text_2 ?? '** Netýká se SVJ, kde MěBS vykonává funkci předsedy společenství';
 const footerText3 = cenikData?.footer_text_3 ?? 'Všechny ceny bez DPH';
 ---

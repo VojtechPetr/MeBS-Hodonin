@@ -1,5 +1,5 @@
 ---
-title: "Dokumenty BD Pastelky "
+title: 'Dokumenty BD Pastelky '
 soubory:
   - file: zápis-z-rozhodnutí-per-rollam-účetní-závěrka-2020.pdf
     uploadDate: 2024-12-01T00:00:00.000Z

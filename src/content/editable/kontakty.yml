@@ -129,7 +129,7 @@ departments:
           - type: email
             value: babicek@bytovka.cz
       - name: centrální dispečink
-        title: ""
+        title: ''
         icon: tabler:headset
         contactInfo:
           - type: phone
@@ -255,7 +255,7 @@ departments:
           - type: email
             value: pijackova@bytovka.cz
       - name: recepce
-        title: ""
+        title: ''
         icon: tabler:bed
         contactInfo:
           - type: phone

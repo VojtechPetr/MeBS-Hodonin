@@ -120,8 +120,16 @@ departments:
             value: 518 398 529, 602 734 775
           - type: email
             value: vrablikova@bytovka.cz
+      - name: vedoucí údržby TVH
+        title: Aleš Bábiček
+        icon: tabler:user
+        contactInfo:
+          - type: phone
+            value: 606 387 498
+          - type: email
+            value: babicek@bytovka.cz
       - name: centrální dispečink
-        title: ''
+        title: ""
         icon: tabler:headset
         contactInfo:
           - type: phone
@@ -155,14 +163,6 @@ departments:
             value: 518 398 519, 606 648 953
           - type: email
             value: hedrich@bytovka.cz
-      - name: technik
-        title: Aleš Bábíček
-        icon: tabler:user
-        contactInfo:
-          - type: phone
-            value: 518 398 526, 606 387 498
-          - type: email
-            value: babicek@bytovka.cz
       - name: technik
         title: Jiří Foltýn
         icon: tabler:user
@@ -255,7 +255,7 @@ departments:
           - type: email
             value: pijackova@bytovka.cz
       - name: recepce
-        title: ''
+        title: ""
         icon: tabler:bed
         contactInfo:
           - type: phone

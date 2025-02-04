@@ -25,14 +25,6 @@ contacts:
         value: 518 398 519, 606 648 953
       - type: email
         value: hedrich@bytovka.cz
-  - name: Aleš Bábíček
-    title: Technik
-    icon: tabler:tools
-    contactInfo:
-      - type: phone
-        value: 518 398 526, 606 387 498
-      - type: email
-        value: babicek@bytovka.cz
   - name: Jiří Foltýn
     title: Technik
     icon: tabler:tools

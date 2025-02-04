@@ -1,5 +1,5 @@
 ---
-title: 'Dokumenty BD Pastelky '
+title: "Dokumenty BD Pastelky "
 soubory:
   - file: zápis-z-rozhodnutí-per-rollam-účetní-závěrka-2020.pdf
     uploadDate: 2024-12-01T00:00:00.000Z
@@ -55,4 +55,6 @@ soubory:
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: darovací-smlouva-město-hodonín-pastelky.pdf
     uploadDate: 2024-12-01T00:00:00.000Z
+  - file: pastelky-v-likvidaci-usnesení-členské-schůze-ze-dne-27.-1.-2025.pdf
+    uploadDate: 2025-02-04T13:36:00.000Z
 ---

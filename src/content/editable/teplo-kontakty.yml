@@ -1,29 +1,35 @@
-title: 'Teplo - kontakty'
-url: '/teplo#kontakty'
+title: Teplo - kontakty
+url: /teplo#kontakty
 contacts:
-  - name: 'Ing. Petr Pacal'
-    title: 'Vedoucí'
-    icon: 'tabler:crown'
+  - name: Ing. Petr Pacal
+    title: Vedoucí
+    icon: tabler:crown
     contactInfo:
-      - type: 'phone'
-        value: '518 398 524, 602 515 443'
-      - type: 'email'
-        value: 'pacal@bytovka.cz'
-
-  - name: 'Jitka Brichtová Vrábliková'
-    title: 'Provozní ekonomka, fakturace'
-    icon: 'tabler:zoom-money'
+      - type: phone
+        value: 518 398 524, 602 515 443
+      - type: email
+        value: pacal@bytovka.cz
+  - name: Jitka Brichtová Vrábliková
+    title: Provozní ekonomka, fakturace
+    icon: tabler:zoom-money
     contactInfo:
-      - type: 'phone'
-        value: '518 398 529, 602 734 775'
-      - type: 'email'
-        value: 'vrablikova@bytovka.cz'
-
-  - name: 'centrální dispečink'
-    title: ''
-    icon: 'tabler:headset'
+      - type: phone
+        value: 518 398 529, 602 734 775
+      - type: email
+        value: vrablikova@bytovka.cz
+  - name: Aleš Babíček
+    title: Vedoucí údržby TVH
+    icon: tabler:crown
     contactInfo:
-      - type: 'phone'
-        value: '602 793 211'
-      - type: 'email'
-        value: 'dispecink@bytovka.cz'
+      - type: phone
+        value: 606 387 498
+      - type: email
+        value: babicek@bytovka.cz
+  - name: centrální dispečink
+    title: ""
+    icon: tabler:headset
+    contactInfo:
+      - type: phone
+        value: 602 793 211
+      - type: email
+        value: dispecink@bytovka.cz

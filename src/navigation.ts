@@ -72,10 +72,6 @@ export const headerData = {
           href: getPermalink('pozvanka-svj', 'post'),
         },
         {
-          text: 'Oznámení o přerušení dodávky elektrické energie',
-          href: getPermalink('oznameni-odstavka', 'post'),
-        },
-        {
           text: 'Oznámení o navýšení odměny za správu bytů',
           href: getPermalink('oznameni-navyseni', 'post'),
         },

@@ -76,11 +76,11 @@ export const headerData = {
           href: getPermalink('oznameni-navyseni', 'post'),
         },
         {
-          text: 'Oznámení o přerušení  dodávky el. energie 10.3.2025',
+          text: 'Oznámení o přerušení  dodávky el. energie 18.3.2025',
           href: getPermalink('oznameni-odstávka10', 'post'),
         },
         {
-          text: 'Oznámení o přerušení  dodávky el. energie 12.3.2025',
+          text: 'Oznámení o přerušení  dodávky el. energie 19.3.2025',
           href: getPermalink('oznameni-odstávka12', 'post'),
         },
       ],

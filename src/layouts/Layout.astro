@@ -12,7 +12,7 @@ import SiteVerification from '~/components/common/SiteVerification.astro';
 //import Analytics from '~/components/common/Analytics.astro';
 import Analytics2 from '~/components/common/Analytics2.html';
 import BasicScripts from '~/components/common/BasicScripts.astro';
-//import PopUp from '~/components/widgets/PopUp.astro';
+import PopUp from '~/components/widgets/PopUp.astro';
 
 // Comment the line below to disable View Transitions
 import { ViewTransitions } from 'astro:transitions';
@@ -39,12 +39,12 @@ const { language, textDirection } = I18N;
     <!-- <Analytics /> -->
     <Analytics2 />
 
-    <!-- <PopUp
+    <PopUp
       timer={1}
       title="OZNÁMENÍ O PŘERUŠENÍ DODÁVKY ELEKTRICKÉ ENERGIE"
-      href="/blog"
-      description="V Hodoníně dojde k plánovaným odstávkám elektřiny: 18. března 2025 v oblasti TS Žižkova – ul. Na Výhoně po ul. Mánesova, část ul. U Hliníku, U přejezdu, Zámečnická, Myslivečkova, Jungmannova, Závodní, Alešova, část ul. Žižkova (od ul. U přejezdu po ul. Smetanova – levá strana), část ul. Sacharova (od ul. U přejezdu po ul. Jungmannova) a 19. března 2025 v oblasti Mírové náměstí (od č. 2332/1 po č. 1123/9), Pr. Veselého (od č. 37 po č. 31 a dále od č. 29 po č. 21). Důvodem odstávek jsou údržba, opravy a revizní práce na distribuční soustavě. Děkujeme za pochopení."
-    /> -->
+      href="/oznameni-odstavka"
+      description="V Hodoníně dojde k plánované odstávce elektřiny dne 2. dubna 2025 v části ul. Purkyňova a 12. dubna z důvodu údržby a revizních prací na distribuční soustavě. Děkujeme za pochopení."
+      />
 
     <!-- <PopUp
       timer={1}

@@ -76,8 +76,8 @@ export const headerData = {
           href: getPermalink('oznameni-navyseni', 'post'),
         },
         {
-          text: 'Oznámení o přerušení  dodávky el. energie 2.4.2025',
-          href: getPermalink('oznameni-odstavka', 'post'),
+          text: 'Oznámení: výpadek služeb O2 14.4.2025',
+          href: getPermalink('oznameni-odstavka-o2', 'post'),
         },
         // {
         //   text: 'Oznámení o přerušení  dodávky el. energie 19.3.2025',

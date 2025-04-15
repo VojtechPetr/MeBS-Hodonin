@@ -75,10 +75,10 @@ export const headerData = {
           text: 'Oznámení o navýšení odměny za správu bytů',
           href: getPermalink('oznameni-navyseni', 'post'),
         },
-        {
-          text: 'Oznámení: výpadek služeb O2 14.4.2025',
-          href: getPermalink('oznameni-odstavka-o2', 'post'),
-        },
+        // {
+        //   text: 'Oznámení: výpadek služeb O2 14.4.2025',
+        //   href: getPermalink('oznameni-odstavka-o2', 'post'),
+        // },
         // {
         //   text: 'Oznámení o přerušení  dodávky el. energie 19.3.2025',
         //   href: getPermalink('oznameni-odstávka12', 'post'),

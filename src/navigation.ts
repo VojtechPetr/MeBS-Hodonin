@@ -79,10 +79,10 @@ export const headerData = {
         //   text: 'Oznámení: výpadek služeb O2 14.4.2025',
         //   href: getPermalink('oznameni-odstavka-o2', 'post'),
         // },
-        // {
-        //   text: 'Oznámení o přerušení  dodávky el. energie 19.3.2025',
-        //   href: getPermalink('oznameni-odstávka12', 'post'),
-        // },
+        {
+          text: 'Oznámení o přerušení  dodávky el. energie 28.4.2025',
+          href: getPermalink('oznameni-odstavka', 'post'),
+        },
       ],
     },
   ],

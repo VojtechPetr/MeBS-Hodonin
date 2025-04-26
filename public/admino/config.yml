@@ -250,7 +250,7 @@ collections:
   - label: 'Dokumenty BD Kaštany'
     name: 'bd_kastany'
     folder: 'src/content/ke-stazeni'
-    create: true 
+    create: true
     media_folder: 'public/assets/files/bd-kastany'
     public_folder: '/assets/files/bd-kastany'
     fields:

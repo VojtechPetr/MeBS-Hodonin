@@ -18,7 +18,7 @@ const parsedMarkdown = matter(rawMarkdown);
 
 const typedFileData = parsedMarkdown.data as unknown as DocumentData;
 
-const directoryPath = path.resolve('./public/assets/files/obecne-doku');
+const directoryPath = path.resolve('./public/assets/files/obecne-dokumenty');
 
 const documents = typedFileData.soubory.map((file) => {
   const filePath = path.join(directoryPath, file.file);
@@ -26,7 +26,7 @@ const documents = typedFileData.soubory.map((file) => {
 
   return {
     title: file.file,
-    url: `/assets/files/obecne-doku/${file.file}`,
+    url: `/assets/files/obecne-dokumenty/${file.file}`,
     date: file.uploadDate,
     size: (stats.size / 1024).toFixed(2),
   };

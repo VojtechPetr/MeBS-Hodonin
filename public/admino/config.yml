@@ -249,10 +249,10 @@ collections:
   #dokumenty
   - label: 'Dokumenty BD Kaštany'
     name: 'bd_kastany'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/bd-kastany'
     create: true
-    media_folder: 'public/assets/files/bd-kastany'
-    public_folder: '/assets/files/bd-kastany'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'
@@ -266,10 +266,10 @@ collections:
 
   - label: 'Dokumenty BD Lípa'
     name: 'bd_lipa'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/bd-lipa'
     create: true
-    media_folder: 'public/assets/files/bd-lipa'
-    public_folder: '/assets/files/bd-lipa'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'
@@ -283,10 +283,10 @@ collections:
 
   - label: 'Dokumenty BD Pastelky'
     name: 'bd_pastelky'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/bd-pastelky'
     create: true
-    media_folder: 'public/assets/files/bd-pastelky'
-    public_folder: '/assets/files/bd-pastelky'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'
@@ -300,10 +300,10 @@ collections:
 
   - label: 'Dokumenty Bytová Údržba'
     name: 'bytova_udrzba'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/bytova-udrzba'
     create: true
-    media_folder: 'public/assets/files/bytova-udrzba'
-    public_folder: '/assets/files/bytova-udrzba'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'
@@ -317,10 +317,10 @@ collections:
 
   - label: 'Dokumenty Obecné Dokumenty'
     name: 'obecne_dokumenty'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/obecne-dokumenty'
     create: true
-    media_folder: 'public/assets/files/obecne-dokumenty'
-    public_folder: '/assets/files/obecne-dokumenty'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'
@@ -334,10 +334,10 @@ collections:
 
   - label: 'Dokumenty Pro Zaměstnance'
     name: 'pro_zamestnance'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/pro-zamestnance'
     create: true
-    media_folder: 'public/assets/files/pro-zamestnance'
-    public_folder: '/assets/files/pro-zamestnance'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'
@@ -351,10 +351,10 @@ collections:
 
   - label: 'Dokumenty Správa Prod. Bytů'
     name: 'sprava_prodanych_bytu'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/sprava-prodanych-bytu'
     create: true
-    media_folder: 'public/assets/files/sprava-prodanych-bytu'
-    public_folder: '/assets/files/sprava-prodanych-bytu'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'
@@ -368,10 +368,10 @@ collections:
 
   - label: 'Dokumenty Tepelné Hospodářství'
     name: 'tepelne_hospodarstvi'
-    folder: 'src/content/ke-stazeni'
+    folder: 'public/assets/files/tepelne-hospodarstvi'
     create: true
-    media_folder: 'public/assets/files/tepelne-hospodarstvi'
-    public_folder: '/assets/files/tepelne-hospodarstvi'
+    media_folder: ''
+    public_folder: ''
     fields:
       - label: 'Název dokumentu'
         name: 'title'

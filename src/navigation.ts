@@ -75,14 +75,18 @@ export const headerData = {
           text: 'Oznámení o navýšení odměny za správu bytů',
           href: getPermalink('oznameni-navyseni', 'post'),
         },
+        {
+          text: 'Reklamační řízení',
+          href: getPermalink('/assets/files/obecne-dokumenty/reklamacni-rizeni.pdf'),
+        },
         // {
         //   text: 'Oznámení: výpadek služeb O2 14.4.2025',
         //   href: getPermalink('oznameni-odstavka-o2', 'post'),
         // },
-        // {
-        //   text: 'Oznámení o přerušení  dodávky el. energie 28.4.2025',
-        //   href: getPermalink('oznameni-odstavka', 'post'),
-        // },
+        {
+          text: 'Oznámení o přerušení  dodávky el. energie 7.5.2025',
+          href: getPermalink('oznameni-odstavka', 'post'),
+        },
       ],
     },
   ],

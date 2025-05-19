@@ -84,16 +84,20 @@ export const headerData = {
         //   href: getPermalink('oznameni-odstavka-o2', 'post'),
         // },
         {
-          text: 'Oznámení o přerušení  dodávky el. energie 14.5.2025',
-          href: getPermalink('oznameni-odstavka14', 'post'),
+          text: 'Oznámení o přerušení  dodávky el. energie 20.5.2025',
+          href: getPermalink('oznameni-odstavka205', 'post'),
         },
         {
-          text: 'Oznámení o přerušení  dodávky el. energie 15.5.2025',
-          href: getPermalink('oznameni-odstavka15', 'post'),
+          text: 'Oznámení o přerušení  dodávky el. energie 21.5.2025',
+          href: getPermalink('oznameni-odstavka215', 'post'),
         },
         {
-          text: 'Oznámení o přerušení  dodávky el. energie 16.5.2025',
-          href: getPermalink('oznameni-odstavka16', 'post'),
+          text: 'Oznámení o přerušení  dodávky el. energie 22.5.2025',
+          href: getPermalink('oznameni-odstavka225', 'post'),
+        },
+                {
+          text: 'Oznámení o přerušení  dodávky el. energie 23.5.2025',
+          href: getPermalink('oznameni-odstavka235', 'post'),
         },
       ],
     },

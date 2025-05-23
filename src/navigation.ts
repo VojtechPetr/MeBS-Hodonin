@@ -95,7 +95,7 @@ export const headerData = {
           text: 'Oznámení o přerušení  dodávky el. energie 22.5.2025',
           href: getPermalink('oznameni-odstavka225', 'post'),
         },
-                {
+        {
           text: 'Oznámení o přerušení  dodávky el. energie 23.5.2025',
           href: getPermalink('oznameni-odstavka235', 'post'),
         },

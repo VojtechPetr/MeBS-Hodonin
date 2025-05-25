@@ -9,12 +9,8 @@ soubory:
     uploadDate: 2025-01-20T00:00:00.000Z
   - file: reklamacni-rizeni.pdf
     uploadDate: 2025-04-26T15:16:00.000Z
-  - file: eon_oznameni205.pdf
-    uploadDate: 2025-05-19T12:55:00.000Z
-  - file: eon_oznameni215.pdf
-    uploadDate: 2025-05-19T12:55:00.000Z
-  - uploadDate: 2025-05-19T12:55:00.000Z
-    file: eon_oznameni225.pdf
-  - uploadDate: 2025-05-19T12:56:00.000Z
-    file: eon_oznameni235.pdf
+  - file: eon_oznameni275.pdf
+    uploadDate: 2025-05-25T11:12:00.000Z
+  - file: eon_oznameni285.pdf
+    uploadDate: 2025-05-25T11:12:00.000Z
 ---

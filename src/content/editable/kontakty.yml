@@ -180,7 +180,7 @@ departments:
           - type: email
             value: jaronkova@bytovka.cz
       - name: účetní
-        title: Jana Králová
+        title: Zdeňka Miholová
         icon: tabler:user
         contactInfo:
           - type: phone

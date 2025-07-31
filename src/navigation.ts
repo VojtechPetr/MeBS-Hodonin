@@ -79,10 +79,10 @@ export const headerData = {
           text: 'Reklamační řízení',
           href: getPermalink('/assets/files/obecne-dokumenty/reklamacni-rizeni.pdf'),
         },
-        // {
-        //   text: 'Oznámení: výpadek služeb O2 14.4.2025',
-        //   href: getPermalink('oznameni-odstavka-o2', 'post'),
-        // },
+        {
+          text: 'Oznámení o opravě teplovodu',
+          href: getPermalink('oznameni-opravaTeplovodu', 'post'),
+        },
         // {
         //   text: 'Oznámení o přerušení  dodávky el. energie 27.5.2025',
         //   href: getPermalink('oznameni-odstavka275', 'post'),

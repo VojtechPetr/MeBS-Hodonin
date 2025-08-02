@@ -7,6 +7,7 @@ import Note from '~/components/widgets/Note.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Button from '~/components/ui/Button.astro';
 import Features21 from '~/components/widgets/Features21.astro';
+import CardsSlider from '~/components/widgets/CardsSlider.astro';
 import { getContent } from '~/utils/getContent';
 import type { AkceData, SVJKontaktyData } from '~/types';
 
@@ -86,7 +87,51 @@ const akceItems = akceData?.items || [];
       { title: 'zámečník ', amount: '1' },
     ]}
   />
-
+  <CardsSlider
+    title="Realizované práce"
+    items={[
+      {
+        title: 'Kompletní rekonstrukce koupelny',
+        description:
+          'Rozsah: nové rozvody vody, topení a elektro, kompletně nové obklady a dlažba, minerální podhled. Instalace sprchového koutu (náhrada za vanu), nového umyvadla a toaletu. Součástí zakázky byly také vzduchotechnické a malířské práce v bytě. Doba realizace: 20 pracovních dnů. Realizace: tým údržby Městské bytové správy Hodonín.',
+        photos: [
+          { src: '/assets/images/koupelna01.JPG', alt: 'Původní stav – bourací práce' },
+          { src: '/assets/images/koupelna02.JPG', alt: 'Původní rozvody a příprava' },
+          { src: '/assets/images/koupelna03.JPG', alt: 'Původní stav – demontáž obkladů' },
+          { src: '/assets/images/koupelna2.webp', alt: 'Hotová koupelna – celkový pohled' },
+          { src: '/assets/images/koupelna3.webp', alt: 'Sprchový kout – dokončený stav' },
+          { src: '/assets/images/koupelna4.webp', alt: 'Hotová koupelna – detail' },
+        ],
+      },
+      // {
+      //   title: 'Rekonstrukce kotelny',
+      //   description: 'Výměna technologie a optimalizace provozu.',
+      //   photos: [
+      //     { src: '/assets/gallery/kotelna/01.webp', alt: 'Nové čerpadlo' },
+      //     { src: '/assets/gallery/kotelna/02.webp', alt: 'Řídicí jednotka' },
+      //   ],
+      //   review: {
+      //     text: 'Úspora nákladů je znatelná už po prvním měsíci.',
+      //     name: 'Petra Dvořáková',
+      //     position: 'správkyně objektu',
+      //   },
+      // },
+      // {
+      //   title: 'Zateplení objektu',
+      //   description: 'Zlepšení energetické náročnosti budovy.',
+      //   photos: [{ src: '/assets/gallery/zatepleni/01.webp', alt: 'Fasádní práce' }],
+      //   review: {
+      //     text: 'Tým byl vstřícný a dodržel termíny.',
+      //     name: 'Milan Horák',
+      //     position: 'manažer provozu',
+      //   },
+      // },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-6xl bg-blue-100"></div>
+    </Fragment>
+  </CardsSlider>
   <Content
     isReversed
     items={[
@@ -134,9 +179,6 @@ const akceItems = akceData?.items || [];
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblasti vodoinstalací</h3>
     </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
-    </Fragment>
   </Content>
 
   <Content
@@ -176,6 +218,9 @@ const akceItems = akceData?.items || [];
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblasti plynoinstalací</h3>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
   </Content>
 
   <Content
@@ -210,9 +255,6 @@ const akceItems = akceData?.items || [];
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Práce v oblasti topenářství</h3>
-    </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -259,6 +301,9 @@ const akceItems = akceData?.items || [];
         Práce v oblasti elektro a výtahů
       </h3>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
+    </Fragment>
   </Content>
 
   <Content
@@ -294,9 +339,6 @@ const akceItems = akceData?.items || [];
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Práce v oblasti stolařské a podlahářské
       </h3>
-    </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -384,6 +426,9 @@ const akceItems = akceData?.items || [];
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Další práce a činnosti</h3>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-100 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 

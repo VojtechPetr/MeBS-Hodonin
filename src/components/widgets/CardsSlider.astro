@@ -1,0 +1,287 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+
+export interface SliderItem {
+  title?: string;
+  description?: string;
+  photos: Array<{ src: string; alt?: string; href?: string }>;
+  review?: { text?: string; name?: string; position?: string };
+}
+
+const {
+  title = '',
+  subtitle = '',
+  tagline = '',
+  items = [],
+  columns = 3,
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const safeItems = (items || [])
+  .map((it) => ({
+    ...it,
+    photos: (it.photos || []).filter(Boolean),
+  }))
+  .filter((it) => it.photos.length > 0);
+
+const count = safeItems.length;
+
+const baseCols = 'grid-cols-1';
+const mdCols = columns >= 2 && count >= 2 ? 'md:grid-cols-2' : 'md:grid-cols-1';
+const lgCols =
+  columns === 3
+    ? count >= 3
+      ? 'lg:grid-cols-3'
+      : count === 2
+        ? 'lg:grid-cols-2'
+        : 'lg:grid-cols-1'
+    : columns === 2
+      ? count >= 2
+        ? 'lg:grid-cols-2'
+        : 'lg:grid-cols-1'
+      : 'lg:grid-cols-1';
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+
+  <div class={`grid gap-6 ${baseCols} ${mdCols} ${lgCols} justify-items-center`}>
+    {
+      safeItems.map((item) => (
+        <article class="max-w-[20rem] flex flex-col rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600 bg-white dark:bg-slate-900">
+          <div class="p-4 md:p-6">
+            {item.title && <h3 class="text-lg font-semibold">{item.title}</h3>}
+            {item.description && <p class="text-sm text-muted mt-1">{item.description}</p>}
+          </div>
+
+          <div class="relative" data-slider>
+            {item.photos.map((p, i) => (
+              <button
+                type="button"
+                data-slide
+                data-src={p.href ?? p.src}
+                class={`block w-full ${i === 0 ? '' : 'hidden'}`}
+              >
+                <img
+                  src={p.src}
+                  alt={p.alt ?? ''}
+                  loading="lazy"
+                  class="w-full h-60 md:h-56 object-cover select-none"
+                />
+              </button>
+            ))}
+
+            {item.photos.length > 1 && (
+              <>
+                <button
+                  type="button"
+                  data-prev
+                  aria-label="Předchozí fotka"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 p-1 md:p-2 bg-transparent text-white opacity-90 hover:opacity-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  data-next
+                  aria-label="Další fotka"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 p-1 md:p-2 bg-transparent text-white opacity-90 hover:opacity-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+
+                <span
+                  data-count
+                  class="absolute bottom-2 right-2 text-xs px-2 py-0.5 rounded bg-white/80 dark:bg-slate-800/80 backdrop-blur"
+                >
+                  1/{item.photos.length}
+                </span>
+              </>
+            )}
+          </div>
+
+          {(item.review?.text || item.review?.name) && (
+            <div class="p-4 md:p-6">
+              {item.review?.text && <blockquote class="text-sm text-muted italic">„{item.review.text}“</blockquote>}
+              <div class="mt-3">
+                {item.review?.name && <p class="text-sm font-semibold">{item.review.name}</p>}
+                {item.review?.position && <p class="text-xs text-muted">{item.review.position}</p>}
+              </div>
+            </div>
+          )}
+        </article>
+      ))
+    }
+  </div>
+</WidgetWrapper>
+
+<div data-lightbox class="fixed inset-0 z-[60] hidden" aria-hidden="true" role="dialog" aria-modal="true">
+  <div data-lightbox-backdrop class="absolute inset-0 bg-black/70"></div>
+
+  <div class="absolute inset-0 flex items-center justify-center p-4">
+    <div class="relative max-w-5xl w-full">
+      <img data-lightbox-img src="" alt="" class="mx-auto max-h-[85vh] max-w-full object-contain rounded shadow-2xl" />
+      <button
+        type="button"
+        data-lightbox-prev
+        aria-label="Předchozí"
+        class="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 p-1 md:p-2 bg-transparent text-white opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/60 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <button
+        type="button"
+        data-lightbox-next
+        aria-label="Další"
+        class="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 p-1 md:p-2
+         bg-transparent text-white opacity-90 hover:opacity-100
+         focus:outline-none focus:ring-2 focus:ring-white/60
+         drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      <button
+        type="button"
+        data-lightbox-close
+        aria-label="Zavřít"
+        class="absolute top-3 right-3 md:top-4 md:right-4 p-1.5 md:p-2
+         bg-transparent text-white opacity-90 hover:opacity-100
+         focus:outline-none focus:ring-2 focus:ring-white/60
+         drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]"
+      >
+        ✕
+      </button>
+
+      <span
+        data-lightbox-count
+        class="absolute bottom-2 right-2 text-xs text-white bg-black/50 rounded px-2 py-1 select-none"
+      >
+      </span>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sliders = document.querySelectorAll('[data-slider]');
+
+    sliders.forEach((root) => {
+      const slides = Array.from(root.querySelectorAll('[data-slide]'));
+      if (!slides.length) return;
+
+      let index = 0;
+      const countEl = root.querySelector('[data-count]');
+      const prev = root.querySelector('[data-prev]');
+      const next = root.querySelector('[data-next]');
+
+      const update = () => {
+        slides.forEach((el, i) => el.classList.toggle('hidden', i !== index));
+        if (countEl) countEl.textContent = `${index + 1}/${slides.length}`;
+      };
+
+      prev?.addEventListener('click', () => {
+        index = (index - 1 + slides.length) % slides.length;
+        update();
+      });
+      next?.addEventListener('click', () => {
+        index = (index + 1) % slides.length;
+        update();
+      });
+
+      root.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') prev?.click();
+        if (e.key === 'ArrowRight') next?.click();
+      });
+      root.tabIndex = 0;
+
+      slides.forEach((btn, i) => {
+        btn.addEventListener('click', () => openLightbox(slides, i));
+      });
+
+      update();
+    });
+
+    const lb = document.querySelector('[data-lightbox]');
+    const lbImg = lb.querySelector('[data-lightbox-img]');
+    const lbCount = lb.querySelector('[data-lightbox-count]');
+    const lbPrev = lb.querySelector('[data-lightbox-prev]');
+    const lbNext = lb.querySelector('[data-lightbox-next]');
+    const lbClose = lb.querySelector('[data-lightbox-close]');
+    const lbBackdrop = lb.querySelector('[data-lightbox-backdrop]');
+
+    let lbItems = [];
+    let lbIndex = 0;
+
+    function renderLightbox() {
+      if (!lbItems.length) return;
+      const it = lbItems[lbIndex];
+      lbImg.src = it.src;
+      lbImg.alt = it.alt || '';
+      if (lbCount) lbCount.textContent = `${lbIndex + 1}/${lbItems.length}`;
+    }
+
+    function openLightbox(slideButtons, startIndex) {
+      lbItems = slideButtons.map((btn) => ({
+        src: btn.dataset.src || btn.querySelector('img')?.currentSrc || btn.querySelector('img')?.src,
+        alt: btn.querySelector('img')?.alt || '',
+      }));
+      lbIndex = startIndex ?? 0;
+      lb.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      renderLightbox();
+    }
+
+    function closeLightbox() {
+      lb.classList.add('hidden');
+      document.body.style.overflow = '';
+      lbItems = [];
+      lbIndex = 0;
+    }
+
+    lbPrev.addEventListener('click', () => {
+      if (!lbItems.length) return;
+      lbIndex = (lbIndex - 1 + lbItems.length) % lbItems.length;
+      renderLightbox();
+    });
+
+    lbNext.addEventListener('click', () => {
+      if (!lbItems.length) return;
+      lbIndex = (lbIndex + 1) % lbItems.length;
+      renderLightbox();
+    });
+
+    lbClose.addEventListener('click', closeLightbox);
+    lbBackdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', (e) => {
+      if (lb.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lbPrev.click();
+      if (e.key === 'ArrowRight') lbNext.click();
+    });
+  });
+</script>

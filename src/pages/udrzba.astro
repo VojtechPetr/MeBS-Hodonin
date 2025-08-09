@@ -54,7 +54,69 @@ const akceItems = akceData?.items || [];
       text="Náhled ceníku služeb"
     />
   </div>
+  <CardsSlider
+    title="Realizované práce"
+    items={[
+      {
+        title: 'Kompletní rekonstrukce koupelny',
+        description:
+          'Rozsah: nové rozvody vody, topení a elektro, kompletně nové obklady a dlažba, minerální podhled. Instalace sprchového koutu (náhrada za vanu), nového umyvadla a toaletu. Součástí zakázky byly také vzduchotechnické a malířské práce v bytě. Doba realizace: 20 pracovních dnů. Realizace: tým údržby Městské bytové správy Hodonín.',
+        photos: [
+          { src: '/assets/images/koupelna01.JPG', alt: 'Původní stav – bourací práce' },
+          { src: '/assets/images/koupelna02.JPG', alt: 'Původní rozvody a příprava' },
+          { src: '/assets/images/koupelna03.JPG', alt: 'Původní stav – demontáž obkladů' },
+          { src: '/assets/images/koupelna2.webp', alt: 'Hotová koupelna – celkový pohled' },
+          { src: '/assets/images/koupelna3.webp', alt: 'Sprchový kout – dokončený stav' },
+          { src: '/assets/images/koupelna4.webp', alt: 'Hotová koupelna – detail' },
+        ],
+      },
+      {
+        title: 'Výměna stoupaček ZTI – Hotel Panon, Hodonín',
+        description:
+          'Kompletní rekonstrukce stoupaček ZTI: výměna odpadního potrubí a rozvodů studené, teplé a cirkulační vody z důvodu havarijního stavu a nedostačujícího průtoku. Doba realizace cca 2 měsíce, investice ~2 000 000 Kč. Materiál: sanita – Gottlieb, obklady a dlažby – LHS Hodonín.',
+        photos: [
+          {
+            src: '/assets/images/zachod1.JPG',
+            alt: 'pohled do stoupačky, původní potrubí před výměnou.',
+          },
+          {
+            src: '/assets/images/zachod2.JPG',
+            alt: 'demontáž, odkrytá stoupačka se starými rozvody a odpady',
+          },
+          {
+            src: '/assets/images/zachod3.JPG',
+            alt: 'nově obložená šachta, příprava pro montáž WC.',
+          },
+          {
+            src: '/assets/images/zachod4.JPG',
+            alt: 'WC po rekonstrukci, nové obklady a závěsné WC.',
+          },
+        ],
+        review: {
+          text: 'Profesionálně provedená úprava a výměna odpadů a vodovodních stoupaček. Oceňujeme koordinovaný a vstřícný přístup vašich pracovníků, ohleduplnost k hotelovému provozu a minimální dopady na hosty i personál. Výsledek zvýšil komfort zařízení a podpořil náš vysoký standard služeb.',
+          name: 'Ing. Pavel Řačák',
+          position: 'ředitel/jednatel, Hotel PANON',
+          url: '/assets/files/bytova-udrzba/poděkování-mbs.pdf',
+          label: 'Celé poděkování',
+        },
+      },
 
+      // {
+      //   title: 'Zateplení objektu',
+      //   description: 'Zlepšení energetické náročnosti budovy.',
+      //   photos: [{ src: '/assets/gallery/zatepleni/01.webp', alt: 'Fasádní práce' }],
+      //   review: {
+      //     text: 'Tým byl vstřícný a dodržel termíny.',
+      //     name: 'Milan Horák',
+      //     position: 'manažer provozu',
+      //   },
+      // },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-6xl bg-blue-100"></div>
+    </Fragment>
+  </CardsSlider>
   <div class="max-w-6xl m-auto px-4 sm:px-0">
     <Features21
       title="Personální struktura střediska"
@@ -87,51 +149,6 @@ const akceItems = akceData?.items || [];
       { title: 'zámečník ', amount: '1' },
     ]}
   />
-  <CardsSlider
-    title="Realizované práce"
-    items={[
-      {
-        title: 'Kompletní rekonstrukce koupelny',
-        description:
-          'Rozsah: nové rozvody vody, topení a elektro, kompletně nové obklady a dlažba, minerální podhled. Instalace sprchového koutu (náhrada za vanu), nového umyvadla a toaletu. Součástí zakázky byly také vzduchotechnické a malířské práce v bytě. Doba realizace: 20 pracovních dnů. Realizace: tým údržby Městské bytové správy Hodonín.',
-        photos: [
-          { src: '/assets/images/koupelna01.JPG', alt: 'Původní stav – bourací práce' },
-          { src: '/assets/images/koupelna02.JPG', alt: 'Původní rozvody a příprava' },
-          { src: '/assets/images/koupelna03.JPG', alt: 'Původní stav – demontáž obkladů' },
-          { src: '/assets/images/koupelna2.webp', alt: 'Hotová koupelna – celkový pohled' },
-          { src: '/assets/images/koupelna3.webp', alt: 'Sprchový kout – dokončený stav' },
-          { src: '/assets/images/koupelna4.webp', alt: 'Hotová koupelna – detail' },
-        ],
-      },
-      // {
-      //   title: 'Rekonstrukce kotelny',
-      //   description: 'Výměna technologie a optimalizace provozu.',
-      //   photos: [
-      //     { src: '/assets/gallery/kotelna/01.webp', alt: 'Nové čerpadlo' },
-      //     { src: '/assets/gallery/kotelna/02.webp', alt: 'Řídicí jednotka' },
-      //   ],
-      //   review: {
-      //     text: 'Úspora nákladů je znatelná už po prvním měsíci.',
-      //     name: 'Petra Dvořáková',
-      //     position: 'správkyně objektu',
-      //   },
-      // },
-      // {
-      //   title: 'Zateplení objektu',
-      //   description: 'Zlepšení energetické náročnosti budovy.',
-      //   photos: [{ src: '/assets/gallery/zatepleni/01.webp', alt: 'Fasádní práce' }],
-      //   review: {
-      //     text: 'Tým byl vstřícný a dodržel termíny.',
-      //     name: 'Milan Horák',
-      //     position: 'manažer provozu',
-      //   },
-      // },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-6xl bg-blue-100"></div>
-    </Fragment>
-  </CardsSlider>
   <Content
     isReversed
     items={[

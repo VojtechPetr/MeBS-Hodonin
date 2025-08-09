@@ -3,6 +3,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import List from '~/components/widgets/List.astro';
 import Features21 from '~/components/widgets/Features21.astro';
+import CardsSlider from '~/components/widgets/CardsSlider.astro';
 import { getContent } from '~/utils/getContent';
 import type { SVJKontaktyData } from '~/types';
 
@@ -35,8 +36,34 @@ if (!kontakty) {
       je zabezpečovat správu prodaných bytů v jednotlivých společenstvích vlastníků na základě mandátních smluv.
     </Fragment>
   </Hero>
-
-  <div class="max-w-7xl m-auto px-4 sm:px-0">
+  <CardsSlider
+    title="Realizované práce"
+    items={[
+      {
+        title: 'Revitalizace bytového domu – Kolískova 9, Hodonín',
+        description:
+          'Technický dozor investora: Městská bytová správa Hodonín. Rozsah: kompletní zateplení fasády a střechy a instalace nových závěsných balkónů. Harmonogram: 01–06/2025. Cíl: snížení energetické náročnosti a vyšší komfort pro 45 obyvatel. Dodavatel: Markéta Vargová Maňáková s.r.o. Financováno z programu Nová zelená úsporám.',
+        photos: [
+          { src: '/assets/images/Koliskova pred pred.webp', alt: 'čelní letecký pohled na objekt před revitalizací.' },
+          {
+            src: '/assets/images/Koliskova bok.webp',
+            alt: ' letecký boční pohled na dům v původním stavu (původní fasáda a zábradlí balkonů)',
+          },
+          { src: '/assets/images/Koliskova za.webp', alt: 'šikmý letecký pohled na dům a balkony před revitalizací.' },
+          {
+            src: '/assets/images/Koliskova pred.jpg',
+            alt: 'šikmý letecký pohled na dům po revitalizaci a zateplenou fasádou',
+          },
+          { src: '/assets/images/Koliskova nad.jpg', alt: 'pohled shora na novou bílou střechu po zateplení.' },
+        ],
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-6xl bg-blue-100"></div>
+    </Fragment>
+  </CardsSlider>
+  <div class="max-w-6xl m-auto px-4 sm:px-0">
     <Features21
       title="Personální struktura střediska"
       id="personální-struktura-střediska"

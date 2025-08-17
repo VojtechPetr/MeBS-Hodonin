@@ -11,4 +11,6 @@ soubory:
     uploadDate: 2025-01-20T00:00:00.000Z
   - file: poděkování-mbs.pdf
     uploadDate: 2025-08-09T12:50:00.000+02:00
+  - file: poděkování-lázně-hodonín.jpg
+    uploadDate: 2025-08-17T10:54:00.000+02:00
 ---

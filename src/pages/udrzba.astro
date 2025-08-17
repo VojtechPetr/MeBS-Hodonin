@@ -58,6 +58,36 @@ const akceItems = akceData?.items || [];
     title="Realizované práce"
     items={[
       {
+        title: 'Zhotovení nových apartmánů – Lázně Hodonín',
+        description:
+          'Kompletní přestavba ze dvou skladů a dvou kanceláří na 4 apartmánové pokoje včetně zhotovení nových koupelen. Termín realizace: prosinec 2024 až únor 2025. Rekonstrukce provedena převážně ve vlastní režii týmu údržby Městské bytové správy Hodonín, podlahy a koberce zajistila firma Podlahy Blažek. Investice: cca 2 300 000 Kč (fakturováno Lázním Hodonín). Interiéry a vybavení nábytkem zajišťovaly Lázně samostatně.',
+        photos: [
+          {
+            src: '/assets/images/pok1.webp',
+            alt: 'Pohled na apartmánový pokoj s dekorativní přepážkou, sedací částí, stolem, TV a klimatizací',
+          },
+          {
+            src: '/assets/images/pok2.webp',
+            alt: 'Sedací část u postele s červenými křesly, kulatým stolem, stojací lampou a dekorativní stěnou',
+          },
+          {
+            src: '/assets/images/pok3.webp',
+            alt: 'Detail sedací části s dvěma červenými křesly, kulatým stolem a stojací lampou před přepážkou',
+          },
+          {
+            src: '/assets/images/koup1.webp',
+            alt: 'Nově rekonstruovaná koupelna s umyvadlem, toaletou, radiátorem a moderními obklady',
+          },
+        ],
+        review: {
+          text: 'Profesionálně odvedená přestavba skladů a kanceláří na apartmánové pokoje včetně koupelen. Oceňujeme koordinaci prací, kvalitu provedení, dodržení termínu a minimální dopady na provoz lázní a hosty. Celkově hodnotíme práci pozitivně.',
+          name: 'Mgr. Andrea Kubatová',
+          position: 'jednatelka, Lázně Hodonín, s.r.o.',
+          url: '/assets/files/bytova-udrzba/poděkování-lázně-hodonín.jpg',
+          label: 'Celé poděkování',
+        },
+      },
+      {
         title: 'Kompletní rekonstrukce koupelny',
         description:
           'Rozsah: nové rozvody vody, topení a elektro, kompletně nové obklady a dlažba, minerální podhled. Instalace sprchového koutu (náhrada za vanu), nového umyvadla a toaletu. Součástí zakázky byly také vzduchotechnické a malířské práce v bytě. Doba realizace: 20 pracovních dnů. Realizace: tým údržby Městské bytové správy Hodonín.',
@@ -100,17 +130,6 @@ const akceItems = akceData?.items || [];
           label: 'Celé poděkování',
         },
       },
-
-      // {
-      //   title: 'Zateplení objektu',
-      //   description: 'Zlepšení energetické náročnosti budovy.',
-      //   photos: [{ src: '/assets/gallery/zatepleni/01.webp', alt: 'Fasádní práce' }],
-      //   review: {
-      //     text: 'Tým byl vstřícný a dodržel termíny.',
-      //     name: 'Milan Horák',
-      //     position: 'manažer provozu',
-      //   },
-      // },
     ]}
   >
     <Fragment slot="bg">

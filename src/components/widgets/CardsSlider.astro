@@ -22,11 +22,11 @@ const {
 } = Astro.props;
 
 const safeItems = (items || [])
-  .map((it) => ({
+  .map((it: SliderItem) => ({
     ...it,
     photos: (it.photos || []).filter(Boolean),
   }))
-  .filter((it) => it.photos.length > 0);
+  .filter((it: SliderItem) => it.photos.length > 0);
 
 const count = safeItems.length;
 
@@ -51,7 +51,7 @@ const lgCols =
 
   <div class={`grid gap-6 ${baseCols} ${mdCols} ${lgCols} justify-items-center items-start`}>
     {
-      safeItems.map((item) => (
+      safeItems.map((item: SliderItem) => (
         <article class="max-w-[20rem] flex flex-col rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600 bg-white dark:bg-slate-900">
           <div class="p-4 md:p-6">
             {item.title && <h3 class="text-lg font-semibold">{item.title}</h3>}
@@ -59,7 +59,7 @@ const lgCols =
           </div>
 
           <div class="relative" data-slider>
-            {item.photos.map((p, i) => (
+            {item.photos.map((p: { src: string; alt?: string; href?: string }, i: number) => (
               <button
                 type="button"
                 data-slide

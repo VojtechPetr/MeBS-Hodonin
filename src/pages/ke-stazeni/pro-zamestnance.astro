@@ -11,7 +11,8 @@ const metadata = {
   title: 'Pro zaměstnance',
 };
 
-const filePath = path.resolve('src/content/ke-stazeni/dokumenty-pro-zaměstnance.md');
+//const filePath = path.resolve('src/content/ke-stazeni/dokumenty-pro-zaměstnance.md');
+const filePath = path.resolve('public/assets/files/pro-zamestnance/dokumenty-pro-zaměstnance.md');
 
 const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
 const parsedMarkdown = matter(rawMarkdown);

@@ -35,7 +35,7 @@ departments:
           - type: email
             value: skopik@bytovka.cz
       - name: vedoucí správy
-        title: Ing. Milana Vršťalová MBA
+        title: Ing. Milana Vršťalová
         icon: tabler:user
         contactInfo:
           - type: phone

@@ -57,4 +57,6 @@ soubory:
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: pastelky-v-likvidaci-usnesení-členské-schůze-ze-dne-27.-1.-2025.pdf
     uploadDate: 2025-02-04T13:36:00.000Z
+  - file: pastelky-stav.-byt.-družstvo-v-likvidaci-usnesení-z-čl.-schůze-24.-9.-2025.pdf
+    uploadDate: 2025-10-01T20:30:00.000+02:00
 ---

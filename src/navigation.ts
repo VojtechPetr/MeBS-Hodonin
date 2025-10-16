@@ -68,6 +68,10 @@ export const headerData = {
           href: getBlogPermalink(),
         },
         {
+          text: 'Oznámení o přerušení  dodávky el. energie 6.11.2025',
+          href: getPermalink('oznameni-odstavka611', 'post'),
+        },
+        {
           text: 'Termíny shromáždění PROFI PŘEDSEDA',
           href: getPermalink('pozvanka-svj', 'post'),
         },
@@ -82,10 +86,6 @@ export const headerData = {
         // {
         //   text: 'Oznámení o opravě teplovodu',
         //   href: getPermalink('oznameni-opravaTeplovodu', 'post'),
-        // },
-        // {
-        //   text: 'Oznámení o přerušení  dodávky el. energie 27.5.2025',
-        //   href: getPermalink('oznameni-odstavka275', 'post'),
         // },
         // {
         //   text: 'Oznámení o přerušení  dodávky el. energie 3.6.2025',

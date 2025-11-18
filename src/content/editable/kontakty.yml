@@ -184,9 +184,9 @@ departments:
         icon: tabler:user
         contactInfo:
           - type: phone
-            value: 518 398 531, 724 118 869
+            value: 601 059 440
           - type: email
-            value: kralova@bytovka.cz
+            value: miholova@bytovka.cz
       - name: účetní
         title: Hana Svatošová
         icon: tabler:user

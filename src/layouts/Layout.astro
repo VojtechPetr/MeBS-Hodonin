@@ -12,7 +12,7 @@ import SiteVerification from '~/components/common/SiteVerification.astro';
 //import Analytics from '~/components/common/Analytics.astro';
 //import Analytics2 from '~/components/common/Analytics2.html';
 import BasicScripts from '~/components/common/BasicScripts.astro';
-//import PopUp from '~/components/widgets/PopUp.astro';
+import PopUp from '~/components/widgets/PopUp.astro';
 
 // Comment the line below to disable View Transitions
 import { ViewTransitions } from 'astro:transitions';
@@ -73,11 +73,12 @@ const { language, textDirection } = I18N;
     description="Městská bytová správa Hodonín, spol. s r.o. oznamuje všem svým klientům, že 2. 5. a 9. 5. 2025 budou pro veřejnost uzavřena všechna naše pracoviště. Omlouváme se za případné komplikace a děkujeme za pochopení."
     /> -->
 
-    <!-- <PopUp
-      timer={1}
-      title="Havárie parního rozvodu PS Erbenova"
-      description="Došlo k havárii parního rozvodu na PS Erbenova. Oprava probíhá a předpokládané odstranění je plánováno na 30.1.2025 v cca 14:00. Omlouváme se za vzniklé komplikace a děkujeme za pochopení."
-    /> -->
+  <PopUp
+    timer={1}
+    title="ODSTÁVKA TEPLA 6.12.2025"
+    description="Dle informace ČEZ Teplárenská bude v sobotu 6.12.2025 přerušena dodávka tepla v Hodoníně od 8:00 do 18:00. Podle průběhu řešení havarijní situace může být dodávka obnovena již kolem 12:00. Omlouváme se za komplikace a děkujeme za pochopení."
+  />
+
 
     <!-- Comment the line below to disable View Transitions -->
     <ViewTransitions fallback="swap" />

@@ -109,6 +109,12 @@ departments:
             value: 518 398 522, 606 392 464
           - type: email
             value: horny@bytovka.cz
+      - name: Hlášení poruch
+        title: dispečink
+        icon: tabler:headset
+        contactInfo:
+          - type: phone
+            value: "727993280"
   - department: Tepelné
     anchor: teplo
     contacts:

@@ -33,9 +33,9 @@ contacts:
         value: 518 398 522, 606 392 464
       - type: email
         value: horny@bytovka.cz
-  - name: HLÁŠENÍ PORUCH
+  - name: dispečink
     icon: tabler:headset
     contactInfo:
       - type: phone
         value: "727993280"
-    title: dispečink
+    title: Hlášení poruch

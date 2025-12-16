@@ -4,10 +4,6 @@ const { timer, imageURL, href, description, title } = Astro.props;
 
 if (!timer) {
   throw new Error('Timer attribute is a must.');
-} else if (!description) {
-  throw new Error('Description attribute is a must.');
-} else if (!title) {
-  throw new Error('Title attribute is a must.');
 }
 ---
 
@@ -30,7 +26,7 @@ if (!timer) {
       {
         imageURL && (
           <div class="image-container w-full flex items-center justify-center mb-4">
-            <img src={imageURL} alt="" class="max-w-full max-h-40 object-contain" />
+            <img src={imageURL} alt="" class="max-w-full max-h-1000 object-contain" />
           </div>
         )
       }

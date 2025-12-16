@@ -377,7 +377,7 @@ export interface PopUpProps {
   timer?: number; // Delay before showing the popup
   imageURL?: string; // Image source URL
   href?: string; // Link URL for the image
-  description: string; // ARIA label description
+  description?: string; // ARIA label description
 }
 
 export interface Features21 extends Omit<Headline, 'classes'>, Widget {

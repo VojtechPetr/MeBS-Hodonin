@@ -115,27 +115,28 @@ kancelare:
       - adresa: Marxova 23-25
       - adresa: Měšťanská 14
       - adresa: Měšťanská 16
+      - adresa: Měšťanská 136
       - adresa: Měšťanská 138
       - adresa: Nádražní řádek 10
       - adresa: Nádražní řádek 11
       - adresa: Nádražní řádek 27
-      - adresa: nám. Osvobození 4
       - adresa: Národní tř.61
       - adresa: Národní tř.63-65
       - adresa: Národní tř.92
       - adresa: Národní třída 94
       - adresa: Nesyt 1-3
+      - adresa: nám. Osvobození 4
       - adresa: Pánov 3132-3166
       - adresa: Pánov 3699-3700
       - adresa: Příční 9
       - adresa: P. Jilemnického 11-13
-      - adresa: Rohatec, U Školky 47
       - adresa: Seifertova 4-6
-      - adresa: Seifertova 12-14
       - adresa: Seifertova 7-9
+      - adresa: Seifertova 12-14
       - adresa: Úprkova 1
       - adresa: Úprkova 3
       - adresa: Radniční 4
+      - adresa: Rohatec, U Školky 47
   - cislo: "23"
     barva: green
     spravce: Ing. Jaroňková

@@ -20,6 +20,7 @@ kancelare:
       - adresa: nám. B. Martinů 7-8-9
       - adresa: nám. B. Martinů 10-11-12
       - adresa: nám. B. Martinů 13-14-15
+      - adresa: Očovská 22-24
       - adresa: Partyzánská 26
       - adresa: P. Veselého 54
       - adresa: P. Veselého 56
@@ -31,6 +32,7 @@ kancelare:
       - adresa: Slunečná 18-20
       - adresa: Slunečná 22-24
       - adresa: U Cihelny 4
+      - adresa: Vančurova 1-3-5-7-9
   - cislo: "20"
     barva: pink
     spravce: p. Svatošová

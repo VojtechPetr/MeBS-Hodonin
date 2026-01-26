@@ -184,11 +184,20 @@ kancelare:
     nemovitosti:
       - adresa: Anenská 2
       - adresa: Anenská 4
-      - adresa: Brandlova 30, Muchova 13
+      - adresa: Brandlova 27
+      - adresa: Brandlova 30
       - adresa: Brněnská 30
-      - adresa: Lesní 13-15-17
+      - adresa: Muchova 13
       - adresa: Lesní 1-3-5
       - adresa: Lesní 7-9-11
+      - adresa: Lesní 13-15-17
+      - adresa: Masarykovo náměstí
+      - adresa: Jánošíkova
+      - adresa: Radniční
+      - adresa: Nám. Osvobození 7
+      - adresa: Nám. Osvobození 8
+      - adresa: Šafaříkova 9,11,13
+      - adresa: Kollárova 16,18
 bytova_druzstva:
   - nazev: Pastelky
   - nazev: Lípa

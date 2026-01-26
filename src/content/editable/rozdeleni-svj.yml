@@ -47,13 +47,17 @@ kancelare:
       - adresa: Cihlářská 17-18
       - adresa: Dobrovolského 13
       - adresa: Dobrovolského 13A
+      - adresa: Lesní 10
       - adresa: Lužní 1-3-5
       - adresa: M. Benky 29A, 29B, 29C
       - adresa: Marxova 21
+      - adresa: Sv. Čecha 1
       - adresa: Třída Bří Čapků 11, 13
       - adresa: Velkomoravská 5
       - adresa: Vřesová 1-3-5
       - adresa: Vřesová 7-9
+      - adresa: V chalupách - Lužice
+      - adresa: Strážnice Grůska 1979
   - cislo: "5"
     barva: yellow
     spravce: p. Lenka Holá

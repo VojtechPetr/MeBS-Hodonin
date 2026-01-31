@@ -197,10 +197,13 @@ const lgCols =
 </div>
 
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
+  function initSliders() {
     const sliders = document.querySelectorAll('[data-slider]');
 
     sliders.forEach((root) => {
+      if (root.dataset.sliderInit === '1') return;
+      root.dataset.sliderInit = '1';
+
       const slides = Array.from(root.querySelectorAll('[data-slide]'));
       if (!slides.length) return;
 
@@ -218,6 +221,7 @@ const lgCols =
         index = (index - 1 + slides.length) % slides.length;
         update();
       });
+
       next?.addEventListener('click', () => {
         index = (index + 1) % slides.length;
         update();
@@ -237,6 +241,9 @@ const lgCols =
     });
 
     const lb = document.querySelector('[data-lightbox]');
+    if (!lb || lb.dataset.lbInit === '1') return;
+    lb.dataset.lbInit = '1';
+
     const lbImg = lb.querySelector('[data-lightbox-img]');
     const lbCount = lb.querySelector('[data-lightbox-count]');
     const lbPrev = lb.querySelector('[data-lightbox-prev]');
@@ -255,7 +262,7 @@ const lgCols =
       if (lbCount) lbCount.textContent = `${lbIndex + 1}/${lbItems.length}`;
     }
 
-    function openLightbox(slideButtons, startIndex) {
+    window.openLightbox = function openLightbox(slideButtons, startIndex) {
       lbItems = slideButtons.map((btn) => ({
         src: btn.dataset.src || btn.querySelector('img')?.currentSrc || btn.querySelector('img')?.src,
         alt: btn.querySelector('img')?.alt || '',
@@ -264,7 +271,7 @@ const lgCols =
       lb.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
       renderLightbox();
-    }
+    };
 
     function closeLightbox() {
       lb.classList.add('hidden');
@@ -273,26 +280,34 @@ const lgCols =
       lbIndex = 0;
     }
 
-    lbPrev.addEventListener('click', () => {
+    lbPrev?.addEventListener('click', () => {
       if (!lbItems.length) return;
       lbIndex = (lbIndex - 1 + lbItems.length) % lbItems.length;
       renderLightbox();
     });
 
-    lbNext.addEventListener('click', () => {
+    lbNext?.addEventListener('click', () => {
       if (!lbItems.length) return;
       lbIndex = (lbIndex + 1) % lbItems.length;
       renderLightbox();
     });
 
-    lbClose.addEventListener('click', closeLightbox);
-    lbBackdrop.addEventListener('click', closeLightbox);
+    lbClose?.addEventListener('click', closeLightbox);
+    lbBackdrop?.addEventListener('click', closeLightbox);
 
     document.addEventListener('keydown', (e) => {
       if (lb.classList.contains('hidden')) return;
       if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') lbPrev.click();
-      if (e.key === 'ArrowRight') lbNext.click();
+      if (e.key === 'ArrowLeft') lbPrev?.click();
+      if (e.key === 'ArrowRight') lbNext?.click();
     });
+  }
+
+  document.addEventListener('DOMContentLoaded', initSliders);
+
+  document.addEventListener('astro:page-load', initSliders);
+
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted) initSliders();
   });
 </script>

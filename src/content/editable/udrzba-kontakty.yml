@@ -37,5 +37,5 @@ contacts:
     icon: tabler:headset
     contactInfo:
       - type: phone
-        value: "727993280"
+        value: '727993280'
     title: Hlášení oprav

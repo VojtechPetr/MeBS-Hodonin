@@ -33,10 +33,6 @@ export const headerData = {
           text: 'BD Lípa',
           href: getPermalink('/svj/bd-lipa'),
         },
-        {
-          text: 'BD Pastelky',
-          href: getPermalink('/svj/bd-pastelky'),
-        },
       ],
     },
     {

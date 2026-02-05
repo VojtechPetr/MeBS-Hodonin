@@ -3,7 +3,7 @@ url: /teplo
 planned_repairs:
   title: Plánované opravy
   anchor: opravy
-  subtitle: v roce 2026
+  subtitle: "v roce 2026 "
   items:
     - title: Výměna teplovodu Erbenova - v trase Patočkova 3-5, Suka 8
       icon: tabler:switch-3

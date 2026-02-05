@@ -3,15 +3,15 @@ url: /teplo
 planned_repairs:
   title: Plánované opravy
   anchor: opravy
-  subtitle: v roce 2025
+  subtitle: v roce 2026
   items:
     - title: Výměna teplovodu Skácelova - I.Olbrachta
-      icon: tabler:switch-3
+      icon: tabler:pipe
     - title: Výměna teplovodu MŠ Jánošíkova
       icon: tabler:switch-3
     - title: Výměna systému měření a regulace Cihlářská - Družstevní
       icon: tabler:switch-3
-    - title: ' V roce 2025 bude metrologicky ověřeno 75 ks měřidel tepla'
+    - title: " V roce 2025 bude metrologicky ověřeno 75 ks měřidel tepla"
       icon: tabler:thermometer
 heating_season:
   title: Průběh topné sezóny

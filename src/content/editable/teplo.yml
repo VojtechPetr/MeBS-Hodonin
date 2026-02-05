@@ -15,7 +15,7 @@ planned_repairs:
       icon: tabler:git-branch
     - title: Přípojka Skácela 5 - 7 - 9
       icon: tabler:git-branch
-    - title: Statické zajištění objektu PS Lesní1 - Sigma
+    - title: Statické zajištění objektu PS Lesní 1 - Sigma
       icon: tabler:shield-check
     - title: Oprava obvodového pláště budovy PS Brandlova
       icon: tabler:wrench

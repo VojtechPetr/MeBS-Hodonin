@@ -66,12 +66,12 @@ departments:
             value: 518 398 536, 518 398 511
           - type: email
             value: suchankova@bytovka.cz
-      - name: Marketing
+      - name: Marketing a PR
         title: Mgr. Andrea Bimková
         icon: tabler:user
         contactInfo:
           - type: phone
-            value: '721439060'
+            value: "721439060"
           - type: email
             value: marketing@bytovka.cz
   - department: Údržba
@@ -114,7 +114,7 @@ departments:
         icon: tabler:headset
         contactInfo:
           - type: phone
-            value: '727993280'
+            value: "727993280"
   - department: Tepelné
     anchor: teplo
     contacts:
@@ -143,7 +143,7 @@ departments:
           - type: email
             value: babicek@bytovka.cz
       - name: centrální dispečink
-        title: ''
+        title: ""
         icon: tabler:headset
         contactInfo:
           - type: phone
@@ -269,7 +269,7 @@ departments:
           - type: email
             value: pijackova@bytovka.cz
       - name: recepce
-        title: ''
+        title: ""
         icon: tabler:bed
         contactInfo:
           - type: phone

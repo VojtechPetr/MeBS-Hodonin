@@ -21,14 +21,13 @@ heating_season:
   title: Průběh topné sezóny
   anchor: topna-sezona
   items:
-    - description: Průběh topné sezóny v r. 2024 byl bez významných výpadků v dodávce
-        tepla. Ke krátkému výpadku v dodávce došlo v prosinci v lokalitě
-        Brandlova a Lesní. Teplotně byl rok 2024 s teplejším jarem a chladnějším
-        podzimem jen lehce teplejší proti roku 2023, v denostupních o 3
-        %. Vytápění bylo ukončeno 10. května a započato 25. září
+    - description: Průběh topné sezóny v r. 2025 byl bez významných výpadků v dodávce
+        tepla s výjimkou krátkého výpadku před vánočními svátky. Teplotně byl
+        rok 2025 významně chladnější proti roku 2024, v denostupních o 13,3 %.
+        Vytápění bylo ukončeno 26. května a započato 25. září
       icon: tabler:info-circle
-    - description: Celkem bylo dodáno za r. 2024 136,6 tis. GJ tepla, což je o 2,8
-        tis. GJ méně než v předchozím roce.
+    - description: Celkem bylo dodáno za r. 2025 148,5 tis. GJ tepla, což je o 11,9
+        tis. GJ více než v předchozím roce.
       icon: tabler:info-circle
     - description: Viz <a href="/ke-stazeni/tepelne-hospodarstvi" target="_blank"
         class="text-blue-500 underline">tabulka denostupňů</a>
@@ -50,7 +49,7 @@ pricing:
         nákladů na cenu tepla se zahrnují (dle Energetického regulačního úřadu)
         všechny oprávněné náklady včetně přiměřeného zisku.
       icon: tabler:info-circle
-    - description: Na rok 2025 předpokládáme růst nákladů za dodávku tepla asi o 3,5 %
+    - description: Na rok 2025 předpokládáme růst nákladů za dodávku tepla asi o 5,8 %.
       icon: tabler:info-circle
     - description: 'Předpoklad výstupních cen: viz <a href="/ke-stazeni"
         target="_blank" class="text-blue-500 underline">ke stažení</a>'

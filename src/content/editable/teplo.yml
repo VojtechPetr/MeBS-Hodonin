@@ -9,16 +9,14 @@ planned_repairs:
       icon: tabler:switch-3
     - title: Výměna systému měření a regulace -  v okruhu Erbenova
       icon: tabler:switch-3
-    - title: " V roce 2025 bude metrologicky ověřeno 75 ks měřidel tepla"
-      icon: tabler:thermometer
     - title: Přípojka Suka 2
-      icon: tabler:git-branch
+      icon: tabler:switch-3
     - title: Přípojka Skácela 5 - 7 - 9
-      icon: tabler:git-branch
+      icon: tabler:switch-3
     - title: Statické zajištění objektu PS Lesní 1 - Sigma
-      icon: tabler:shield-check
+      icon: tabler:switch-3
     - title: Oprava obvodového pláště budovy PS Brandlova
-      icon: tabler:wrench
+      icon: tabler:switch-3
 heating_season:
   title: Průběh topné sezóny
   anchor: topna-sezona

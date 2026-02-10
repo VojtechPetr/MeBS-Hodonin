@@ -5,8 +5,8 @@ soubory:
     uploadDate: 2026-01-01T12:00:00.000+01:00
   - file: žádost-o-změnu-fondu-oprav.pdf
     uploadDate: 2026-01-01T12:00:00.000+01:00
-  - file: žádost-o-přeprogramování-měřičů-tepla.doc
-    uploadDate: 2024-12-01T00:00:00.000Z
+  - file: žádost-o-přeprogramování-měřičů-tepla.pdf
+    uploadDate: 2026-01-01T12:00:00.000+01:00
   - file: předávací-protokol.doc
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: zákon-č.72-1994-sb.-v-platném-znění.pdf

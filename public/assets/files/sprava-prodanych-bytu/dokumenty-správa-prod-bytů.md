@@ -1,7 +1,7 @@
 ---
 title: Dokumenty Správa Prod. Bytů
 soubory:
-  - file: žádost-o-změnu-vlastníka.xls
+  - file: žádost-o-změnu-vlasatníka.pdf
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: žádost-o-snížení-nebo-zvýšení-fondu-oprav.doc
     uploadDate: 2024-12-01T00:00:00.000Z

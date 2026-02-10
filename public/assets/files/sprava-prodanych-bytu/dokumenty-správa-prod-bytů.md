@@ -2,7 +2,7 @@
 title: Dokumenty Správa Prod. Bytů
 soubory:
   - file: žádost-o-změnu-vlasatníka.pdf
-    uploadDate: 2024-12-01T00:00:00.000Z
+    uploadDate: 2026-01-01T12:00:00.000+01:00
   - file: žádost-o-snížení-nebo-zvýšení-fondu-oprav.doc
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: žádost-o-přeprogramování-měřičů-tepla.doc
@@ -15,6 +15,4 @@ soubory:
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: předávací-protokol.doc
     uploadDate: 2024-12-01T00:00:00.000Z
-  - file: žádost-o-změnu-vlasatníka.pdf
-    uploadDate: 2026-01-01T12:00:00.000+01:00
 ---

@@ -1,11 +1,11 @@
 ---
 title: Dokumenty Správa Prod. Bytů
 soubory:
-  - file: žádost-o-změnu-vlasatníka.pdf
+  - file: zadost-o-zmenu-vlastnika.pdf
     uploadDate: 2026-01-01T12:00:00.000+01:00
   - file: žádost-o-změnu-fondu-oprav.pdf
     uploadDate: 2026-01-01T12:00:00.000+01:00
-  - file: žádost-o-přeprogramování-měřičů-tepla.pdf
+  - file: zadost-o-preprogramovani-mericu-tepla.pdf
     uploadDate: 2026-01-01T12:00:00.000+01:00
   - file: předávací-protokol.pdf
     uploadDate: 2026-01-01T12:00:00.000+01:00

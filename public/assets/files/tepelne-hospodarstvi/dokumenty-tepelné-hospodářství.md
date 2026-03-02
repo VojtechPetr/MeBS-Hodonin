@@ -15,6 +15,6 @@ soubory:
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: pravidla-pro-vytápění.doc
     uploadDate: 2024-12-01T00:00:00.000Z
-  - file: oznámení-o-odstávce-tepelné-energie.pdf
-    uploadDate: 2024-12-01T00:00:00.000Z
+  - file: předpokládané-ceny-tepla-2026.pdf
+    uploadDate: 2026-02-18T13:29:00.000+01:00
 ---

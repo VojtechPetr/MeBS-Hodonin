@@ -1,6 +1,6 @@
 ---
 title: Dokumenty Pro Zaměstnance
 soubory:
-  - file: měbs-ochrana-oznamovatelu-pro-zaměstnance.docx
+  - file: ochrana-oznamovatelů-pro-zaměstnance.pdf
     uploadDate: 2024-12-01T00:00:00.000Z
 ---

@@ -5,12 +5,6 @@ soubory:
     uploadDate: 2025-01-18T00:00:00.000Z
   - file: denostupne2025ext-3-.xls
     uploadDate: 2025-01-17T00:00:00.000Z
-  - file: předpokládané-ceny-tepla-na-rok-2024.pdf
-    uploadDate: 2024-12-01T00:00:00.000Z
-  - file: předpokládané-ceny-tepla-2023.pdf
-    uploadDate: 2024-12-01T00:00:00.000Z
-  - file: předpokládané-ceny-tepla-2022.pdf
-    uploadDate: 2024-12-01T00:00:00.000Z
   - file: předávací-stanice-napojené-domy.doc
     uploadDate: 2024-12-01T00:00:00.000Z
   - file: pravidla-pro-vytápění.doc

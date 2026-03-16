@@ -1,7 +1,7 @@
 ---
 title: Dokumenty Tepelné Hospodářství
 soubory:
-  - file: předpokládané-ceny-tepla-na-rok-2025.doc
+  - file: předpokládané-ceny-tepla-2025.pdf
     uploadDate: 2025-01-18T00:00:00.000Z
   - file: denostupne2025ext-3-.xls
     uploadDate: 2025-01-17T00:00:00.000Z

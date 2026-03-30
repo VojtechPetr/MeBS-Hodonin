@@ -97,11 +97,3 @@ contacts:
         value: 518 398 513, 736 624 070
       - type: email
         value: adamcova@bytovka.cz
-  - name: Ing. Zdeňka Drutarovská
-    title: Bytová družstva
-    icon: tabler:building-community
-    contactInfo:
-      - type: phone
-        value: 518 398 535
-      - type: email
-        value: drutarovska@bytovka.cz

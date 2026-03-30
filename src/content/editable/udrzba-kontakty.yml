@@ -33,15 +33,15 @@ contacts:
         value: 518 398 522, 606 392 464
       - type: email
         value: horny@bytovka.cz
-  - name: dispečink
-    icon: tabler:headset
-    contactInfo:
-      - type: phone
-        value: 727 993 280
-    title: Hlášení oprav
   - icon: tabler:forklift
     title: Šárka Frýželková
     name: skladnice
     contactInfo:
       - type: phone
         value: 775 297 803
+  - name: dispečink
+    icon: tabler:headset
+    contactInfo:
+      - type: phone
+        value: 727 993 280
+    title: Hlášení oprav

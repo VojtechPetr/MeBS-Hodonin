@@ -18,8 +18,8 @@ contacts:
       - type: email
         value: stanicka@bytovka.cz
   - name: Jakub Nevečeřal
-    title: Vedoucí skladník, rozpočtář
-    icon: tabler:forklift
+    title: Technik - rozpočtář
+    icon: tabler:tools
     contactInfo:
       - type: phone
         value: 518 398 545, 607 001 912

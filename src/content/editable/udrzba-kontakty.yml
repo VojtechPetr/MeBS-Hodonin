@@ -41,7 +41,7 @@ contacts:
     title: Hlášení oprav
   - icon: tabler:forklift
     title: Šárka Frýželková
-    name: Skladnice
+    name: skladnice
     contactInfo:
       - type: phone
         value: 775 297 803

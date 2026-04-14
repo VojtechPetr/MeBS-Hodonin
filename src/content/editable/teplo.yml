@@ -3,7 +3,7 @@ url: /teplo
 planned_repairs:
   title: Plánované opravy
   anchor: opravy
-  subtitle: 'v roce 2026 '
+  subtitle: "v roce 2026 "
   items:
     - title: Výměna teplovodu Erbenova - v trase Patočkova 3-5, Suka 8
       icon: tabler:switch-3
@@ -49,7 +49,7 @@ pricing:
         nákladů na cenu tepla se zahrnují (dle Energetického regulačního úřadu)
         všechny oprávněné náklady včetně přiměřeného zisku.
       icon: tabler:info-circle
-    - description: Na rok 2025 předpokládáme růst nákladů za dodávku tepla asi o 5,8 %.
+    - description: Na rok 2026 předpokládáme růst nákladů za dodávku tepla asi o 5,8 %.
       icon: tabler:info-circle
     - description: 'Předpoklad výstupních cen: viz <a href="/ke-stazeni"
         target="_blank" class="text-blue-500 underline">ke stažení</a>'

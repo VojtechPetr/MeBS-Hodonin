@@ -2,7 +2,7 @@ title: Údržba - kontakty
 url: /udrzba#kontakty
 contacts:
   - name: Vedoucí údržby
-    title: "Miloslav Komosný "
+    title: 'Miloslav Komosný '
     icon: tabler:crown
     contactInfo:
       - type: phone
@@ -10,7 +10,7 @@ contacts:
       - type: email
         value: komosny@bytovka.cz
   - name: Provozní ekonomka, fakturace
-    title: "Pavla Stanická "
+    title: 'Pavla Stanická '
     icon: tabler:zoom-money
     contactInfo:
       - type: phone

@@ -63,10 +63,10 @@ export const headerData = {
           text: 'Seznam aktualit',
           href: getBlogPermalink(),
         },
-        // {
-        //   text: 'Oznámení o přerušení  dodávky el. energie 6.11.2025',
-        //   href: getPermalink('oznameni-odstavka611', 'post'),
-        // },
+        {
+          text: 'Oznámení o přerušení dodávek tepla a teplé vody',
+          href: getPermalink('oznameni-odstavka18', 'post'),
+        },
         {
           text: 'Termíny shromáždění PROFI PŘEDSEDA',
           href: getPermalink('pozvanka-svj', 'post'),

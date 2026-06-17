@@ -12,7 +12,7 @@ import SiteVerification from '~/components/common/SiteVerification.astro';
 //import Analytics from '~/components/common/Analytics.astro';
 //import Analytics2 from '~/components/common/Analytics2.html';
 import BasicScripts from '~/components/common/BasicScripts.astro';
-//import PopUp from '~/components/widgets/PopUp.astro';
+import PopUp from '~/components/widgets/PopUp.astro';
 
 // Comment the line below to disable View Transitions
 import { ViewTransitions } from 'astro:transitions';
@@ -49,12 +49,11 @@ const { language, textDirection } = I18N;
 
     <!-- <PopUp timer={1} imageURL="/assets/images/pozvankaLipa.webp" href="https://www.bytovka.cz/ke-stazeni/bd-lipa" /> -->
 
-    <!-- <PopUp
+    <PopUp
       timer={1}
-      title="POZVÁNKA NA ČLENSKOU SCHŮZI BYTOVÉHO DRUŽSTVA KAŠTANY"
-      imageURL="/assets/images/pozvankaKastany.webp"
-      href="/ke-stazeni/bd-kastany"
-    /> -->
+      imageURL="/assets/images/aktualita.webp"
+      href="/blog"
+    />
 
     <!-- <PopUp
       timer={1}

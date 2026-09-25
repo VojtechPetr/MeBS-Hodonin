@@ -82,7 +82,7 @@ contacts:
       - type: email
         value: stylarkova@bytovka.cz
   - name: Bc. Lenka Holá, BA
-    title: Účetní - PROFI
+    title: Referent - PROFI předseda
     icon: tabler:calculator
     contactInfo:
       - type: phone
@@ -90,10 +90,18 @@ contacts:
       - type: email
         value: lenka.hola@bytovka.cz
   - name: Zuzana Adamcová
-    title: Účetní – PROFI, technik, projekce
+    title: Referent – PROFI předseda, projekce
     icon: tabler:calculator
     contactInfo:
       - type: phone
         value: 518 398 513, 736 624 070
       - type: email
         value: adamcova@bytovka.cz
+  - name: Bc. Veronika Pěnčíková
+    icon: tabler:calculator
+    title: Referent - PROFI předseda
+    contactInfo:
+      - type: phone
+        value: 518 398 539, 606 647 295
+      - type: email
+        value: pencikova@bytovka.cz

@@ -26,10 +26,10 @@ contacts:
       - type: email
         value: babicek@bytovka.cz
   - name: centrální dispečink
-    title: ''
+    title: " "
     icon: tabler:headset
     contactInfo:
       - type: phone
-        value: 602 793 211
+        value: 518 343 349, 602 793 211
       - type: email
         value: dispecink@bytovka.cz

@@ -8,7 +8,7 @@ interface JobFrontmatter {
   location: string;
   email: string;
   icon: string;
-  slug: string;
+  slug?: string;
 }
 
 let jobs: MDXInstance<JobFrontmatter>[] = [];
@@ -39,7 +39,7 @@ try {
     ) : (
       <div class="grid grid-cols-1 gap-4">
         {jobs.map((job) => (
-          <a href={`/kariera/${job.frontmatter.slug}`} class="block">
+          <a href={`/kariera/${job.frontmatter.slug ?? job.file.split('/').pop()?.replace('.mdx', '')}`} class="block">
             <article class="bg-white dark:bg-dark p-6 rounded-lg shadow-md text-center border border-gray-200 transition-transform duration-300 ease-in-out transform hover:scale-110">
               <div class="text-primary mb-4">
                 <Icon name="tabler:user-search" class="w-12 h-12 mx-auto text-blue-600" />

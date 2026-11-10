@@ -10,6 +10,7 @@ interface JobFrontmatter {
   email: string;
   icon: string;
   publishDate: string;
+  slug?: string;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -22,7 +23,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }
 
     return jobs.map((job) => ({
-      params: { slug: job.file.split('/').pop()?.replace('.mdx', '') },
+      params: { slug: job.frontmatter.slug ?? job.file.split('/').pop()?.replace('.mdx', '') },
       props: { job },
     }));
   } catch (error) {
